@@ -1,0 +1,117 @@
+%add all your local new commands to this file
+
+\newcommand{\smiley}{:)}
+\newcommand{\mc}[1]{\textsc{#1}}	% morpheme glossing as small caps: does not clash with fontspec
+\def\Id#1{\vskip-.cm\hskip.01cm\vtop{#1}} % for controlling where the example breaks onto the next line
+
+\renewbibmacro*{index:name}[5]{%
+  \usebibmacro{index:entry}{#1}
+    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+\setlength{\emergencystretch}{2pt}
+\newcolumntype{s}{>{\hsize=.5\hsize}X}
+\newcolumntype{m}{>{\hsize=.25\hsize}X}
+
+
+
+% \newcommand{\noop}[1]{}
+
+%makes subscripts
+\newcommand{\sub}[1]{\textsubscript{#1}}
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture]\node(#1){};}
+
+%draws normal arrow
+\newcommand*{\DrawArrow}[3][]{%
+	\begin{tikzpicture}[overlay,remember picture, >=latex']
+	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em)coordinate (a) -- 
+	($(a-|#3)$) -- (#3);
+	\end{tikzpicture}%
+}
+
+%draws dashed arrow
+\newcommand*{\DrawXArrow}[3][]{%
+    % #1 = draw options
+    % #2 = left point
+    % #3 = right point
+    \begin{tikzpicture}[overlay,remember picture,>=latex']
+       % \draw [-latex, #1] ($(#2)+(0.1em,0.5ex)$) to ($(#3)+(0,0.5ex)$);
+		\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em)coordinate (a) -- 
+		node%[font=\footnotesize]
+		{\ding{56}}
+		($(a-|#3)$) -- (#3);
+    \end{tikzpicture}%
+}% 
+
+\newcommand*{\DrawArrowok}[4][]{%
+	% #1 = draw options
+	% #2 = left point
+	% #3 = right point
+	\begin{tikzpicture}[overlay,remember picture, >=latex']
+	% \draw [-latex, #1] ($(#2)+(0.1em,0.5ex)$) to ($(#3)+(0,0.5ex)$);
+	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em)coordinate (a) -- 
+	%node[below,font=\footnotesize]{#4} 
+	node[midway,fill=white,font=\normalsize]{#4}
+	($(a-|#3)$) -- (#3);
+	\end{tikzpicture}%
+}% 
+
+\newcommand*{\DrawLXArrow}[3][]{%
+	% #1 = draw options
+	% #2 = left point
+	% #3 = right point
+	\begin{tikzpicture}[overlay,remember picture,>=latex']
+	% \draw [-latex, #1] ($(#2)+(0.1em,0.5ex)$) to ($(#3)+(0,0.5ex)$);
+	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.8em)coordinate (a) -- 
+	node%[font=\footnotesize]
+	{\ding{56}}
+	($(a-|#3)$) -- (#3);
+	\end{tikzpicture}%
+}% 
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees,calc}
+\usetikzlibrary{decorations.text}
+
+%\renewbibmacro*{index:name}[5]{%
+%  \usebibmacro{index:entry}{#1}
+%    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+
+% \newcommand{\noop}[1]{}
+\renewcommand{\all}[1]{\ensuremath{\forall #1}}
+
+\newcommand{\bari}{\ipabar{\i}{.5ex}{1.1}{}{}}
+% \newcommand{\noop}[1]{}
+
+\let\oldemptyset\emptyset
+\let\emptyset\varnothing
+\captionsetup{labelsep=space,justification=justified,singlelinecheck=off}
+%\newlength\tindent
+%\setlength{\tindent}{\parindent}
+%\renewcommand{\indent}{\hspace*{\tindent}}
+
+
+\usetikzlibrary{calc,positioning,tikzmark}
+
+%hyman
+\newcommand{\higr}[1]{{\color{red}#1}}
+ 
+ 
+\definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
+
+%newkirk
+\newcommand{\ix}[1]{{\color{red}\textsubscript{#1}}} %probably i.nde.x
+\newcommand{\ol}[1]{{\color{red}\textit{#1}}} %probably o.bject l.anguage
+\newcommand{\alert}[1]{{\color{red}\textbf{#1}}}
+\newenvironment{context}{\color{red}
+\smallskip 
+
+\scriptsize 
+}{\color{black}\normalsize }
+\newcommand{\m}[1]{{\color{red}\textsc{#1}}}
+\newcommand{\den}[1]{{\color{red}#1}}
+\newcommand{\type}[1]{{\color{red}#1}}
+\newcommand{\denol}[1]{{\color{red}#1}}
+\newcommand{\bex}{\ea}
+\newcommand{\fex}{\z}
+\newcommand{\set}{{\color{red} SET}}
+
+\newcommand{\biberror}[1]{{\color{red}#1}}
+\def\denotes#1{$\lbrack\!\lbrack${#1\/}$\rbrack\!\rbrack$}      % denotes
+\newcommand{\citeNP}{\citealt}

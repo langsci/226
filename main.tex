@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%     Language Science Press Master File       %%%
+%%%              edited volumes                  %%%
+%%%         follow the instructions below        %%%  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[output=book,modfonts,collection,collectionchapter
+,colorlinks,citecolor=brown
+% ,draft,draftmode
+		  ]{langscibook}                               
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex} 
+\bibliography{localbibliography}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%             Frontmatter                      %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\WarningsOff[microtype]
+\WarningFilter{microtype}{Unknown slot} 
+
+\begin{document}         
+\maketitle                
+\frontmatter
+
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+{\sloppy \tableofcontents}
+% %% uncomment if you have preface and/or acknowledgements
+% \include{chapters/preface}
+% \include{chapters/acknowledgments}
+
+\mainmatter          
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%             Chapters                         %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\includepaper{chapters/cahill} 
+\includepaper{chapters/baird}
+\includepaper{chapters/baron}
+\includepaper{chapters/downing}
+
+\includepaper{chapters/tamba}  
+\includepaper{chapters/letsholo}
+\includepaper{chapters/glewwe}
+% \includepaper{chapters/becker} %shapes broken
+
+\includepaper{chapters/kanijo}
+\includepaper{chapters/takam}
+\includepaper{chapters/grano}
+\includepaper{chapters/baird}
+
+\includepaper{chapters/bochnak} %bochnak is missing bib file
+\includepaper{chapters/owusu}
+\includepaper{chapters/hyman} %hyman's chapter does compile now
+\includepaper{chapters/kaspercushman}
+
+\includepaper{chapters/newkirk} %guessed versions of missing commands available in localcommands. Check with author about the semantics of commands
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%%%             Backmatter                       %%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\input{backmatter.tex}
+\end{document} 
