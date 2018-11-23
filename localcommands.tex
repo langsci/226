@@ -1,19 +1,14 @@
-%add all your local new commands to this file
-
-\newcommand{\smiley}{:)}
+ 
 \newcommand{\mc}[1]{\textsc{#1}}	% morpheme glossing as small caps: does not clash with fontspec
 \def\Id#1{\vskip-.cm\hskip.01cm\vtop{#1}} % for controlling where the example breaks onto the next line
 
-\renewbibmacro*{index:name}[5]{%
-  \usebibmacro{index:entry}{#1}
-    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+
 \setlength{\emergencystretch}{2pt}
 \newcolumntype{s}{>{\hsize=.5\hsize}X}
 \newcolumntype{m}{>{\hsize=.25\hsize}X}
 
 
-
-% \newcommand{\noop}[1]{}
+ 
 
 %makes subscripts
 \newcommand{\sub}[1]{\textsubscript{#1}}
@@ -69,22 +64,14 @@
 \usetikzlibrary{arrows,shapes,positioning,shadows,trees,calc}
 \usetikzlibrary{decorations.text}
 
-%\renewbibmacro*{index:name}[5]{%
-%  \usebibmacro{index:entry}{#1}
-%    {\iffieldundef{usera}{}{\thefield{usera}\actualoperator}\mkbibindexname{#2}{#3}{#4}{#5}}}
+ 
+\newcommand{\all}[1]{\ensuremath{\forall #1}}
 
-% \newcommand{\noop}[1]{}
-\renewcommand{\all}[1]{\ensuremath{\forall #1}}
-
-\newcommand{\bari}{\ipabar{\i}{.5ex}{1.1}{}{}}
-% \newcommand{\noop}[1]{}
+\newcommand{\bari}{\ipabar{\i}{.5ex}{1.1}{}{}} 
 
 \let\oldemptyset\emptyset
 \let\emptyset\varnothing
-\captionsetup{labelsep=space,justification=justified,singlelinecheck=off}
-%\newlength\tindent
-%\setlength{\tindent}{\parindent}
-%\renewcommand{\indent}{\hspace*{\tindent}}
+ 
 
 
 \usetikzlibrary{calc,positioning,tikzmark}
@@ -111,7 +98,6 @@
 \newcommand{\bex}{\ea}
 \newcommand{\fex}{\z}
 \newcommand{\set}{{\color{red} SET}}
-
-\newcommand{\biberror}[1]{{\color{red}#1}}
+ 
 \def\denotes#1{$\lbrack\!\lbrack${#1\/}$\rbrack\!\rbrack$}      % denotes
 \newcommand{\citeNP}{\citealt}
