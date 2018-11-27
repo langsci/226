@@ -39,7 +39,35 @@ In a cartographic approach to DP structure, \citet{Greenberg1963} and \citet{Cin
 
   
 \begin{figure} 
-\includegraphics[width=\textwidth]{figures/baron-img1.png} 
+% % \includegraphics[width=\textwidth]{figures/baron-img1.png}
+\begin{forest} for tree={nice empty nodes}
+[Agr\textsubscript{w}P
+    [~]
+    [
+    [Agr\textsubscript{w}] [WP
+        [DemP] [
+            [W] [Agr\textsubscript{x}P
+                [~] [
+                    [Agr\textsubscript{x}] [XP
+                        [NumP] [
+                            [X] [Agr\textsubscript{y}P
+                                [~] [
+                                    [Agr\textsubscript{y}] [YP
+                                        [AP] [
+                                            [Y] [\textbf{NP}]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    ]
+]
+\end{forest}
 \caption{the cartographic representation of DPs (adapted from \citealt{Cinque2005}: (2)).} 
 \label{fig:baron:1}
 \end{figure}
