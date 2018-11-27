@@ -41,7 +41,7 @@ agnostic.
  Tap &  & ɾ  &  &  &  & \\
  Glide & w & & j & &  & \\
  \lspbottomrule
-\lspbottomrule\end{tabularx}
+ \end{tabularx}
 \end{table}
 
 
@@ -273,7 +273,7 @@ The markedness constraint that motivates the hiatus resolution is as follows:
 \z
   
   Vowel hiatus in Gurmancema is always resolved by deleting the first vowel, or 
-  the word-final vowel. A tableau showing an example is shown in Table 2.
+  the word-final vowel. A tableau showing an example is shown in \tabref{tab:baird:2}.
   
 \todo{these look more like standard tables than tableaux}  
 \begin{table}
@@ -291,7 +291,7 @@ The markedness constraint that motivates the hiatus resolution is as follows:
  \lspbottomrule\end{tabularx}} 
 \end{table}
 
-In the tableau in Table 2, candidate (a) has a vowel sequence and a word-final tense vowel, so it violates *V.V and [+tns]\#, incurring a score of 9.34+6.14, totaling 15.44. Candidate (b) violates *V.V and \textsc{Ident}(hi), incurring a score of 9.34+2.99, totaling 12.63. Candidate (c) only violates \textsc{Max}(V), incurring a score of 3.62. This is the lowest score by a significant amount, so the model predicts candidate (c) will surface approximately 100\% of the time, which is what was observed. 
+In the tableau in \tabref{tab:baird:2}, candidate (a) has a vowel sequence and a word-final tense vowel, so it violates *V.V and [+tns]\#, incurring a score of 9.34+6.14, totaling 15.44. Candidate (b) violates *V.V and \textsc{Ident}(hi), incurring a score of 9.34+2.99, totaling 12.63. Candidate (c) only violates \textsc{Max}(V), incurring a score of 3.62. This is the lowest score by a significant amount, so the model predicts candidate (c) will surface approximately 100\% of the time, which is what was observed. 
 Vowel hiatus resolution is entirely regular and predictable in Gurmancema, with 
 the word-final vowel always being deleted.
 
@@ -304,14 +304,14 @@ leading to a preference for reduction over deletion when word-final vowels are p
 	[-sonorant][+consonantal] consonant cluster in the output. 
 \z
 
-Table 3 shows an example of reduction of a vowel following an obstruent. The tableau shows observed data for all /Ta\#C/, meaning all environments of an obstruent followed by /a/ followed by a consonant. 
+\tabref{tab:baird:3} shows an example of reduction of a vowel following an obstruent. The tableau shows observed data for all /Ta\#C/, meaning all environments of an obstruent followed by /a/ followed by a consonant. 
 
 \begin{table}
 \caption{Tableau for /Ta\#C/ with sample phrase ‘child loses’, n=88}
 \label{tab:baird:3}
+\small
 \begin{tabularx}{\textwidth}{Xccccccc} 
 \lsptoprule
-
 {} &  p   &  p   &    &   *[+tns]\#   &   *TC   &   \textsc{Max} (V)   &   \textsc{Ident} (lo)  \\
 \midrule
    /kìbéga bìáni/ & obs & pred & score & 6.14 & 4.55 & 3.62 & 3.52 \\
@@ -326,15 +326,15 @@ Word-final /i/ and /o/ behave very similarly to word-final /a/ when preceded by
 an obstruent, but /u/ behaves slightly different. Reducing /u/ violates both 
 \textsc{Ident}(hi) as well as \textsc{Ident}(round), so the reduced candidate 
 has more penalties than the other word-final vowels. This leads to a case of 
-ganging, where the violation of two lower constraints is strong enough to overpower one stronger constraint, leading to variation. While violating either \textsc{Ident}(high) or \textsc{Ident}(labial) produces patterns similar to those seen in Table 2, violating both means almost double the penalty for that candidate, making reduction a significantly worse choice for /u/ than the other vowels. The ganging and variation is 
-illustrated in Table 4. 
+ganging, where the violation of two lower constraints is strong enough to overpower one stronger constraint, leading to variation. While violating either \textsc{Ident}(high) or \textsc{Ident}(labial) produces patterns similar to those seen in \tabref{tab:baird:2}, violating both means almost double the penalty for that candidate, making reduction a significantly worse choice for /u/ than the other vowels. The ganging and variation is 
+illustrated in \tabref{tab:baird:4}. 
 
 \begin{table}
 \caption{Tableau for /Tu\#C/ with sample phrase ‘tree wants’, n=141}
 \label{tab:baird:4}
-\begin{tabularx}{\textwidth}{Xcccccccc} 
+\small
+\begin{tabularx}{\textwidth}{Xc@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c} 
 \lsptoprule
-
 {} &  p   &  p   &    &   *[+tns]\#   &   *TC   &   \textsc{Max} (V)   &   \textsc{Ident} (lab)   &   \textsc{Ident} (hi)  \\
 \midrule
  /bútíbu bwà/ & obs & pred & score & 6.14 & 4.55 & 3.62 & 3.62 & 2.99 \\
@@ -359,7 +359,7 @@ The reason we need two constraints *TC and *RC rather than a general *CC constra
 
 
 There were no cases of word-final /e/, /u/, or /o/ preceded by an approximant. Word-final /a/ preceded by approximants behaves differently from /i/, 
-however, always surfacing as a maintained [a]. The vowel /a/ reduces in other cases, such as after obstruents (see Table 2), so this is not a result of constraints preventing /a/ from reducing. There is nothing morphologically unique about the words that exhibit this pattern, and it is very consistent. To account for this pattern, a new solution is necessary. The first ingredient in the solution is the following constraint: 
+however, always surfacing as a maintained [a]. The vowel /a/ reduces in other cases, such as after obstruents (see \tabref{tab:baird:2}), so this is not a result of constraints preventing /a/ from reducing. There is nothing morphologically unique about the words that exhibit this pattern, and it is very consistent. To account for this pattern, a new solution is necessary. The first ingredient in the solution is the following constraint: 
 \ea
 *[+approximant][-tense] (*R[ə]): Assign a violation for every approximant in 	the output followed by a [-tense] vowel
 \z
@@ -370,28 +370,35 @@ The only way to add more weight to this combination is to use constraint conjunc
 
 The addition of the conjoined constraint *R[ə] \& \textsc{Ident}(lo) correctly predicts the data distribution. Although many superadditive models only use superadditivity for conjoining markedness constraints \citep{AlbrightEtAl2008}, there is also precedent for using faithfulness constraints in a superadditive manner \citep{GreenDavis2014}. Nevertheless, there is some debate about whether markedness and faithfulness constraints can be conjoined \citep{MoretonSmolensky2002}. Conjoined constraints are intended only to be used for patterns in local domains. According to \citet{MoretonSmolensky2002}, as the domain of markedness is the output while faithfulness necessarily refers to the input, it is not clear whether such conjunctions can be truly considered local. In this case, the only way to represent the data was to conjoin a faithfulness and a markedness constraint (*R[ə] \& \textsc{Ident}(lo)). 
 
-Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are shown in Table 5 
+Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are shown in \tabref{tab:baird:5} 
 
 \begin{table}
+\small
 \caption{Tableau for /Ri\#C/ with sample phrase ‘hair covers’, n=192}
 \label{tab:baird:5}
-\begin{tabularx}{\textwidth}{Xccccccccc} 
+\fittable{
+\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}} 
 \lsptoprule
 
 {} &  p   &  p   &    &   *R[ə] \& \textsc{Ident}(lo)  &   *[+tns]\#   &    *RC   &   \textsc{Max} (V)   &   \textsc{Ident} (hi)   &   *R[ə]\#  \\
-
+\midrule
    /tìyúɾi ŋóagéni/ & obs & pred & score & 8.13 & 6.14 & 6.04 & 3.62 & 2.99 & 0 \\
 {a. [tìyúɾi ŋóagéni]} & .05 & \textasciitilde .04 & 6.14 & 0 &1 & 0 & 0 & 0 & 0 \\
 {b. [tìyúɾə ŋóagéni]} & .91 & \textasciitilde .96 & 2.99 & 0 & 0&0 & 0 & 1 & 1 \\
 {c. [tìyúɾ ŋóagéni]} & .04 & \textasciitilde 0 & 9.66 & 0 &0& 1 & 1 & 0 & 0\\
-\lspbottomrule\end{tabularx}
+\lspbottomrule
+\end{tabular}
+}
 \end{table}
 
 
 
 \begin{table}
+\small
  \caption{Tableau for /Ra\#C/ with sample phrase ‘children sell’, n=160}
-\label{tab:baird:6}\begin{tabularx}{\textwidth}{Xccccccccc} 
+\label{tab:baird:6}
+\fittable{
+\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}} 
 \lsptoprule
 
 {} &  p   &  p   &    &   *R[ə] \& \textsc{Ident}(lo)  &   *[+tns\#]   &   \textsc *RC   &   \textsc{Max}(V)  &   \textsc{Ident} (lo)   &   *R[ə] \\
@@ -400,7 +407,9 @@ Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are sho
 {a. [abéla kúaɾi]} & 1 & \textasciitilde .97 & 6.14 & 0 & 1 & 0 & 0 & 0 & 0\\
 {b. [abélə kúaɾi]} & 0 & \textasciitilde 0 & 11.65 & 1 & 0 & 0 & 0 & 1 & 1\\
 {c. [abél kúaɾi]} & 0 & \textasciitilde .03 & 9.66 & 0 & 0 & 1 & 1 & 0 & 0\\
-\lspbottomrule\end{tabularx}
+\lspbottomrule
+\end{tabular}
+}
 \end{table}
 
 Without the use of superadditivity, the model predicts variation in this environment which showed categorical behavior. An example tableau is shown below. 
@@ -408,8 +417,8 @@ Without the use of superadditivity, the model predicts variation in this environ
 
 \begin{table}
  \caption{Tableau for /Ra\#C/ with sample phrase ‘children sell’, n=160 without superadditivity}
-\label{tab:baird:7}
- \begin{tabularx}{\textwidth}{Xcccccccc} 
+\label{tab:baird:7} 
+ \begin{tabularx}{\textwidth}{X@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c} 
  \lsptoprule
 
 {} &  p   &  p   &    &   *RC   &   \textsc *[+tns\#]    &   \textsc{Ident} (lo)  &   *R[ə]   &   \textsc{Max}(V)  \\
@@ -437,12 +446,12 @@ below.
 
 
 \begin{table}
- 
 \caption{Tableau for /mi\#C/ with sample phrase ‘elephants eat’, n=44}
 \label{tab:baird:8}
-\begin{tabularx}{\textwidth}{Xcccccccc} 
+\small
+\fittable{
+\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}} 
 \lsptoprule
-
 {} &  p   &  p   &    &   *[+tns]\#   &   \textsc{Max}(V)   &   \textsc{Ident} (lab)   &   \textsc{Ident} (hi)   &   \textsc{Nasal Assimilation}  \\
 \midrule
     /ilúomì dá/ & obs & pred & score & 6.14 & 3.62 & 3.62 & 2.99 & 2.55 \\
@@ -450,7 +459,9 @@ below.
    \textipa{b. [ilúomə̀ dá]} & .91 & \textasciitilde .91 & 2.99 & 0 & 0 & 0 & 1 & 0 \\
    \textipa{c. [ilúom dá]} & .02 & \textasciitilde .04 & 6.17 & 0 & 1 & 0 & 0 & 1\\
    \textipa{d. [ilúon dá]} & 0 & \textasciitilde .01 & 7.24 & 0 & 1 & 1 & 0 & 0\\
- \lspbottomrule\end{tabularx}
+ \lspbottomrule
+ \end{tabular}
+ }
 \end{table}
 
 In cases where the next consonant is also bilabial, the vowel is more likely to delete because it only violates \textsc{Max}(V), rather than \textsc{Max}(V) as well as either \textsc{NasalAssimilation} or \textsc{Ident}(lab). 
@@ -458,17 +469,19 @@ In cases where the next consonant is also bilabial, the vowel is more likely to 
 \begin{table}
  \caption{Tableau for /ma\#C/ with sample phrase ‘food hits’, n=6}
 \label{tab:baird:9}
-\begin{tabularx}{\textwidth}{Xcccccccc} 
+\small
+\fittable{
+\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}}  
 \lsptoprule
-
 {} &  p   &  p   &    &   *[+tns]\#   &   \textsc{Max}(V)   &   \textsc{Ident} (lab)   &   \textsc{Ident} (low)   &   \textsc{Nasal Assimilation}  \\
 \midrule
     /míɟemá pwá/ & obs & pred & score & 6.14 & 3.62 & 3.52 & 2.99 & 2.55 \\
     \textipa{a. [míɟemá pwá]} & 0 & \textasciitilde .04 & 6.14 & 1 & 0 & 0 & 0 & 0\\
    \textipa{b. [míɟemə́ pwá]} & .33 & \textasciitilde .50 & 3.52 & 0 & 0 & 0 & 1 & 0 \\
    \textipa{c. [míɟem pwá]} & .67 & \textasciitilde .46 & 3.62 & 0 & 1 & 0 & 0 & 1\\
- \lspbottomrule\end{tabularx}
- 
+ \lspbottomrule
+ \end{tabular}
+ }
 \end{table}
 
 While there may be greater deviation between observed and predicted probabilities in this case, the sample size for this environment was considerably smaller than for other environments modeled, given its specificity.
