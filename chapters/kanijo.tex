@@ -1,17 +1,18 @@
-\documentclass[output=paper]{langscibook} 
-\author{Ponsiano Sawaka Kanijo\affiliation{University of Gothenburg}}
-% \title{The interaction of -\textit{ø}-…-\textit{íle} with aspectual classes in Nyamwezi}
-% \title{The interaction of -ø-…-íle with aspectual classes in Nyamwezi}
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook} 
+\author{Ponsiano Sawaka Kanijo\affiliation{University of Gothenburg}} 
 \title{The interaction of  with aspectual classes in Nyamwezi}
-
-% \chapterDOI{} %will be filled in at production
  
 \abstract{This study investigates different readings of the construction -\textit{ø}-\ldots-\textit{íle} resulting from the interaction with aspectual classes in Nyamwezi, a Bantu language spoken in Tabora, Tanzania. The study is motivated by two observations. Firstly, in previous analyses \cite{Maganga1992}, it was noted that -\textit{ø}-\ldots-\textit{íle} in Nyamwezi selects few verbs, but the patterns governing its distribution were not identified. Secondly, not much has been done on describing the semantics of verbal roots in Nyamwezi (and many other Bantu languages), which appears to be a source of variable temporal interpretations of -\textit{ø}-\ldots-\textit{íle}. Based on field data, I show that the first main function of -\textit{ø}-\ldots-\textit{íle} is that of stativizer. That is, -\textit{ø}-\ldots-\textit{íle} picks out a phase of an event or the entire event (if the event lacks phasic structure) and presents it as a stable, undifferentiated property. -\textit{ø}-\ldots-\textit{íle} does so in three different ways, which give three different readings: (i) resultative, when it occurs with achievements, (ii) general present, which occurs with statives and (iii) a progressive-like reading, which occurs with some activity verbs classified as ‘directed motion verbs’ in this study. The discussion of the contrast between these readings is informed by a progressive form -{\textit{l}}{\textit{ɪɪ}}-. Many other activity verbs do not typically occur with -\textit{ø}-\ldots-\textit{íle}. Those that occur with this construction either suggest the change-of-state or condition of the verb’s subject (which has the semantic role of patient; patientive subject) or they are used in a special pragmatic condition where -\textit{ø}-\ldots-\textit{íle} is coerced. Coercion of -\textit{ø}-\ldots-\textit{íle} expresses a contradiction and/or emphasis, which can be regarded as a second main function of this construction. }
-\maketitle
+% Keywords: aspectual classes, resultative, general present, progressive-like, Nyamwezi
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[9]
+}{}
 
 \begin{document}
+\maketitle
 
-% Keywords: aspectual classes, resultative, general present, progressive-like, Nyamwezi
 
 \section{Introduction}
 
@@ -51,16 +52,19 @@ The suffix -\textit{íle}, apart from this basic form, can also be realized as -
 \begin{table}
 \caption{Variants of -íle}
 \label{tab:kanijo:1}
-\begin{tabularx}{\textwidth}{XXXX}
+\begin{tabularx}{\textwidth}{lXXX}
 \lsptoprule
-
 \bfseries The form of the stem & \bfseries Stem & \bfseries Gloss & \bfseries -\textit{íle} form\\
-CVCw\textsubscript{} stems & \textit{-togwá} & ‘love’ & \textit{-tog}\textit{ílw}\textit{e}\\
+\midrule
+CVCw stems & \textit{-togwá} & ‘love’ & \textit{-tog}\textit{ílw}\textit{e}\\
 & \textit{-chilwa} & ‘hate’ & \textit{-chil}\textit{ilw}\textit{e}\\
+\tablevspace
 Stems ending in Cy & \textit{-seßya} & ‘boil’ & \textit{-seß}\textit{ije}\\
-\hhline{-~~~} & \textit{-s}\textit{ʊßya} & ‘dilute’ & \textit{-s}\textit{ʊß}\textit{ije}\\
+ & \textit{-s}\textit{ʊßya} & ‘dilute’ & \textit{-s}\textit{ʊß}\textit{ije}\\
+
+\tablevspace
 Monosyllabic stems & \textit{-faá} & ‘die’ & \textit{-f}\textit{iile}\\
-\hhline{-~~~} & \textit{-pyaá} & ‘be ripe’ & \textit{-p}\textit{iile}\\
+ & \textit{-pyaá} & ‘be ripe’ & \textit{-p}\textit{iile}\\
 \lspbottomrule
 \end{tabularx}
 \end{table}
@@ -135,9 +139,10 @@ A number of diagnostic tests have been developed to determine Vendler’s aspect
 
 One way in which the events named by the verbs may be differentiated is with respect to their temporal internal structures. In Bantu languages, \citet{Botne1983}, and \citet{Botne2000, Botne2008}, following \citet{Freed1979}, propose a framework that takes into account three potential phases of an event, onset, nucleus and coda, to classify aspectual classes. The onset (O) phase, which may or may not be included in the event’s temporal structure, constitutes the initial or preparatory phase of the event. It is a preparatory stage for the nuclear activity of the event. The coda (C) phase constitutes a final phase which brings the event to a definite end or to a state resulting from the prior event. Lastly, the nuclear (N) phase is characterized as comprising the characteristic and prominent feature of the event. All three phases are schematically represented in \figref{fig:kanijo:1}. 
 
+\todo{redo all diagrams with tikz}
 \begin{figure}
 \caption{Phase representation}
-\centering
+
 \begin{tabularx}{.3\textwidth}{|c|c|c|}
 \cline{1-3}
  onset & nucleus & coda\\
@@ -303,15 +308,18 @@ There is a correspondence relationship between lexicalized temporal phases (O, N
 \begin{table}
 \caption{Readings of -ø-…-íle by aspectual classes}
 \label{tab:kanijo:2}
-\begin{tabularx}{\textwidth}{XXX}
+\begin{tabularx}{\textwidth}{QQp{39mm}}
 \lsptoprule
 \bfseries Aspectual classes & \bfseries Temporal interpretations & \bfseries Examples \\
+\midrule 
 Achievements & Resultative & \textit{agini}\textbf{\textit{lé}} 
 
 a-ø-gin-í\textbf{le} 
 
 3\textsc{sg}-become fat-\textbf{íle} 
 ‘S/he is fat (because s/he got fat in the past)’\\
+
+\tablevspace
 Statives & General present time & \textit{kasaat}\textbf{\textit{i}}\textbf{\textit{lé}} 
 
 ka\footnotemark{}-ø-saat-\textbf{íle} 
@@ -319,7 +327,9 @@ ka\footnotemark{}-ø-saat-\textbf{íle}
 cl.12-be sick-\textbf{íle}
 
 ‘S/he (small child) is sick’\\
-Activities (Directed motion verbs) & Progressive-like & \textit{az}\textbf{\textit{íílé}         }\textit{kʊ}\textit{Púgu}
+
+\tablevspace
+Activities\newline (Directed motion verbs) & Progressive-like & \textit{az}\textbf{\textit{íílé}         }\textit{kʊ}\textit{Púgu}
 
 a-ø-z-\textbf{íle}    kʊ-Pugu
 
@@ -398,7 +408,7 @@ being sour &  & %%[Warning: Draw object ignored] & O\par
 % \lspbottomrule
 \end{tabularx}
                 N             N 
-                
+\caption{{\color{red} Missing caption}}                
 \end{table} 
 
                 
@@ -485,6 +495,8 @@ It is hard to find a context where the difference between -\textit{lɪɪ}\textit
 
 In order to find the difference, consultants were asked to tell which of the two forms they can use when talking about chronic diseases. They all agreed that the construction \textit{-ø}\textit{-…-íle} is appropriate when talking about chronic diseases (hence unacceptable in (20b), while the form -\textit{lɪɪ}\textit{-} is only used to talk about curable diseases like malaria (hence acceptable in (20a). The use of \textit{-ø}\textit{-…-íle} when referring to chronic diseases gives some evidence that this construction really describes a state, while -\textit{lɪɪ}\textit{-} denotes an event which is true for the time being, but probably it will not persist in the coming days. 
 
+\todo{ALLCAPS to smallcaps}
+\todo{gll missing from here onwards}
 \ea{}
 [Context: Someone has arrived and is looking at the children who are playing at the house compound. As she was expecting to see J, but J is not there, she then asks “where is J today?”] 
 
@@ -513,6 +525,7 @@ In order to find the difference, consultants were asked to tell which of the two
 
 As described in the previous section, duratives, in general, have an extended nuclear phase (as shown in \figref{fig:key:9}). Duratives are classified into two subclasses: activities (those in which the nuclear phase indicates internal change of an event from moment to moment, e.g. -\textit{lyaá} ‘eat’ and \textit{-peela} ‘run’) and serial semelfactives (those in which the nuclear phase constitutes multiple occurrences of a situation when perceived as series, e.g. -\textit{kolola} ‘laugh’). 
 
+\todo{check all floats whether they are tables or figures}
 \begin{table}
 \caption{Durative event}
 
@@ -1069,37 +1082,45 @@ In short, \textit{-ø}\textit{-…-íle} in Nyamwezi has two main functions: (i)
 
 \section*{Abbreviations} 
 
-\begin{tabular}{l l}
-A & Augment\\
-APPL & Applicative\\
-ASS & Associative\\
-AUX & Auxiliary\\
+
+
+
+
+
+\begin{tabularx}{.45\textwidth}{>{\scshape}lQ}
+a & Augment\\
+appl & Applicative\\
+ass & Associative\\
+aux & Auxiliary\\
 cl & noun class\\
-CPL & Completive marker\\
-CON & Connexive\\
-COP & Copular\\
-EXT & Extension\\
-FV & Final vowel\\
-HAB & Habitual\\
-IMP & Imperative\\
-INF & Infinitive\\
-IT & Itive marker\\
-LOC & Locative\\
-NEG & Negative\\
-OC & Object concord\\
-OPT & Optative\\
-PASS & Passive\\
-PL & Plural\\
-POSS & Possessive\\
-PROG & Progressive\\
-REC & Recent past\\
-RS & Resultant state\\
-SC & Subject concord\\
-SG & singular\\
-TAM & Tense, Aspect and Mood\\
-TC/SC & Tense copy of subject concord\\
-VB & Verbal base\\
-\end{tabular}
+cpl & Completive marker\\
+con & Connexive\\
+cop & Copular\\
+ext & Extension\\
+fv & Final vowel\\
+hab & Habitual\\
+imp & Imperative\\
+inf & Infinitive\\
+it & Itive marker\\
+loc & Locative\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{>{\scshape}ll}
+neg & Negative\\
+oc & Object concord\\
+opt & Optative\\
+pass & Passive\\
+pl & Plural\\
+poss & Possessive\\
+prog & Progressive\\
+rec & Recent past\\
+rs & Resultant state\\
+sc & Subject concord\\
+sg & singular\\
+tam & Tense, Aspect and Mood\\
+tc/sc & Tense copy of subject concord\\
+vb & Verbal base\\
+\\
+\end{tabularx}
 
 \section*{Acknowledgements}
 Many thanks to the language consultants for this study, especially Margreth Nyamizi and Michael Shija, for devoting their time to feed me with data. Thanks also to Laura Downing, Malin Petzell, Elizabeth Coppock and Leora Bar-El for discussing this work with me. I thank Thera Crane and two anonymous reviewers for their insightful comments on an earlier version of this paper.  
