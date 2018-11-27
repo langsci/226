@@ -1,11 +1,18 @@
-\documentclass[output=paper]{langscibook} 
+\documentclass[output=paper,newtxmath,modfonts,nonflat,draftmode]{langsci/langscibook} 
 \author{Aurelie Takam\affiliation{Department of African Languages and Linguistics, University of Yaoundé\newline Department of French studies, York University}}
 \title{Toward a better understanding of speech-language disorders in African countries: The case of speech sound disorders in Cameroon}
-
-% \chapterDOI{} %will be filled in at production
-\begin{document} 
- 
 \abstract{Child speech and language disorders are not well known in many African countries. The aim of this study was to analyze speech sound disorders in Cameroon in order to encourage the rehabilitation of language disorders in general in the public health system. From a sample of 1127 children, 6\% of children presented with speech sound disorders including speech delays, articulation and phonological disorders. Boys were more affected than girls. Complex syllables and fricatives sounds were the most impaired while omission and substitution were the most frequent errors. }
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[10]
+}{}
+
+
+ 
+\begin{document} 
+\shorttitlerunninghead{Toward a better understanding of speech-language disorders in Africa}
 \maketitle
 
 
@@ -15,18 +22,23 @@ Language disorders are not well known in many sub-Saharan countries. Our review 
 
 \subsection{Profile and classification of SSD} %1.1 /
 
-Examples~to illustrate some speech sound errors 
+Examples~to illustrate some speech sound errors are given in \tabref{tab:takam:0}
 
+\begin{table}
+\caption{Speech sound errors}
 \begin{tabularx}{\textwidth}{XXX}
 \lsptoprule
-\textbf{French} \textbf{word}  & \textbf{illustration} & \textbf{Error} \textbf{types}\\
-«~viande~»  & [vjãd] → [bjãd] & Substitution \\
-«~couscous~»  & [kuskus] → [tutu] & substitution; omission\\
-«~chaise»  & [ʃɛz] → [ʃɛ] & omission\\
-«~table~»  & [tabl] → [tab] & omission\\
-«~chocolat~»  & [ʃokola] → [kokola] & consonant harmony\\
+{French} {word}  & {illustration} & {Error} {types}\\
+\midrule
+\textit{viande}  & [vjãd] → [bjãd] & Substitution \\
+\textit{couscous}  & [kuskus] → [tutu] & substitution; omission\\
+\textit{chaise}  & [ʃɛz] → [ʃɛ] & omission\\
+\textit{table}  & [tabl] → [tab] & omission\\
+\textit{chocolat}  & [ʃokola] → [kokola] & consonant harmony\\
 \lspbottomrule
 \end{tabularx}
+\end{table}
+
 
 The generic terminology for these disorders varies in the literature, but in this study, we use the term “speech sound disorder” (SSD) to include articulation disorders, phonological delays and phonological disorders. Articulation disorders are phonetic in nature. For example, a child can systematically replace a sound with another regardless of the syllabic context (see examples 1 and 2 above) while another may systematically omit it (as in example 2). These types of systematic errors indicate a phonetic difficulty to perform the movement required to produce a sound \citep{Fox2001}. Another child may exhibit phonological errors that are specific to younger children. Here, a child may assimilate or omit a sound in a specific context and correctly produce it in another (as in examples 3, 4 and 5 above). The persistence of these types of errors above the expected age results in phonological delay. Thus a delay of at least six months is significant for this purpose \citep{Dodd2013}.%This was originally Dodd2011 but I cannot find the reference for this. I think Dodd2011 was what was intended.
 However, when phonological errors are different from phonological processes (normal errors in phonological development), they are considered as atypical phonological errors and can be consistent or inconsistent depending on whether the same error pops up often or occasionally \citep{Dodd2013}. Finally, a child may exhibit a systematic error on a sound and assimilate another sound, thus showing an overlap between articulation and phonological problems. Therefore, we use the term SSD to include both articulation and phonological problems and the likely overlap between them.
@@ -63,20 +75,29 @@ This study is based on a sample of 1127 bilingual French-Ghɔmálá’ children 
 
 \begin{table}
 \caption{Description of the sample based on school level, gender and socio-linguistic context (N=1127 children) }
-
-\begin{tabularx}{\textwidth}{Xss}
+\begin{tabularx}{.8\textwidth}{lSS}
 \lsptoprule
-\textbf{School} \textbf{level} & \textit{N} & \textbf{\%} \\
-\textit{Maternelle} (kindergarten) & \textit{136}  & 12\\
-\textit{SIL} (grade 1) & \textit{518}  & 46 \\
-\textit{CP} (grade 2) & \textit{473}  & 42 \\
+	& {N} & {\%} \\
+\midrule
+\textbf{School level}\\
+\midrule
+\textit{Maternelle} (kindergarten) & {136}  & 12\\
+{SIL} (grade 1) & {518}  & 46 \\
+{CP} (grade 2) & {473}  & 42 \\
+
+\tablevspace
 \textbf{Gender}  &  & \\
-\textit{girls} & \textit{553}  & 49 \\
-\textit{boys} & \textit{574}  & 51 \\
-\textbf{Sociolinguistic} \textbf{context}  &  & \\
-\textit{rural} & \textit{606}  & 54 \\
-\textit{urban} & \textit{521}  & 46\\
-\textbf{\textit{Total} } & \textit{1127}  & \textit{100} \\
+\midrule
+{girls} & {553}  & 49 \\
+{boys} & {574}  & 51 \\
+
+\tablevspace
+{\textbf{Sociolinguistic context}}   & \\
+\midrule
+{rural} & {606}  & 54 \\
+{urban} & {521}  & 46\\
+\midrule
+\textbf{{Total} } & {1127}  & {100} \\
 \lspbottomrule
 \end{tabularx}
 \label{tab:takam:sample_description}
@@ -118,15 +139,22 @@ The identification of SSD was based on the analysis of consonants and syllabic s
 
 \begin{table}
 \caption{Classification of speech errors by structure (sound and syllable)}
-\begin{tabularx}{\textwidth}{msX}
+\begin{tabularx}{\textwidth}{llQ}
 \lsptoprule
-\textbf{Structure}  & \textbf{Error}  & \textbf{Phonological} \textbf{process} \textbf{leading} \textbf{to} \textbf{the…}\\
+{Structure}  & {Error}  & {Phonological} {process} {leading} {to} {the…}\\
+\midrule
 Sound & Substitution & replacement of a difficult sound by another causing a change in point or mode of articulation\\
+\tablevspace
 & Distortion & rough articulation producing a false noise\\
+\tablevspace
 & Assimilation & replacement of a sound which becomes like a nearby sound (sounds harmony)\\
+\tablevspace
 & Metathesis & position change of one or more sounds in the word\\
+\tablevspace
 Syllable & Omission & erasing of a sound\\
+\tablevspace
 & Addition & vocalic or consonantal addition\\
+\tablevspace
 & Metathesis & position change of one or more sounds in the word\\
 \lspbottomrule
 \end{tabularx}
@@ -141,13 +169,14 @@ Following the preliminary screening, 100 children were listed as presenting at l
 
 \begin{table}
 \caption{Prevalence rate by gender, sociolinguistic context and school level}
-\begin{tabularx}{\textwidth}{XXXXXXXXX} & \multicolumn{2}{c}{ \bfseries Gender}  & \multicolumn{2}{c}{ \bfseries Sociolinguistic context} & \multicolumn{3}{c}{ \bfseries School level} & \bfseries Total \\
+\begin{tabularx}{\textwidth}{X rr rr rrr S}
 \lsptoprule
+& \multicolumn{2}{c}{  Gender}  & \multicolumn{2}{c}{  Sociolinguistic context} & \multicolumn{3}{c}{  School level} &  Total \\
 & Girls & Boys & Rural & Urban & Mat & SIL & \textit{CP} & \\
-\hline
-\bfseries N & 553 & 574 & 606 & 521 & 136 & 518 & 473 & \textbf{1127}\\
-\bfseries n & 25 & 43 & 39 & 29 & 12 & 39 & 17 & \textbf{68}\\
-\bfseries \textit{\%} & \textit{4.5} & \textit{7.5} & \textit{6.4} & \textit{5.6} & \textit{8.8} & \textit{7.5} & \textit{3.6} & \textbf{\textit{6.0}}\\
+\midrule 
+ N & 553 & 574 & 606 & 521 & 136 & 518 & 473 & \textbf{1127}\\
+ n & 25 & 43 & 39 & 29 & 12 & 39 & 17 & \textbf{68}\\
+ {\%} & {4.5} & {7.5} & {6.4} & {5.6} & {8.8} & {7.5} & {3.6} & {{6.0}}\\
 \lspbottomrule
 \end{tabularx}
 \label{tab:takam:3}
@@ -158,10 +187,10 @@ N= general population; n= children with speech disorders; Mat= kindergarten~(4-5
 
 \begin{table}
 \caption{Prevalence rate by age groups}
-\begin{tabularx}{\textwidth}{XXXXXX}
+\begin{tabularx}{\textwidth}{XSSSSS}
 \lsptoprule
-& {\bfseries 4 years} \bfseries (N=117) & \bfseries 5 years (N=254) & \bfseries 6 years (N=279) & \bfseries 7 years (N=221) & \bfseries 8 years (N=256)\\
-\hline
+& { 4 years}  (N=117) &  5 years (N=254) &  6 years (N=279) &  7 years (N=221) &  8 years (N=256)\\
+\midrule
 n & 8 & 16 & 19 & 11 & 14\\
 {\%} & 6.8 & 6.3 & 6.8 & 5.0 & 5.4\\
 \lspbottomrule
@@ -177,16 +206,21 @@ On a segmental level, {the analysis by age group showed some differences in the 
 \begin{table}
 \caption{Impaired consonants by age group  }
 \label{tab:takam:5}
-\begin{tabularx}{\textwidth}{XXXXX}
+\begin{tabularx}{\textwidth}{Q@{~} lQQl@{}}
 \lsptoprule
-\bfseries Age groups & \bfseries Not impaired & \bfseries Low & \bfseries Medium & \bfseries Highly \\
-\hline
-4 years (n=8) & [p, m, n, ɲ, ɥ ] & n/a & [j, v, d, w, f, t, b, k] & [ʒ, g, s, z, ʃ, l, ʁ]\\
-5 years (n=16) & [p, m, n, v, j] & [ʒ, ɲ, d, w, f, t] & [ɥ, g, k, b, s] & [z, ʃ, l, ʁ]\\
-6 years (n=19) & [p, m, n, ʒ, v, b, ɲ, d] & [w, f, v, t] & [ɥ, g, k, ʃ] & [l, s, z, ʁ]\\
-7 years (n=11) & [p, m, n, ɲ, v, f, b] & [ɥ, k, ʒ] & [j, w, t, g, d, s, z] & [ʃ, l, ʁ]\\
-8 years (n=14) & [p, m, n, w, ʒ, ɥ] & [v, b, ɲ, f, j, t, d] & [g, k] & [s, ʃ, z, l, ʁ]\\
-\bfseries 4-8 years (n=68) & \textbf{[p,} \textbf{m,} \textbf{n]} & \textbf{[ɲ,} \textbf{v,} \textbf{f,} \textbf{ɥ,} \textbf{ʒ,} \textbf{j,} \textbf{w,} \textbf{b,} \textbf{t,} \textbf{d]} & \textbf{[g,} \textbf{k]} & \textbf{[s,} \textbf{ʃ,} \textbf{z,} \textbf{l,} \textbf{ʁ]}\\
+ Age groups &  Not impaired &  Low &  Medium &  Highly \\
+\midrule
+4 years\newline (n=8) & p, m, n, ɲ, ɥ  & n/a & j, v, d, w, f, t, b, k & ʒ, g, s, z, ʃ, l, ʁ\\
+\tablevspace
+5 years (n=16) & p, m, n, v, j & ʒ, ɲ, d, w, f, t & ɥ, g, k, b, s & z, ʃ, l, ʁ\\
+\tablevspace
+6 years (n=19) & p, m, n, ʒ, v, b, ɲ, d & w, f, v, t & ɥ, g, k, ʃ & l, s, z, ʁ\\
+\tablevspace
+7 years (n=11) & p, m, n, ɲ, v, f, b & ɥ, k, ʒ & j, w, t, g, d, s, z & ʃ, l, ʁ\\
+\tablevspace
+8 years (n=14) & p, m, n, w, ʒ, ɥ & v, b, ɲ, f, j, t, d & g, k & s, ʃ, z, l, ʁ\\
+\midrule 
+4-8 years (n=68) & {p,} {m,} {n} & {ɲ,} {v,} {f,} {ɥ,} {ʒ,} {j,} {w,} {b,} {t,} {d} & {g,} {k} & {s,} {ʃ,} {z,} {l,} {ʁ}\\
 \lspbottomrule
 \end{tabularx}
 \end{table}
@@ -198,16 +232,15 @@ As far as syllable structures were concerned (see \tabref{tab:takam:6}), the CVC
 
 \begin{table}
 \caption{Impaired syllable structures by age group}
-
-\begin{tabularx}{\textwidth}{XXXXXXX}
+\begin{tabularx}{\textwidth}{QSSSSSr}
 \lsptoprule
-& \bfseries 4 years & \bfseries 5 years & \bfseries 6 years & \bfseries 7 years & \bfseries 8 years & \bfseries 4-8 years\\
-\hline
+&  4 years &  5 years &  6 years &  7 years &  8 years &  4-8 years\\
+\midrule
  & n=8 & n=8 & n=8 & n=8 & n=8 & n=8\\
-\bfseries CV & \textit{6.2} & \textit{31.2} & \textit{36.8} & \textit{27.3} & \textit{28.6} & \textit{32.3}\\
-\bfseries VC & \textit{75.0} & \textit{37.5} & \textit{57.9} & \textit{27.3} & \textit{35.7} & \textit{52.9}\\
-\bfseries \MakeUppercase{CC} & \textit{75.0} & \textit{68.7} & \textit{31.6} & \textit{36.4} & \textit{35.7} & \textit{52.9}\\
-\bfseries CVC & \textit{87.5} & \textit{93.7} & \textit{94.7} & \textit{90.9} & \textit{100} & \textit{97.0}\\
+ CV & {6.2} & {31.2} & {36.8} & {27.3} & {28.6} & {32.3}\\
+ VC & {75.0} & {37.5} & {57.9} & {27.3} & {35.7} & {52.9}\\
+ {CC} & {75.0} & {68.7} & {31.6} & {36.4} & {35.7} & {52.9}\\
+ CVC & {87.5} & {93.7} & {94.7} & {90.9} & {100} & {97.0}\\
 \lspbottomrule
 \end{tabularx}
 \label{tab:takam:6}
@@ -217,18 +250,20 @@ As far as syllable structures were concerned (see \tabref{tab:takam:6}), the CVC
 {Finally,} omission and substitution were the most prevalent error forms as shown in \tabref{tab:takam:7} below. The Chi-square analysis of the percentage of children by age groups for each error reveals no significant difference. However, for distortion errors, the z-test with adjustment of the values according to the Bonferroni method indicated significant higher prevalence rates for four-year-olds (88\%) and six-year-olds (80\%) compared to the three other age groups: five-year-olds (\textit{44\%}); seven-year-olds (\textit{64\%}) and eight-year-olds (50\%). \REF{ex:takam:omission_errors} to \REF{ex:takam:assimilation_errors} below show detailed evaluations of these types of errors.
 
 \begin{table}
+\todo[inline]{no need to repeat $\chi^2=$}
+\todo[inline]{what does =(4 mean?}
 \caption{Frequency of speech sound errors by age (N=68 children)}
 \label{tab:takam:7}
 \begin{tabularx}{\textwidth}{sssX}
 \lsptoprule
-& \multicolumn{2}{c}{ \bfseries \textit{4-8} \textit{years}} & \bfseries \textit{Chi-square} ($\chi$\textsuperscript{2})\\
-\hline
-\textbf{Errors} & n & \textit{\%} & \\
-{o}mission & 68 & \textit{100} & $\chi$\textsuperscript{2}=(4, N=68)= 5.26, \textit{p}=.26\\
-{S}ubstitution & 61 & \textit{89.7} & $\chi$\textsuperscript{2}=(4, N=68)= 4.36, \textit{p}=.36\\
-{D}istortion & 43 & \textit{63.2} & $\chi$\textsuperscript{2}=(4, N=68)= 7.12, \textit{p}=.10\\
-Addition & 32 & \textit{44.1} & $\chi$\textsuperscript{2}=(4, N=68)= 5.69, \textit{p}=.22\\
-Assimilation & 22 & \textit{32.4} & $\chi$\textsuperscript{2}=(4, N=68)= 4,28, \textit{p}=.37\\
+& \multicolumn{2}{c}{  {4-8} {years}} & $\chi^2$\\
+\textbf{Errors} & n & {\%} & \\
+\midrule
+{o}mission & 68 & {100} & $\chi^2$=(4, N=68)= 5.26, {p}=.26\\
+{S}ubstitution & 61 & {89.7} & $\chi^2$=(4, N=68)= 4.36, {p}=.36\\
+{D}istortion & 43 & {63.2} & $\chi^2$=(4, N=68)= 7.12, {p}=.10\\
+Addition & 32 & {44.1} & $\chi^2$=(4, N=68)= 5.69, {p}=.22\\
+Assimilation & 22 & {32.4} & $\chi^2$=(4, N=68)= 4,28, {p}=.37\\
 \lspbottomrule
 \end{tabularx}
 \end{table}
@@ -245,19 +280,19 @@ Beginning with forms of omission, all the children revealed at least one of the 
 %\textit{-syllable final consonant omission}\\
 %(ardoise) [aʁ-dwaz] > [a-dwaz] $\rightarrow$ V\textbf{C} > V\\
 %(couscous) [kuskus] > [ku-kus] $\rightarrow$ CV\textbf{C} > CV\\
-%\hline
+%\midrule
 %\textit{-syllable initial consonant omission}\\
 %(parapluie) [pa-\textbf{ʁ}a-plɥi] > [pa:-plɥi] $\rightarrow$ CV>V\textbf{:}\\
 %(arachide) /a-\textbf{ʁ}a-ʃid/ >  /a:-ʃid/ $\rightarrow$ CV>V\textbf{:}\\
-%\hline
+%\midrule
 %\textit{-simplification of consonants group}\\
 %(crayon) [kʁe-jɔ] > [ki-jɔ] $\rightarrow$ C\textbf{C}V > CV\\
 %(table)  [tabl] > [tab] \biberror{[F0E0?]} CVC\textbf{C} > CVC\\
-%\hline
+%\midrule
 %\textit{-syllable omission}\\
 %(nourriture) [nu-ʁ\textbf{i}-tyʁ] > [nu:-ty:] $\rightarrow$ CV\\
 %(télévision) [te-le-\textbf{vi}-zjɔ] > [te-le-sjɔ] $\rightarrow$ CV\\
-%\hline
+%\midrule
 %\textit{-simplification of complex syllable structures}\\ 
 %(arbre)  [a:ʁbʁ] > [a:b] $\rightarrow$ V\textbf{C}C\textbf{C} > VC\\
 %(parapluie) [pa-ʁa-plɥi] > [pa-ha-ply] $\rightarrow$ CC\textbf{C}V > CCV\\
@@ -269,23 +304,23 @@ Beginning with forms of omission, all the children revealed at least one of the 
 \begin{exe}
 \ex Omission errors \label{ex:takam:omission_errors}
 \begin{itemize}
-\item \textit{syllable final consonant omission}\\
+\item {syllable final consonant omission}\\
 (ardoise) [aʁ-dwaz] > [a-dwaz] $\rightarrow$ V\textbf{C} > V\\
 (couscous) [kuskus] > [ku-kus] $\rightarrow$ CV\textbf{C} > CV\\
 
-\item \textit{syllable initial consonant omission}\\
+\item {syllable initial consonant omission}\\
 (parapluie) [pa-\textbf{ʁ}a-plɥi] > [pa:-plɥi] $\rightarrow$ CV>V\textbf{:}\\
 (arachide) /a-\textbf{ʁ}a-ʃid/ >  /a:-ʃid/ $\rightarrow$ CV>V\textbf{:}\\
 
-\item \textit{simplification of consonants group}\\
+\item {simplification of consonants group}\\
 (crayon) [kʁe-jɔ] > [ki-jɔ] $\rightarrow$ C\textbf{C}V > CV\\
 (table)  [tabl] > [tab] $\rightarrow$ CVC\textbf{C} > CVC\\
 
-\item \textit{syllable omission}\\
+\item {syllable omission}\\
 (nourriture) [nu-ʁ\textbf{i}-tyʁ] > [nu:-ty:] $\rightarrow$ CV\\
 (télévision) [te-le-\textbf{vi}-zjɔ] > [te-le-sjɔ] $\rightarrow$ CV\\
 
-\item \textit{simplification of complex syllable structures}\\ 
+\item {simplification of complex syllable structures}\\ 
 (arbre)  [a:ʁbʁ] > [a:b] $\rightarrow$ V\textbf{C}C\textbf{C} > VC\\
 (parapluie) [pa-ʁa-plɥi] > [pa-ha-ply] $\rightarrow$ CC\textbf{C}V > CCV\\
 \end{itemize}
@@ -296,38 +331,38 @@ Substitution errors appeared as a systematic or an inconsistent replacement of a
 \begin{exe}
 \ex Substitution errors \label{ex:takam:substitution_errors}
 \begin{itemize}
-\item \textit{fronting}\\
+\item {fronting}\\
 (couscous) [kuskus] > [tutu] $\rightarrow$ [k] > [t]\\
 (chat) [ʃa] > [sa] $\rightarrow$ [ʃ] > [s]\\
 
-\item \textit{substitution} \textit{of} \textit{[l]} \textit{to} \textit{[j]}\\
+\item {substitution} {of} {[l]} {to} {[j]}\\
  (crayon) [kʁejɔ] > [kʁelɔ] $\rightarrow$ [j] > [l]\\ 
 (bouteille) [butɛj] > [butɛl] $\rightarrow$ [j] > [l]\\
 
-\item \textit{backing}: \\
+\item {backing}: \\
 (tasse) [tas] > [kas] $\rightarrow$ [t] > [k]\\
 (train) [tʁɛ] > [kʁɛ] $\rightarrow$ [t] > [k]\\
 
-\item \textit{substitution of [ʃ,ʒ] to [s,z]:}\\ 
+\item {substitution of [ʃ,ʒ] to [s,z]:}\\ 
 (tasse) [tas] > [taʃ] $\rightarrow$ [s] > [ʃ]\\
 (maison) [mɛzɔ] > [mɛʒɔ] $\rightarrow$ [z] > [ʒ] \\
 
-\item \textit{stopping}: \\
+\item {stopping}: \\
 (savon) [savɔ] > [tavɔ]] $\rightarrow$ [s] > [t]\\ 
 (carte) [kaʁt] > [kaktə] $\rightarrow$ [ʁ] > [k]\\
 
-\item \textit{substitution of [l] to [ʁ]}\\
+\item {substitution of [l] to [ʁ]}\\
 (robe) [ʁɔb] > [lɔb] $\rightarrow$ [ʁ] > [l]\\ 
 (orange) [oʁãʒ] > [olãʒ] $\rightarrow$ [ʁ] > [l]\\
 
-\item \textit{gliding}:\\
+\item {gliding}:\\
 (fleur) [fløʁ] > [fwøʁ] $\rightarrow$ [l] > [w]\\ 
 (ballon) [balɔ] > [bajɔ] $\rightarrow$ [l] > [j]\\
 
-\item \textit{substitution of vowel to glide}\\
+\item {substitution of vowel to glide}\\
 (parapluie) [paʁaplɥi] > [palaply] $\rightarrow$ [ɥ]> [y]\\
 
-\item \textit{Devoicing}:\\
+\item {Devoicing}:\\
 (doigt) [dwa] >[twa] $\rightarrow$ [d]> [t]\\
 \end{itemize}
 \end{exe}
@@ -481,7 +516,7 @@ The objective of this study was to analyze child SSD in Cameroon in order to enc
 \caption{A sample of Ghɔmálá’ words used (IPA)}
 
 \begin{tabularx}{\textwidth}{XXX}
-\lsptoprule
+% \lsptoprule
 /phə/ ‘bag’
 
 /paʔ/ ‘house’
@@ -519,7 +554,7 @@ The objective of this study was to analyze child SSD in Cameroon in order to enc
 /ʣə/ ‘clothe’
 
 /wɔktə/ ‘umbrella’\\
-\lspbottomrule
+% \lspbottomrule
 \end{tabularx}
 \end{table}
 
@@ -528,7 +563,7 @@ The objective of this study was to analyze child SSD in Cameroon in order to enc
 \caption{ List of the 64 words (in French) used for picture naming and word repetition tests }
 
 \begin{tabularx}{\textwidth}{XXXX}
-\lsptoprule
+% \lsptoprule
 \textit{ananas}
 
 \textit{arachide}
@@ -650,7 +685,7 @@ The objective of this study was to analyze child SSD in Cameroon in order to enc
 \textit{voiture}
 
 \textit{yaourt}\\
-\lspbottomrule
+% \lspbottomrule
 \end{tabularx}
 \end{table}
 
@@ -676,6 +711,7 @@ The objective of this study was to analyze child SSD in Cameroon in order to enc
 \includegraphics[width=.2\textwidth]{figures/takam-img12.png}\\
 % \lspbottomrule
 \end{tabularx}
+\todo[inline]{copyright status of the pictures must be established}
 \end{figure}
 
 \begin{comment}%%move bib entries to  localbibliography.bib
@@ -1034,10 +1070,10 @@ Takam, A. (In press). Développement phonologique du français en milieu multili
 	year = {2016}
 }
 \end{comment}
-\section*{Abbreviations}
+% \section*{Abbreviations}
 \section*{Acknowledgements}
 
-\textbf{Special} \textbf{thanks}: to Dr. John Ogwana for verifying the transcribed data and for all his contributions in this work, to Pr. Geneviève Bengono who performed the medical exam, and to Claire Nkoué, the speech-language therapist who gave us access to the speech and language assessment material used during the survey. Our special thanks also go to the teachers and headmasters of the eight schools for their enthusiasm and willingness to make the survey possible.
+Special thanks to Dr. John Ogwana for verifying the transcribed data and for all his contributions in this work, to Pr. Geneviève Bengono who performed the medical exam, and to Claire Nkoué, the speech-language therapist who gave us access to the speech and language assessment material used during the survey. Our special thanks also go to the teachers and headmasters of the eight schools for their enthusiasm and willingness to make the survey possible.
 
 {\sloppy
 \printbibliography[heading=subbibliography,notkeyword=this] 
