@@ -101,3 +101,26 @@
  
 \def\denotes#1{$\lbrack\!\lbrack${#1\/}$\rbrack\!\rbrack$}      % denotes
 \newcommand{\citeNP}{\citealt}
+
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author 
+\makeatother
+
+
+\newcommand{\togglepaper}[1][0]{ 
+  \bibliography{../localbibliography}
+  \papernote{\scriptsize\normalfont
+    \theauthor.
+    \thetitle. 
+    To appear in: 
+    Samson Lotven,   Silvina Bongiovanni,   Phillip Weirich,   Robert Botne \&  Samuel Gyasi Obeng (eds.),  
+    African linguistics across the disciplines: Selected papers from the 48th Annual Conference on African Linguistics 
+    Berlin: Language Science Press. [preliminary page numbering]
+  }
+  \pagenumbering{roman}
+  \setcounter{chapter}{#1}
+  \addtocounter{chapter}{-1}
+}
+

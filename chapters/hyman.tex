@@ -1,24 +1,15 @@
-\documentclass[output=paper
-,modfonts
-,nonflat]{langsci/langscibook-Hyman-et-al} 
-%\bibliography{localbibliography-Hyman-et-al} 
-%\input{localpackages-Hyman-et-al.tex}
-%\input{localhyphenation.tex}
-%\input{localcommands.tex} 
-
+\documentclass[output=paper,,modfonts,nonflat]{langsci/langscibook-Hyman-et-al}  
 \title{Number and Animacy in the Teke Noun Class System} 
-\author{%
- Larry M. Hyman\affiliation{University of California, Berkeley}\and 
- Florian Lionnet\affiliation{Princeton University}\lastand 
- Christophère Ngolele\affiliation{Université Catholique d'Afrique Centrale, Yaoundé}
-}
-% \chapterDOI{} %will be filled in at production
+\author{Larry M. Hyman\affiliation{University of California, Berkeley}\and  Florian Lionnet\affiliation{Princeton University}\lastand  Christophère Ngolele\affiliation{Université Catholique d'Afrique Centrale, Yaoundé}}
 
-% \epigram{}
 
-\abstract{
-In this paper, we trace the development of Proto-Bantu noun classes into Teke (Bantu B71, Ewo dialect), showing that formal reflexes of classes 1, 2, 5-9, and 14 are detectable. We further show that animacy, abstractness, and number allow us to determine the fate of classes 3, 4, 10, 11 and identify the following singular/plural genders: 1/2 (animate <PB 1/2, some 9/10), 1/8 (inanimate, <PB 3/4), 14/8 (abstract, <PB 14/8), 5/6 (<PB 5/6), 5/9 (<PB 11/10, with 10>9 merger), 7/8 (<PB 7/8), and 9/6 (<PB 9/6). Such reassignments provide a window into probing parallel noun class changes in other Northwest Bantu and Niger-Congo in general.
-}
+\abstract{In this paper, we trace the development of Proto-Bantu noun classes into Teke (Bantu B71, Ewo dialect), showing that formal reflexes of classes 1, 2, 5-9, and 14 are detectable. We further show that animacy, abstractness, and number allow us to determine the fate of classes 3, 4, 10, 11 and identify the following singular/plural genders: 1/2 (animate <PB 1/2, some 9/10), 1/8 (inanimate, <PB 3/4), 14/8 (abstract, <PB 14/8), 5/6 (<PB 5/6), 5/9 (<PB 11/10, with 10>9 merger), 7/8 (<PB 7/8), and 9/6 (<PB 9/6). Such reassignments provide a window into probing parallel noun class changes in other Northwest Bantu and Niger-Congo in general.}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \togglepaper[13]
+}{}
 
 \begin{document}
 
@@ -569,9 +560,8 @@ As seen above, an identical prefix shape can not only lead to merger of noun cla
 In the preceding sections, we have seen that the Teke noun class system has undergone important restructuring with loss of eleven of the nineteen PB classes, four class mergers, and many gender reassignments. As we have shown, only three out of eight genders are inherited from PB. Three variables have played an important role in this evolution: (i) prefix shapes; (ii) animacy; (iii) number. Number and animacy have played a major role in this restructuring, in particular in the class and gender reassignment of PB *9/10 nouns. These become 1/2 \textit{waà/bá} if animate, 5/6 \textit{lé/má} or 9/6 \textit{yè/má} if inanimate (occasionally also 1/8 \textit{wà/bé} and 5/9 \textit{lé/yè}). Animacy also plays an important role in synchrony. As we have shown, singular \textit{ò-} is interpreted as 1/2 \textit{wà/bá} if animate, 14/8 \textit{bó/bé} if abstract, and 1/8 \textit{wà/bé} if concrete inanimate. In addition, a noun with the prefix sequence \textit{à-N-} is unambiguously class 2 \textit{bá} if animate, class 6 \textit{má} if inanimate. The relevance (and potential conflict) of animacy in the synchronic and diachronic marking of noun classes is attested elsewhere in Bantu (\cite{wald1975}, \cite{maho1999}, \cite{contini2008}, among others), even to the extent of entirely replacing the inherited noun class system, as in Nzadi \citep{craneetal2011}. What is particularly interesting in the Teke case is the conspiracy between prefix shape and animacy. Noun classes are reassigned on the basis of animacy. As prefixes merge, noun class agreements merge, even those accompanying singular and plural 9/10. This shows that Teke speakers are paying attention not only to the semantics, but are impressively influenced by the forms. Such interplay in the reassignments which we have enumerated should be considered in probing parallel noun class changes in other Northwest Bantu and Niger-Congo in general.
 
 
-%\section*{Abbreviations}
-%\section*{Acknowledgements}
-
+\sloppy
 \printbibliography[heading=subbibliography,notkeyword=this]
+
 
 \end{document}

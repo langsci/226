@@ -1,7 +1,17 @@
-\documentclass[letterpaper, 12pt]{article}
-\title{Universal Quantification in the Nominal Domain in Kihehe}
-\author{Kelly Kasper-Cushman, Indiana University}
+\documentclass[output=paper,modfonts,nonflat]{langsci/langscibook} 
+\title{Universal quantification in the nominal domain in Kihehe}
+\author{Kelly Kasper-Cushman\affiliation{Indiana University}}
 \abstract{This study provides a description of the universal quantifiers \textit{mbe-\textsc{agr2}-li} `all' and \textit{kila} `every' in Kihehe, a Bantu language spoken in south-central Tanzania. Following a description of general properties of these quantifiers, this study analyzes how the Kihehe data bear on the phenomena of collectivity and distributivity, and situates the Kihehe data with regard to recent crosslinguistic work on the typology of quantifiers \cite{matthewson13}.}
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+  \input{../localpackages}
+  \input{../localcommands} 
+  \bibliography{../localbibliography}
+  \togglepaper[13]
+}{}
+
+
+
 
 \begin{document}
 
@@ -9,23 +19,25 @@
 
 \section{Introduction}
 
-This paper presents a description of the universal quantifiers \textit{mbe-\textsc{agr2}-li} `all' and \textit{kila} `every' in Kihehe (G.62; \citealt{maho09}), a Bantu language spoken in south-central Tanzania around the town of Iringa.\footnote{I would like to thank Richard Nyamahanga for providing the Kihehe language data and judgements presented in this paper. Data were collected by the author through elicitation sessions at Indiana University.  I would like to thank Robert Botne and my fellow students in L654: Field Methods, Indiana University, Spring 2016, for their suggestions and discussion of this data. I would also like to thank Tom Grano and Steve Franks for formative comments on earlier versions of this work. Finally, I would like to thank the audience members at ACAL 48, and an anonymous reviewer for helpful feedback and suggestions.}\footnote{Abbreviations used: Bare numerals (e.g., 1, 2, 3) refer to noun class markers or agreement markers for that noun class, \textsc{1sg}= first person singular, \textsc{1pl}= first person plural, \textsc{add}= proximal to addressee, \textsc{adj}= adjective, \textsc{agr2}= agreement marker 2, \textsc{assoc}= associative marker, \textsc{aux}= auxiliary, \textsc{dem}= demonstrative, \textsc{dur}= durative, \textsc{fv}= final vowel, \textsc{hab}= habitual, \textsc{imp}= imperative, \textsc{impf}= imperfective, \textsc{loc}=locative, N= noun, \textsc{p1}= recent past, \textsc{p2}= hodiernal past, \textsc{p3}= remote past, \textsc{ppf}= pre-prefix, \textsc{poss}= possessive, \textsc{prox}= proximal, \textsc{prs}= present, \textsc{pst}= past, \textsc{rel}= relative, \#= infelicitous} Regarding quantification in Bantu, \citealt[p. 383]{zerbian08} note that ``few studies exist which touch upon quantification [in (whatever) Bantu languages]'' (but see \citealt{landman16, landmanip} for two recent works). Additionally, this documentation contributes to an understanding of quantifiers crosslinguistically, and to the development of a typology of quantifiers, as called for by Matthewson (2013) (for recent studies on quantification in natural languages, see the works in \citealt{gil13, keenan12, matthewson08} and \citealt{paperno17}).
+This paper presents a description of the universal quantifiers \textit{mbe-\textsc{agr2}-li} `all' and \textit{kila} `every' in Kihehe (G.62; \citealt{maho09}), a Bantu language spoken in south-central Tanzania around the town of Iringa.
+Regarding quantification in Bantu, \citealt[p. 383]{zerbian08} note that ``few studies exist which touch upon quantification [in (whatever) Bantu languages]'' (but see \citealt{landman16, landmanip} for two recent works). Additionally, this documentation contributes to an understanding of quantifiers crosslinguistically, and to the development of a typology of quantifiers, as called for by \cite{matthewson13} (for recent studies on quantification in natural languages, see the works in \citealt{gil13, keenan12, matthewson08} and \citealt{paperno17}).
 
-Sections 2 and 3 describe general properties of \textit{mbe-\textsc{agr2}-li} `all' and \textit{kila} `every,' respectively. Section 4 considers how the data in Kihehe bear on the properties of collectivity and distributivity associated with the universal quantifiers (see, e.g., \citet{szabolcsi10}). Finally, Section 5 situates the Kihehe data with regard to three crosslinguistic typological generalizations of quantifiers put forth in \citealt{matthewson13}. 
+Sections \ref{sec:kasper:2} and \ref{sec:3} describe general properties of \textit{mbe-\textsc{agr2}-li} `all' and \textit{kila} `every,' respectively. Section 4 considers how the data in Kihehe bear on the properties of collectivity and distributivity associated with the universal quantifiers (see, e.g., \citet{szabolcsi10}). Finally, Section 5 situates the Kihehe data with regard to three crosslinguistic typological generalizations of quantifiers put forth in \citealt{matthewson13}. 
 
 
 \section{\emph{Mbe-\textsc{agr2}-li} `all'}
 
-This section provides an overview of the universal quantifier \emph{mbe-\textsc{agr2}-li} `all.'\footnote{The meaning of the individual components \textit{mb\'e-} and \textit{-li} is not clear; these components always appear together with an infixed agreement marker in this construction.} It starts wtih a discussion of general agreement patterns before providing a description of coordination and the partitive construction. 
+This section provides an overview of the universal quantifier \emph{mbe-\textsc{agr2}-li} `all.'\footnote{The meaning of the individual components \textit{mbé-} and \textit{-li} is not clear; these components always appear together with an infixed agreement marker in this construction.} It starts wtih a discussion of general agreement patterns before providing a description of coordination and the partitive construction. 
 
 \subsection{General properties}
 
  The quantifier \emph{mbe-\textsc{agr2}-li} follows the noun it modifies and agrees with it in noun class, as shown in (\ref{ex:kaspercushman:allpeople}) in which it modifies the plural Class 2 noun \textit{vanu} `people.' The agreement marker, labeled \textsc{agr2}, is an infix.  
 
 \begin{exe}
-\ex \gll v\'a-nu mb\'e-va-li \label{ex:kaspercushman:allpeople} \\
+\ex 
+\gll vá-nu mbé-va-li \label{ex:kaspercushman:allpeople} \\
 2-person all-2-all \\
-`all people'/`all of the people'\footnotemark \\
+\glt `all people'/`all of the people'\footnotemark \\
 
 \end{exe}
 \footnotetext{Tone is marked on examples where transcription is reliable. Data are transcribed using orthographic conventions based on Kiswahili. Vowel length is not typically marked. Syllabic nasals are marked.}
@@ -37,13 +49,15 @@ The morphological form of the agreement marker for this quantifier patterns with
 
 \ex\begin{xlist}
 
-\ex \gll i-mi-biki gi-tayi mbe-ge-li\\ 
+\ex 
+\gll i-mi-biki gi-tayi mbe-ge-li\\ 
 \textsc{ppf}-4-tree 4-four all-4-all\\
-`all four trees' \\ \label{ex:kaspercushman:alltrees}
+\glt `all four trees' \\ \label{ex:kaspercushman:alltrees}
 
-\ex \gll i-mi-biki my-ongefu\\
+\ex 
+\gll i-mi-biki my-ongefu\\
 \textsc{ppf}-4-tree 4-many \\
-`many trees' \label{ex:kaspercushman:ex:kaspercushman:manytrees}
+\glt `many trees' \label{ex:kaspercushman:ex:kaspercushman:manytrees}
 
 \end{xlist}
 
@@ -55,9 +69,10 @@ A singular noun can be modified by \textit{mbe-\textsc{agr2}-li}. Example (\ref{
 
 \begin{exe} 
 
-\ex \gll \s{m}-v\'ili mb\'e-gu-li  \label{wholebody} \\   
+\ex 
+\gll \s{m}-víli mbé-gu-li  \label{wholebody} \\   
 3-body all-3-all \\
-`a/the whole body' \\  
+\glt `a/the whole body' \\  
 
 \end{exe}
 
@@ -65,9 +80,10 @@ A singular noun can be modified by \textit{mbe-\textsc{agr2}-li}. Example (\ref{
 \textit{Mbe-\textsc{agr2}-li} can take locative noun class agreement. With the Class 16 agreement (\textit{pa-}), for example, the quantifier translates as `all of the time.'
 
 \begin{exe}
-\ex \gll mb\'e-pa-li \\
+\ex 
+\gll mbé-pa-li \\
 all-16-all \\
-`all of the time' \\
+\glt `all of the time' \\
 \end{exe}
 
 
@@ -75,9 +91,10 @@ The quantifier can agree with a plural personal subject (see also \citealt{jerro
 
 \begin{exe}   
 
-\ex \gll tu-b\'it-e mb\'e-tu-li \label{subjectagreement} \\
+\ex 
+\gll tu-bít-e mbé-tu-li \label{subjectagreement} \\
 \textsc{1pl}-go-\textsc{imp} all-\textsc{1pl}-all \\  
-`Let's all go!'
+\glt `Let's all go!'
 
 \end{exe}
 
@@ -86,9 +103,10 @@ There is no separate lexical item to express \textit{ex:kaspercushman:both}; \te
 
 \begin{exe} 
 
-\ex \gll a-v-ana va-v\'il\^i mbe-va-li va-t\'amw-a \\ 
+\ex 
+\gll a-v-ana va-víl\^i mbe-va-li va-támw-a \\ 
 \textsc{ppf}-2-child 2-two all-2-all 2-be\_sick-\textsc{fv} \\ \label{ex:kaspercushman:both}
-`Both of the children are sick.' \\
+\glt `Both of the children are sick.' \\
 
 \end{exe}
 
@@ -96,55 +114,63 @@ There is no separate lexical item to express \textit{ex:kaspercushman:both}; \te
 In citation form, the head noun modified by \textit{mbe-\textsc{agr2}-li} can optionally occur with the pre-prefix.  However, when the head noun is an argument, the head noun must appear with the pre-prefix; compare example (\ref{ex:kaspercushman:allsick}) with example (\ref{ex:kaspercushman:allpeople}); see also the discussion in Section \ref{ex:kaspercushman:type} and \citealt{gambarage16}. 
  
 \begin{exe}
-\ex \gll a-v-\'ana mb\'e-va-li va-t\'amw-a. \\
+\ex 
+\gll a-v-ána mbé-va-li va-támw-a. \\
 \textsc{ppf}-2-child all-2-all 2-be\_sick-\textsc{fv} \\
-`All of the children are sick.' \\ \label{ex:kaspercushman:allsick}
+\glt `All of the children are sick.' \\ \label{ex:kaspercushman:allsick}
 \end{exe}
 
 Note that the pre-prefix is required even if a demonstrative is present as in (\ref{ex:kaspercushman:demonstrative}) (see also the discussion in Matthewson, 2013, pp. 32-33). 
 \begin{exe}
 
-\ex \label{ex:kaspercushman:demonstrative}\gll A-va-na i-v-o mbe-va-li va-tamw-a \\
+\ex \label{ex:kaspercushman:demonstrative}
+\gll A-va-na i-v-o mbe-va-li va-tamw-a \\
 \textsc{ppf}-2-child \textsc{prox.dem}-2-\textsc{add} all-2-all 2-be\_sick-\textsc{fv} \\
-`All of those children are sick.' \\
+\glt `All of those children are sick.' \\
 \end{exe}
 
 
 \textit{Mbe-\textsc{agr2}-li} can stand alone as a pronoun, as shown in (\ref{ex:kaspercushman:allofthemdied}-\ref{ex:kaspercushman:allarechildren}).  Example (\ref{ex:kaspercushman:allarechildren}) shows a copular structure with a predicate noun. 
 
 \begin{exe}
-\ex \label{ex:kaspercushman:allofthemdied} \gll mb\'e-se-li s\'i-fw-e \\ 
+\ex \label{ex:kaspercushman:allofthemdied} 
+\gll mbé-se-li sí-fw-e \\ 
 all-10-all 10-die-\textsc{pst}.\textsc{fv} \\
-`All (of them) died.' 
+\glt `All (of them) died.' 
 
 \end{exe}
 
 \begin{exe}
-\ex \label{ex:kaspercushman:allarechildren} \gll mb\'e-va-li v-ana \\
+\ex \label{ex:kaspercushman:allarechildren} 
+\gll mbé-va-li v-ana \\
 all-2-all 2-child \\
-`All are children.'
+\glt `All are children.'
 \end{exe}
 
 
 Finally, an example of the universal quantifier in a text is given in (\ref{ex:kaspercushman:luwuko}). The example is from \citet{ex:kaspercushman:luwuko} (9:25), the Kihehe translation of the Book of Exodus.
 
 \begin{exe} 
-\singlespacing 
+ 
 
-\ex\gll na i-ndonya i-nya-ma-ganga y-a-denyanz-ile \\ 
+\ex
+\gll na i-ndonya i-nya-ma-ganga y-a-denyanz-ile \\ 
 and \textsc{ppf}-9.rain \textsc{ppf}-of-6-stone 9-\textsc{p3}-strike\_down-\textsc{pst}\\
+
 
 \gll \textbf{i-fi-melo} \textbf{mbe-fi-li} \textbf{i-fy-a} \textbf{mu}=\textbf{mi-gunda}, \\
 \textsc{ppf}-8-seedling all-8-all \textsc{ppf}-8-\textsc{assoc} \textsc{loc}=4-field,\\
 
+
 \gll y-a-nanz-ile \textbf{i-mi-biki} \textbf{mbe-gi-li} \textbf{i-j-a}  \\
 9-\textsc{p3}-destroy-\textsc{pst} \textsc{ppf}-4-tree all-4-all \textsc{ppf}-4-\textsc{assoc}  \\
+
 
 \gll \textbf{mu}=\textbf{mi-gunda} \\ 
 \textsc{loc}=4-field \\
 
 
-`Then the hail struck down \textbf{all of the seedlings in the fields}, and destroyed \textbf{all of the crops in the fields}.' \hfill{(Luwuko 9:25)} \label{ex:kaspercushman:luwuko}\\
+\glt `Then the hail struck down \textbf{all of the seedlings in the fields}, and destroyed \textbf{all of the crops in the fields}.' \hfill{(Luwuko 9:25)} \label{ex:kaspercushman:luwuko}\\
 
 \end{exe}
 
@@ -153,35 +179,38 @@ and \textsc{ppf}-9.rain \textsc{ppf}-of-6-stone 9-\textsc{p3}-strike\_down-\text
 In a coordinate structure such as \textit{all of the N$_{1}$ and N$_{2}$}, \emph{mbe-\textsc{agr2}-li}  can modify either $N_{1}$ or both $N_{1}$ and $N_{2}$.  \emph{Mbe-\textsc{agr2}-li} can be placed after either the first noun or the second noun in the coordinate structure and have the interpretation `all $N_{1}$ and all $N_{2}$,' although the most natural reading will be that of \emph{mbe-\textsc{agr2}-li} modifying the closest N (compare (\ref{ex:kaspercushman:allboysgirls}) with (\ref{ex:kaspercushman:allgirls})). To disambiguate, \emph{mbe-\textsc{ag2}-li} can be placed after both nouns, as in (\ref{ex:kaspercushman:allboysallgirls}).
 
 \begin{exe} 
-\singlespacing
+
 \ex \begin{xlist} \label{ex:kaspercushman:coordination}
 
 \ex Structure: \emph{all N$_{1}$ and N$_{2}$} 
 
-\gll a-va-kw\'amisi mb\'e-va-li n(a)	a-v\'a-h\'i\`inza \label{ex:kaspercushman:allboysgirls}\\  
+
+\gll a-va-kwámisi mbé-va-li n(a)	a-vá-hí\`inza \label{ex:kaspercushman:allboysgirls}\\  
 \textsc{ppf}-2-boy all-2-all and \textsc{ppf}-2-girl \\
 \vspace{-1.25mm}
 \textit{Most natural interpretation}: `all of the boys and some (not all) of the girls' \\
 \textit{Possible interpretation}: `all of the boys and all of the girls' \\
 
 
-\vspace{5mm}
+
 
 \ex  Structure: \emph{N$_{1}$ and all N$_{2}$} 
 
-\gll a-va-kwamisi n(a) a-va-h\'i\`inza mbe-va-li \label{ex:kaspercushman:allgirls}  \\  
+
+\gll a-va-kwamisi n(a) a-va-hí\`inza mbe-va-li \label{ex:kaspercushman:allgirls}  \\  
 \textsc{ppf}-2-boy and \textsc{ppf}-2-girl all-2-all\\
 
 \textit{Most natural interpretation}: `Some (not all) of the boys and all of the girls' \\
 \textit{Possible interpretation}: `all of the boys and all of the girls' \\
 
 
-\vspace{5mm}
+
 
 \ex  Structure: \emph{all N$_{1}$ and all N$_{2}$} 
-\gll a-va-kwamisi mbe-va-li n(a) a-va-h\'i\`inza mbe-va-li  \label{ex:kaspercushman:allboysallgirls} \\  
+
+\gll a-va-kwamisi mbe-va-li n(a) a-va-hí\`inza mbe-va-li  \label{ex:kaspercushman:allboysallgirls} \\  
 \textsc{ppf}-2-boy all-2-all  and \textsc{ppf}-2-girl all-2-all\\
-`all of the boys and all of the girls' \\
+\glt `all of the boys and all of the girls' \\
 
 \end{xlist}
 \end{exe} 
@@ -189,19 +218,21 @@ In a coordinate structure such as \textit{all of the N$_{1}$ and N$_{2}$}, \emph
 In the examples in (\ref{ex:kaspercushman:coordination}), both nouns in the coordinate structure belong to the same noun class. Nouns from different noun classes can be coordinated using the structure \textit{all of the $N_{1}$ and $N_{2}$}, but the most natural interpretation of that structure is `all of the $N_{1}$ and some of the $N_{2}$.'  When the intended meaning is `all of the $N_{1}$ and all of the $N_{2}$,' it is more felicitous to modify both nouns with \textit{all}.  
 
 \begin{exe}
-\singlespacing
+
 \ex \begin{xlist}
 
-\ex \gll a-va-nu mbe-va-li n(a) i-senga \\
+\ex 
+\gll a-va-nu mbe-va-li n(a) i-senga \\
 \textsc{ppf}-2-person all-2-all and \textsc{ppf}-10.cow \\
 \textit{Most natural interpretation}: `all of the people and some (not all) of the cows' \\
 \textit{Possible interpretation}: `all of the people and all of the cows' \\
 
 \vspace{2mm}
 
-\ex \gll a-va-nu mbe-va-li n(a) i-senga mbe-se-li \\
+\ex 
+\gll a-va-nu mbe-va-li n(a) i-senga mbe-se-li \\
 \textsc{ppf}-2-person all-2-all and \textsc{ppf}-10.cow all-10-all \\
-`all of the people and all of the cows' 
+\glt `all of the people and all of the cows' 
 
 \end{xlist}
 \end{exe}
@@ -211,35 +242,39 @@ In the examples in (\ref{ex:kaspercushman:coordination}), both nouns in the coor
 In English, there is a surface difference between quantified nouns in partitive constructions (e.g., \textit{all of the N}) and non-partitive constructions (\textit{all N}); for example, \textit{I went to a party last night and talked to *all linguists/all of the linguists} (example adapted from an example in Matthewson, 2001, p. 170; see Matthewson, 2001, and Matthewson, 2013, for a discussion of the debate regarding the partitive construction and the semantic denotation of quantifiers). In Kihehe, there is no overt morphological element corresponding to \textit{of} in English partitive constructions. Additionally, all nouns modified by \emph{mbe-\textsc{agr2}-li} must first combine with the pre-prefix.  Thus, we find a lack of surface contrast between contexts in which the quantified noun is contextually restricted versus non-contextually restricted, for both count nouns, as in (\ref{ex:kaspercushman:eatgrass}), and mass nouns, as in (\ref{ex:kaspercushman:drinktea}).
 
 \begin{exe} 
-\singlespacing
+
 \ex \label{ex:kaspercushman:partitive} \begin{xlist} \label{ex:kaspercushman:eatgrass}
 
-\ex \gll \textbf{i-senga} \textbf{mbe-se-li} s-ay-i-ly-(a) a-ma-soli \\
+\ex 
+\gll \textbf{i-senga} \textbf{mbe-se-li} s-ay-i-ly-(a) a-ma-soli \\
 \textsc{ppf}-10.cow all-10-all 10-\textsc{hab}-\textsc{prs}-eat-\textsc{fv} \textsc{ppf}-6-grass \\
-`All cows do eat grass.' \hfill{\emph{generic}}
-\vspace{5mm}
+\glt `All cows do eat grass.' \hfill{\emph{generic}}
 
-\ex \gll ke=nyele ku=\s{m}-nada n-gus-is(e) \textbf{i-senga} \textbf{mbe-se-li} \\
+
+\ex 
+\gll ke=nyele ku=\s{m}-nada n-gus-is(e) \textbf{i-senga} \textbf{mbe-se-li} \\
 \textsc{aux}=\textsc{1sg}.go.\textsc{pst} \textsc{loc}=3-auction \textsc{1sg}-sell-\textsc{pst} \textsc{ppf}-10.cow all-10-all \\
-`I went to the auction and sold all of the cows.' \\ \hfill{\emph{contextually restricted}}  
+\glt `I went to the auction and sold all of the cows.' \\ \hfill{\emph{contextually restricted}}  
 \end{xlist}
 \end{exe}
 
 \begin{exe}
-\singlespacing
+
 \ex \begin{xlist} \label{ex:kaspercushman:drinktea}
 
-\ex \gll nd-i-wend-(a) \textbf{i-fy-ayi} \textbf{mbe-fe-li} \\
+\ex 
+\gll nd-i-wend-(a) \textbf{i-fy-ayi} \textbf{mbe-fe-li} \\
 \textsc{1sg}-\textsc{prs}-like-\textsc{fv} \textsc{ppf}-8-tea all-8-all \\
-`I like all tea.' \hfill{\emph{generic}}
+\glt `I like all tea.' \hfill{\emph{generic}}
 
-\vspace{5mm}
+
 
 \ex Context: I made two pots of tea a while ago.
 
+
 \gll \textbf{i-fy-ayi} \textbf{mbe-fe-li} fy-e=nelike fi-$\emptyset$-pos-ile \\
 \textsc{ppf}-8-tea all-8-all 8-\textsc{rel}=\textsc{1sg}.cook.\textsc{pst} 8-\textsc{p1}-be\_cool-\textsc{pst} \\
-`All of the tea which I made is cold.' \hfill{\emph{contextually restricted}}
+\glt `All of the tea which I made is cold.' \hfill{\emph{contextually restricted}}
 
 \end{xlist}
 \end{exe}
@@ -257,18 +292,21 @@ Similar to what \citealt{zerbian08} note for Kiswahili, in Kihehe \textit{kila} 
 
 \begin{exe} 
 \ex \begin{xlist}
-\ex \gll kila mw-ana \\ 
+\ex 
+\gll kila mw-ana \\ 
 every 1-child \\
-`every child' \\ \label{ex:kaspercushman:everychild} 
+\glt `every child' \\ \label{ex:kaspercushman:everychild} 
 
-\ex \gll * mw-ana kila \\
+\ex 
+\gll * mw-ana kila \\
 {} 1-child every \\
-`every child' \\
+\glt `every child' \\
 
 
-\ex \gll * kila u-mw-ana \label{ex:kaspercushman:everyppfn}\\
+\ex 
+\gll * kila u-mw-ana \label{ex:kaspercushman:everyppfn}\\
 {} every \textsc{ppf}-1-child \\
-`every child'
+\glt `every child'
 
 
 \end{xlist}
@@ -279,9 +317,10 @@ every 1-child \\
 
 \begin{exe}
 
-\ex \gll \textbf{kila} \textbf{va-nu} v-ay-i-pig-ag-a i-kasi kwa u-\s{m}-twa \\
+\ex 
+\gll \textbf{kila} \textbf{va-nu} v-ay-i-pig-ag-a i-kasi kwa u-\s{m}-twa \\
 every 2-person 2-\textsc{hab}-\textsc{prs}-work-\textsc{dur}-\textsc{fv} \textsc{ppf}-9.work for \textsc{ppf}-1-chief \\
-`Every group of people does work for the chief.' \label{ex:kaspercushman:everygroup}
+\glt `Every group of people does work for the chief.' \label{ex:kaspercushman:everygroup}
 
 \end{exe}
 
@@ -297,29 +336,35 @@ In general, \textit{kila} seems to resist coordination. Structures such as \text
 
 \begin{xlist}
 
-\ex \gll nd-a-tov-ige i-picha y-a \textbf{kila} \textbf{\s{m}-biki} \\
+\ex 
+\gll nd-a-tov-ige i-picha y-a \textbf{kila} \textbf{\s{m}-biki} \\
 \textsc{1sg}-\textsc{p3}-beat-\textsc{dur.pst} \textsc{ppf}-9.picture 9-\textsc{assoc} every 3-tree \\ \label{ex:kaspercushman:everyphotos}
+
 
 \gll gw-e-nd-a-gu-won-ige \textbf{na} \textbf{kila} \textbf{ki-koko} \\
 3-\textsc{rel}-\textsc{1sg}-\textsc{p3}-3-see-\textsc{dur.pst} and every 7-animal \\
 
+
 \gll ch-e-nd-a-ki-won-ige. \\
   7-\textsc{rel}-\textsc{1sg}-\textsc{p3}-7-see-\textsc{dur.pst}  \\
   
-`I took a picture of every plant which I saw and every animal which I saw.' 
+\glt `I took a picture of every plant which I saw and every animal which I saw.' 
 
-\vspace{5mm}
 
-\ex \gll nd-a-tov-ige i-picha y-a \textbf{i-mi-biki}  \\ 
+
+\ex 
+\gll nd-a-tov-ige i-picha y-a \textbf{i-mi-biki}  \\ 
 \textsc{1s}-\textsc{p3}-beat-\textsc{dur.pst} \textsc{ppf}-9.picture 9-\textsc{assoc} \textsc{ppf}-4-tree \\ \
+
 
 \gll \textbf{mbe-ge-li} \textbf{n(a)} \textbf{i-fi-koko} \textbf{mbe-fe-li} \label{ex:kaspercushman:allphotos} \\
  all-4-all and \textsc{ppf}-8-animal all-8-all  \\
  
- \gll fy-e-nd-a-fi-won-ige. \\
+ 
+\gll fy-e-nd-a-fi-won-ige. \\
  8-\textsc{rel}-\textsc{1s}-\textsc{p3}-8-see-\textsc{dur.pst} \\
  
-`I took a picture of all the plants and animals that I saw.'
+\glt `I took a picture of all the plants and animals that I saw.'
 
 \end{xlist}
 \end{exe}
@@ -331,63 +376,69 @@ There is no separate lexical item in Kihehe expressing \textit{each}. For Englis
 
 \begin{table}
 \small
-\singlespacing
 \caption{Some properties of \emph{each} and \emph{every} \citep{BeghelliStowell1997}}
 \label{tab:kaspercushman:everyeach}
-\begin{tabular}{@{}lll@{}}
-\toprule
-Property                 & \textit{Each}                                                                                            & \textit{Every}                                                                                                 \\ \midrule
-Ability to float         & can float                                                                                       & cannot float                                                                                          \\ \\
-\begin{tabular}[c]{@{}l@{}}Modification by `almost'\\ \end{tabular}  & cannot be modified by \textit{almost}                                                                         & can be modified by \textit{almost}                                                                           \\ \\
-\begin{tabular}[c]{@{}l@{}}Generics\\ \end{tabular}                  & \begin{tabular}[c]{@{}l@{}}\textit{each N} cannot be understood\\ as a generic\end{tabular}             & \begin{tabular}[c]{@{}l@{}}\textit{every N} can be understood as a \\ generic\end{tabular}                    \\ 
-\bottomrule
-\end{tabular}
+\begin{tabularx}{\textwidth}{l@{~~}p{42mm}@{~~}Q@{}}
+\lsptoprule
+Property                 & \textit{Each}                                                                                            & \textit{Every}                                                                                                 \\ 
+\midrule
+Ability to float         & can float                                                 & cannot float                                                                                          \\ 
+Modification by `almost'  & cannot be modified by \textit{almost}                     & can be modified by \textit{almost}                                                                           \\ 
+Generics                 & \textit{each N} cannot be understood as a generic          & \textit{every N} can be understood as a   generic                  \\ 
+\lspbottomrule
+\end{tabularx}
+\todo[inline]{maybe use + and -- in table cells}
 \end{table}
 
 For the properties in \tabref{tab:kaspercushman:everyeach}, \textit{kila} patterns with \textit{every}, rather than \textit{each}.  First, \textit{kila} cannot float. It can appear in only one position, preceding the noun it modifies. Second, as shown in (\ref{ex:kaspercushman:almostevery}), \textit{kila} can be modified by \textit{kalibiya} `almost,' which is a borrowing from Kiswahili. 
 
 \begin{exe}
-\ex \gll Kalibiya kila ki-nu ki-sis-ile     \\
+\ex 
+\gll Kalibiya kila ki-nu ki-sis-ile     \\
 almost every 7-thing 7-be\_used\_up-\textsc{pst} \\
-`almost every thing is gone' \\ \label{ex:kaspercushman:almostevery}
+\glt `almost every thing is gone' \\ \label{ex:kaspercushman:almostevery}
 \end{exe}
 
 Third, \emph{kila} can be used to make generic statements, as shown in example (\ref{ex:kaspercushman:everycow}).
 
 \begin{exe}
-\singlespacing
 
-\ex \gll kila senga y-ay-i-ly-(a) a-ma-soli \label{ex:kaspercushman:everycow}\\
+
+\ex 
+\gll kila senga y-ay-i-ly-(a) a-ma-soli \label{ex:kaspercushman:everycow}\\
 every 9.cow 9-\textsc{hab}-\textsc{prs}-eat-\textsc{fv} \textsc{ppf}-6-grass \\
-`Every cow eats grass.' 
+\glt `Every cow eats grass.' 
 
 \end{exe}
 
 
 In addition to these properties, \citealt[p. 150]{vendler62}, states that ```each'...directs one's attention to the individuals as they appear, in some succession or other, one by one.''  Consider example (\ref{ex:kaspercushman:onebyone}), based on a similar example in \citealt[p. 150]{vendler62}. The example suggests that in Kihehe, when the context establishes a one-by-one interpretation, \textit{kila} becomes infelicitous.\footnote{An anonymous reviewer notes that this example ``suggests that Kihehe employs the typologically widespread reduplication strategy for expressing `strong distributivity' (in the sense of Beghelli and Stowell, 1997)'' and wonders if the reduplication method for expressing strong distributivity blocks \textit{kila} in appearing in such contexts. The use of reduplication to indicate distributivity is also supported by the Kihehe data in (\ref{mangos}), in which reduplication gives rise to an unambiguous distributive meaning of ``2 mangos per child'' (on reduplication and distributivity, see also \citealt{balusu13}). 
 \begin{exe}
-\ex \label{mangos} \gll \s{M}-pel-e kila mw-an(a) a-ma-yembe ga-vili ga-vili \\
+\ex \label{mangos} 
+\gll \s{M}-pel-e kila mw-an(a) a-ma-yembe ga-vili ga-vili \\
 1-give-\textsc{imp} every 1-child \textsc{ppf}-6-mango 6-two 6-two \\
-`Give every child 2 mangos each.' \\
+\glt `Give every child 2 mangos each.' \\
 \end{exe}
 
 A final point of comparison between English \textit{every} and \textit{kila}. Beghelli and Stowell (1997, p. 98) note that \textit{every} allows collective readings, as in \textit{It took every boy to lift the piano} (their example 33a). \textit{Kila} does not allow collective readings. This is discussed in the following section in conjunction with example (\ref{ex:kaspercushman:competition}) and footnote (\ref{footnotecompetition}).}
 
 \begin{exe}
-\singlespacing
+
  \ex Context: After I purchased a basket of mangos, I noticed that some of them were starting to rot. I want you to look at each one carefully so that you can sort the mangos into those that are still good to eat, and those that are spoiled. I tell you: \label{ex:kaspercushman:onebyone} \\
 
 \begin{xlist}
 
-\ex \gll \# li-lav-e kila li-yembe \\
+\ex 
+\gll \# li-lav-e kila li-yembe \\
 {} 5-see-\textsc{imp} every 5-mango \\
-`Examine every mango.' \\
+\glt `Examine every mango.' \\
 
-\vspace{5mm}
 
-\ex \gll \textsc{ok} li-lav-e l\'i-mw\'i-l\'i-mw\^i \\
+
+\ex 
+\gll \textsc{ok} li-lav-e lí-mwí-lí-mw\^i \\
 {} 5-see-\textsc{imp} 5-one-5-one \\ \label{reduplication}
-`Examine (them) one after another.'
+\glt `Examine (them) one after another.'
 
 \end{xlist}
 \end{exe}
@@ -409,15 +460,17 @@ In the contexts that are distributive, \textit{mbe-\textsc{agr2}-li} is acceptab
 
 \begin{xlist}
 
-\ex \gll \textbf{a-va-nu} \textbf{mbe-va-li} va-mu-$\emptyset$-hunje u-mu-twa \\
+\ex 
+\gll \textbf{a-va-nu} \textbf{mbe-va-li} va-mu-$\emptyset$-hunje u-mu-twa \\
 \textsc{ppf}-2-person all-2-all 2-1-\textsc{p1}-greet.\textsc{pst} \textsc{ppf}-1-chief \\
-`All of the people greeted the chief.' \\
+\glt `All of the people greeted the chief.' \\
 
-\vspace{5mm}
 
-\ex \gll \textbf{Kila} \textbf{mu-nu} a-\s{m}-$\emptyset$-hunje u-mu-twa \\
+
+\ex 
+\gll \textbf{Kila} \textbf{mu-nu} a-\s{m}-$\emptyset$-hunje u-mu-twa \\
 every 1-person 1-1-\textsc{p1}-greet.\textsc{pst} \textsc{ppf}-1-chief  \\ \label{ex:kaspercushman:everygreeted}
-`Every person greeted the chief.' 
+\glt `Every person greeted the chief.' 
 
 \end{xlist}
 \end{exe}
@@ -431,23 +484,26 @@ However, \textit{kila} is not acceptable in all distributive contexts. In exampl
 
 \begin{xlist}
 
-\ex \gll \textbf{a-va-kwamisi} \textbf{mbe-va-li} v-a-hom-it(e) i-li-ganga \\
+\ex 
+\gll \textbf{a-va-kwamisi} \textbf{mbe-va-li} v-a-hom-it(e) i-li-ganga \\
 \textsc{ppf}-2-boy all-2-all 2-\textsc{p3}-throw-\textsc{pst} \textsc{ppf}-5-stone \\
-`All of the boys threw the rock.'
-
-\vspace{5mm}
+\glt `All of the boys threw the rock.'
 
 
-\ex \gll \# \textbf{kila} \textbf{\s{m}-kwamisi} (a)-a-hom-it(e) i-li-ganga \\
+
+
+\ex 
+\gll \# \textbf{kila} \textbf{\s{m}-kwamisi} (a)-a-hom-it(e) i-li-ganga \\
 {} every 1-boy 1-\textsc{p3}-throw-\textsc{pst} \textsc{ppf}-5-stone \\ \label{ex:kaspercushman:reduplicationstone}
-`Every boy threw the rock.'
-
-\vspace{5mm}
+\glt `Every boy threw the rock.'
 
 
-\ex \gll \textsc{ok} \textbf{u-mu-nu} \textbf{yu-mwi-yu-mwi} (a)-a-hom-it(e) i-li-ganga \\  
+
+
+\ex 
+\gll \textsc{ok} \textbf{u-mu-nu} \textbf{yu-mwi-yu-mwi} (a)-a-hom-it(e) i-li-ganga \\  
 {} \textsc{ppf}-1-person 1-one-1-one 1-\textsc{p3}-throw-\textsc{pst} \textsc{ppf}-5-stone \\
-`The people threw the stone one after another.'
+\glt `The people threw the stone one after another.'
 
 \end{xlist}
 \end{exe}
@@ -463,21 +519,25 @@ In contexts that are necessarily collective, only \textit{mbe-\textsc{agr2}-li} 
 
 \begin{xlist}
 
-\ex \gll \textbf{a-va-baba} \textbf{mbe-va-li} v-a-senz-ile kangi i-nyumba \\
+\ex 
+\gll \textbf{a-va-baba} \textbf{mbe-va-li} v-a-senz-ile kangi i-nyumba \\
 \textsc{ppf}-2-man all-2-all 2-\textsc{p3}-build-\textsc{pst} again \textsc{ppf}-9.house\\
+
 
 \gll ye=ke=yi-ka-pye  \\ 
  9.\textsc{rel}=\textsc{aux}=9-\textsc{p2}-burn.\textsc{pst} \\
-`All the men rebuilt the house which had burned.' \\
+\glt `All the men rebuilt the house which had burned.' \\
 
-\vspace{5mm}
 
-\ex \gll \# \textbf{kila} \textbf{\s{m}-baba} (a)-a-senz-ile kangi i-nyumba \\
+
+\ex 
+\gll \# \textbf{kila} \textbf{\s{m}-baba} (a)-a-senz-ile kangi i-nyumba \\
 {} every 1-man 1-\textsc{p3}-build-\textsc{pst} again \textsc{ppf}-9.house \\
+
 
 \gll ye=ke=yi-ka-pye   \\ 
 9.\textsc{rel}=\textsc{aux}=9-\textsc{p2}-burn.\textsc{pst}\\
-`Every man rebuilt the house which had burned.' \\ 
+\glt `Every man rebuilt the house which had burned.' \\ 
 \textit{Comment from informant: This would have to mean that there were many houses being built.}
 
 \end{xlist}
@@ -492,14 +552,16 @@ In contexts that are necessarily collective, only \textit{mbe-\textsc{agr2}-li} 
 
 \begin{xlist}
 
-\ex \gll \textbf{a-va-nu} \textbf{mbe-va-li} va-$\emptyset$-nyanyuw(e) i-li-tololi \\
+\ex 
+\gll \textbf{a-va-nu} \textbf{mbe-va-li} va-$\emptyset$-nyanyuw(e) i-li-tololi \\
 \textsc{ppf}-2-person all-2-all 2-\textsc{p1}-lift\_up.\textsc{pst} \textsc{ppf}-5-wagon  \\
-`All of the people lifted up the wagon.' \\
+\glt `All of the people lifted up the wagon.' \\
 
 
-\ex \gll \# \textbf{kila} \textbf{mu-nu} a-$\emptyset$-nyanyuw(e) i-li-tololi \\ 
+\ex 
+\gll \# \textbf{kila} \textbf{mu-nu} a-$\emptyset$-nyanyuw(e) i-li-tololi \\ 
 {} every 1-person 1-\textsc{p1}-lift\_up.\textsc{pst} \textsc{ppf}-5-wagon  \\
-`Every person lifted up the wagon.' \\ \label{ex:kaspercushman:everywagon}
+\glt `Every person lifted up the wagon.' \\ \label{ex:kaspercushman:everywagon}
 \textit{Comment from informant: This would mean that everyone has his/her own wagon.}
 
 \end{xlist}
@@ -513,15 +575,17 @@ However, as Robert Botne (pers. comm.) points out, we cannot be sure that \texti
 
 \ex  \label{ex:kaspercushman:competition} \begin{xlist}
 
-\ex \gll \textbf{a-va-kwamisi} \textbf{mbe-va-li} v-a-lavis-ig\^e a-ma-shindano pamw\^i \\
+\ex 
+\gll \textbf{a-va-kwamisi} \textbf{mbe-va-li} v-a-lavis-ig\^e a-ma-shindano pamw\^i \\
 \textsc{ppf}-2-boy all-2-all 2-\textsc{p3}-watch-\textsc{dur.pst} \textsc{ppf}-6-competition together\\
-`All of the boys watched the competition together.'\\
+\glt `All of the boys watched the competition together.'\\
 
-\vspace{5mm}
 
-\ex \label{ex:kaspercushman:everytogether} \gll * \textbf{kila} \textbf{\s{m}-kwamisi} (a)-a-lavis-ig\^e a-ma-shindano pamw\^i \\
+
+\ex \label{ex:kaspercushman:everytogether} 
+\gll * \textbf{kila} \textbf{\s{m}-kwamisi} (a)-a-lavis-ig\^e a-ma-shindano pamw\^i \\
 {} every 1-boy 1-\textsc{p3}-watch-\textsc{dur.pst} \textsc{ppf}-6-competition together \\
-`Every boy watched the competition together.'
+\glt `Every boy watched the competition together.'
 
 \end{xlist}
 \end{exe}
@@ -537,7 +601,7 @@ Matthewson (2013) calls for work towards a typology of quantifiers, and puts for
 First, consider Matthewson's Generalization 6:
 
 \begin{exe}
-\singlespacing
+
 \ex Gen6: It is common for a word translated as `all' to look as if it attaches to a full DP, even when other quantifiers do not. \cite[p. 35]{matthewson13} \\
 \end{exe}
 
@@ -547,9 +611,10 @@ In support of this hypothesis, note that in Kihehe, the head noun of a DP argume
 
 \begin{exe}
 
-\ex \label{ex:kaspercushman:alldied} \gll * \textbf{S\'enga} \textbf{mb\'e-se-li} s\'i-fwe \label{ex:kaspercushman:allcowsnoppf2}\\ 
+\ex \label{ex:kaspercushman:alldied} 
+\gll * \textbf{Sénga} \textbf{mbé-se-li} sí-fwe \label{ex:kaspercushman:allcowsnoppf2}\\ 
 {} 10.cow all-10-all 10-die.\textsc{pst} \\
-`All the cows died.' 
+\glt `All the cows died.' 
 
 \end{exe}
 
@@ -558,30 +623,34 @@ While DP arguments must contain a pre-prefix on the head noun, the pre-prefix ca
 \begin{exe}
 \ex \label{ex:kaspercushman:chief} \begin{xlist}
 
-\ex \gll u-mu-nu yu-la \textbf{mu-twa} \\
+\ex 
+\gll u-mu-nu yu-la \textbf{mu-twa} \\
 \textsc{ppf}-1-person 1-\textsc{dem.dist} 1-chief \\
-`That person is a/the chief.'
+\glt `That person is a/the chief.'
 
 
-\ex \gll u-mu-nu yu-la \textbf{u-mu-twa} \\
+\ex 
+\gll u-mu-nu yu-la \textbf{u-mu-twa} \\
 \textsc{ppf}-1-person 1-\textsc{dem.dist} \textsc{ppf}-1-chief \\
-`that person who is a/the chief'
+\glt `that person who is a/the chief'
 
 \end{xlist}
 \end{exe}
 
 \begin{exe}
-\singlespacing
+
 \ex \label{ex:kaspercushman:tall} \begin{xlist}
 
-\ex \gll a-v-ana \textbf{va-tali} \\
+\ex 
+\gll a-v-ana \textbf{va-tali} \\
 \textsc{ppf}-2-child 2-tall  \\
-`The children are tall'
+\glt `The children are tall'
 
 
-\ex \gll a-v-ana \textbf{a-va-tali} \\
+\ex 
+\gll a-v-ana \textbf{a-va-tali} \\
 \textsc{ppf}-2-child \textsc{ppf}-2-tall \\
-`the children who are tall'
+\glt `the children who are tall'
 
 \end{xlist}
 \end{exe}
@@ -591,31 +660,34 @@ Pre-prefixes are not needed on mass nouns when stating general information (\ref
 
 \begin{exe}
 
-\ex \label{ex:kaspercushman:wulasi} \gll \textbf{wu-lasi} wu-nono \\
+\ex \label{ex:kaspercushman:wulasi} 
+\gll \textbf{wu-lasi} wu-nono \\
 14-wulasi 14-sweet \\
-`\textit{ex:kaspercushman:wulasi} is sweet'
+\glt `\textit{ex:kaspercushman:wulasi} is sweet'
 
 \end{exe}
 
 The hypothesis that a DP noun argument must be marked with a pre-prefix when combing with the universal quantifier is strongly supported by the Kihehe data.  However, one possible counter example to this hypothesis is given in example (\ref{ex:kaspercushman:mango}). This minimal pair demonstrates the finding that the requirement of the pre-prefix on the head noun seems to be stronger for subjects and direct objects than for indirect objects.  My informant judged (\ref{ex:kaspercushman:noppfio}) only marginally worse than (\ref{yesppfio}). 
 
 \begin{exe} 
-\singlespacing
+
 \ex  \label{ex:kaspercushman:mango} \begin{xlist}
 
 \ex Pre-prefix on indirect object head noun \\
+
 \gll Va-pel-(e) a-ma-yembe ga-vili \textbf{a-v-ana} \textbf{mbe-va-li} \\
 2-give-\textsc{imp} \textsc{ppf}-6-mango 6-two \textsc{ppf}-2-child all-2-all\\ 
 \vspace{-1.25ex}
-`Give two mangos to all of the children.' \\ \label{yesppfio} 
+\glt `Give two mangos to all of the children.' \\ \label{yesppfio} 
 
-\vspace{5mm}
+
 
 \ex No pre-prefix on indirect object head noun \
+
 \gll ? Va-pel-(e) a-ma-yembe ga-vili \textbf{v-ana} \textbf{mbe-va-li} \\
 {} 2-give-\textsc{imp} \textsc{ppf}-6-mango 6-two 2-child all-2-all\\ \label{ex:kaspercushman:noppfio}\
 \vspace{-1.25ex}
-`Give two mangos to all of the children.'
+\glt `Give two mangos to all of the children.'
 
 \end{xlist}
 \end{exe}
@@ -624,7 +696,7 @@ Thus, the Kihehe evidence is consistent with Generalization 6 in that `all' appe
 
 
 \begin{exe}
-\singlespacing
+
 \ex Gen7: In some languages, distributive universals appear to combine directly with NP, while other quantifiers do not. \cite[p. 36]{matthewson13} \\
 \end{exe}
 
@@ -633,7 +705,7 @@ As described above, unlike \textit{mbe-\textsc{agr2}-li}, the distributive unive
 Finally, consider Matthewson's Generalization 8: 
 
 \begin{exe}
-\singlespacing
+
 \ex Gen8: A secondary pattern is to distinguish distributive universal quantifiers from other universal quantifiers, but for the former to use some other strategy such as reduplication, affixation, or adverbial quantification \cite[p. 37]{matthewson13} \\
 \end{exe}
 
@@ -645,6 +717,48 @@ As discussed above, the data suggest that Kihehe uses reduplication to express d
 
 This paper describes general properties of the universal quantifiers \textit{mbe-\textsc{agr2}-li} `all' and \textit{kila} `every' in Kihehe. It then discusses the quantifiers in light of the properties of collectivity and distributivity, and provides data that suggest that Kihehe has an additional strategy of reduplication for expressing distributive quantification. Ultimately, this paper argues that Kihehe attests patterns similar to what has been observed for other Bantu languages: \textit{mbe-\textsc{agr2}-li} is compatible with both collective and distributive contexts, while \textit{kila} is distributive. Unlike English \textit{every}, \textit{kila} is ungrammatical with a collective reading. However, while distributive, \textit{kila} is infelicitous in contexts in which a `one by one' or `one after another' reading is required, though the exact constraints on \textit{kila}, and a more thorough investigation of the strategy of reduplication, are left for future research. Finally, this paper considers the Kihehe data in light of the typology of quantifiers crosslinguistically, specifically arguing that the Kihehe data are congruent with three of Matthewson's (2013) crosslinguistic generalizations. 
 
-% \bibliography{KiheQuantBib}
+\section*{Acknowledgements}
+I would like to thank Richard Nyamahanga for providing the Kihehe language data and judgements presented in this paper. Data were collected by the author through elicitation sessions at Indiana University.  I would like to thank Robert Botne and my fellow students in L654: Field Methods, Indiana University, Spring 2016, for their suggestions and discussion of this data. I would also like to thank Tom Grano and Steve Franks for formative comments on earlier versions of this work. Finally, I would like to thank the audience members at ACAL 48, and an anonymous reviewer for helpful feedback and suggestions.
 
+\section*{Abbreviations}
+Bare numerals (e.g., 1, 2, 3) refer to noun class markers or agreement markers for that noun class.\\
+
+
+
+
+
+
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{1sg} & first person singular\\
+\textsc{1pl} & first person plural\\
+\textsc{add} & proximal to addressee\\
+\textsc{adj} & adjective\\
+\textsc{agr2} & agreement marker 2\\
+\textsc{assoc} & associative marker\\
+\textsc{aux} & auxiliary\\
+\textsc{dem} & demonstrative\\
+\textsc{dur} & durative\\
+\textsc{fv} & final vowel\\
+\textsc{hab} & habitual\\
+\textsc{imp} & imperative\\
+\textsc{impf} & imperfective\\
+\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ}
+\textsc{loc}=locative\\
+N & noun\\
+\textsc{p1} & recent past\\
+\textsc{p2} & hodiernal past\\
+\textsc{p3} & remote past\\
+\textsc{ppf} & pre-prefix\\
+\textsc{poss} & possessive\\
+\textsc{prox} & proximal\\
+\textsc{prs} & present\\
+\textsc{pst} & past\\
+\textsc{rel} & relative\\
+\# & infelicitous\\
+\\
+\end{tabularx}
+
+\sloppy
+\printbibliography[heading=subbibliography,notkeyword=this]
 \end{document}
