@@ -1,5 +1,5 @@
-\documentclass[output=paper,,modfonts,nonflat]{langsci/langscibook-Hyman-et-al}  
-\title{Number and Animacy in the Teke Noun Class System} 
+\documentclass[output=paper,,modfonts,nonflat]{langsci/langscibook}  
+\title{Number and animacy in the Teke noun class system} 
 \author{Larry M. Hyman\affiliation{University of California, Berkeley}\and  Florian Lionnet\affiliation{Princeton University}\lastand  Christophère Ngolele\affiliation{Université Catholique d'Afrique Centrale, Yaoundé}}
 
 
@@ -8,6 +8,7 @@
 \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
   \input{../localpackages}
   \input{../localcommands} 
+  \bibliography{../localbibliography}
   \togglepaper[13]
 }{}
 
@@ -17,7 +18,7 @@
 \section{Introduction} 
 \label{intro}
 
-In this paper we have two goals. First, we trace the development of the Proto-Bantu (PB) noun classes into a variety of Teke, a group of closely related, understudied B70 languages spoken in Gabon, the Republic of the Congo, and the Democratic Republic of the Congo. Second, we discuss how the Teke facts provide a window into probing parallel noun class changes in other Northwest Bantu, Bantu, and Niger-Congo (NC) in general. In this sense we provide an additional contribution and comparison with past work on the restructuring and loss of NC noun classes. This includes, among others, the considerable work on mergers and loss in Bantoid (cf. the papers in \cite{hyman1980}  and \cite{hymanvoorhoeve1980}) and Cross-River (\cite{williamson1985}, \cite{faraclas1986}, \cite{connell1987}, \cite{hymanudoh2006}). Of particular interest will be the restructuring which takes place on the basis of animacy, something discussed at great length in Northeastern Bantu (\cite{wald1975}, \cite{contini2008}) and elsewhere in Bantu \pgcitep{maho1999}{122--126}. We will show that both phonetic and semantic factors have played a role in the changes which have taken place between PB and Teke. All of the above ---and more--- is covered in very careful detail in \citet{good2012}.
+In this paper we have two goals. First, we trace the development of the Proto-Bantu (PB) noun classes into a variety of Teke, a group of closely related, understudied B70 languages spoken in Gabon, the Republic of the Congo, and the Democratic Republic of the Congo. Second, we discuss how the Teke facts provide a window into probing parallel noun class changes in other Northwest Bantu, Bantu, and Niger-Congo (NC) in general. In this sense we provide an additional contribution and comparison with past work on the restructuring and loss of NC noun classes. This includes, among others, the considerable work on mergers and loss in Bantoid (cf. the papers in \cite{Hyman1980}  and \cite{Hymanvoorhoeve1980}) and Cross-River (\cite{Williamson1985}, \cite{Faraclas1986}, \cite{Connell1987}, \cite{Hymanudoh2006}). Of particular interest will be the restructuring which takes place on the basis of animacy, something discussed at great length in Northeastern Bantu (\cite{Wald1975}, \cite{Contini2008}) and elsewhere in Bantu \pgcitep{maho1999}{122--126}. We will show that both phonetic and semantic factors have played a role in the changes which have taken place between PB and Teke. All of the above ---and more--- is covered in very careful detail in \citet{Good2012}.
 
 Crucial to the approach taken here is that synchronic noun classes and genders (singular/plural pairings) are established by concord (agreement markers), not by affixal marking on the noun itself. On the other hand, as pointed out by several of the above studies, attention must be paid to both marking on the noun as well as on agreeing elements. Our attention is on the Ewo dialect of Teke B71 (Republic of the Congo), as spoken by the third author, reporting on a several month study together in Berkeley in Spring 2016. We begin by considering the situation in PB in \S\ref{2-PB}, then turn to Teke in \S\ref{3-Teke}. The changes which have taken place between the two are enumerated in \S\ref{4-PB-Teke}, followed by a presentation of our conclusions in \S\ref{5-ccl}.
 
@@ -25,7 +26,7 @@ Crucial to the approach taken here is that synchronic noun classes and genders (
 \section{Proto-Bantu noun classes} 
 \label{2-PB}
 
-The natural starting point for this kind of study is the Proto-Bantu noun class system, both noun prefixes and (pronominal) concordial elements, which \pgcitet{meeussen1967}{97} identifies as shown in Table \ref{table1}.\footnote{Abbreviations used in the tables: As = Associative; Co = concord; Dist = distal demonstrative `that/those'; NPfx = noun prefix; Prox = proximal demonstrative `this/these'; SA = Subject agreement; SPr = Subject pronoun. Vowels are transcribed using IPA symbols, rather than \posscitet{meeussen1967} symbols: /i, ɪ, u, ʊ/ rather than /i̧, i, u̧, u/. Note that we choose to reconstruct the concordial prefix of class 1 as *ʊ̀- rather than to adopt Meeussen's (1967) *jʊ̀-, in which the j- might be a confusion with class 9.}
+The natural starting point for this kind of study is the Proto-Bantu noun class system, both noun prefixes and (pronominal) concordial elements, which \pgcitet{Meeussen1967}{97} identifies as shown in \tabref{table1}.\footnote{Abbreviations used in the tables: As = Associative; Co = concord; Dist = distal demonstrative `that/those'; NPfx = noun prefix; Prox = proximal demonstrative `this/these'; SA = Subject agreement; SPr = Subject pronoun. Vowels are transcribed using IPA symbols, rather than \posscitet{meeussen1967} symbols: /i, ɪ, u, ʊ/ rather than /i̧, i, u̧, u/. Note that we choose to reconstruct the concordial prefix of class 1 as *ʊ̀- rather than to adopt \citegen{Meeussen1967}'s  *jʊ̀-, in which the j- might be a confusion with class 9.}
 
 %\begin{table}[!htbp]
 %\begin{tabular}{| l		l		l		l		l		l		l	|	l	|	l		l |}
@@ -50,7 +51,7 @@ The natural starting point for this kind of study is the Proto-Bantu noun class 
 \caption{Proto-Bantu noun classes and genders}
 \begin{small}
 \label{table1}
-\begin{tabular}{l		l		l		l		l		l		l		l	|	l		l }
+\begin{tabular}{l		l		l		l		l		l		l		l	@{\qquad\qquad}	l		l }
 \lsptoprule
 Class	&	NPfx	&	Co	&		&	Class	&	NPfx	&	Co	&		&	\multicolumn{2}{l}{Sg./Pl. genders}			\\	
 \midrule
@@ -75,7 +76,7 @@ On the basis of the reconstructions, we can make the following observations: (i)
 \section{Teke (Ewo dialect)} 
 \label{3-Teke}
 
-The situation is quite different in Teke.\footnote{Although Teke languages often have seven (or more) phonetic vowels, e.g. Kukuya \citep{paulian1975}, we did not find a phonemic contrast in the mid vowels, which we transcribe with \emph{e} and \emph{o}, pronounced as such in noun class markers and other grammatical morphemes, otherwise as [ɛ] and [ɔ].} The forms found in the Ewo dialect are presented in Table \ref{table2}. The PB class numbers in the first column are given for reference. Note that it is not clear whether the initial nasal consonant of class 9 nouns should still be analyzed as a prefix in Teke, or whether it has fused with the root (i.e., class 9 nouns do not have a prefix anymore). This will accordingly be shown in all transcriptions of class 9 nouns with a hyphen in parentheses between the potential nasal prefix and the root.
+The situation is quite different in Teke.\footnote{Although Teke languages often have seven (or more) phonetic vowels, e.g. Kukuya \citep{paulian1975}, we did not find a phonemic contrast in the mid vowels, which we transcribe with \emph{e} and \emph{o}, pronounced as such in noun class markers and other grammatical morphemes, otherwise as [ɛ] and [ɔ].} The forms found in the Ewo dialect are presented in \tabref{table2}. The PB class numbers in the first column are given for reference. Note that it is not clear whether the initial nasal consonant of class 9 nouns should still be analyzed as a prefix in Teke, or whether it has fused with the root (i.e., class 9 nouns do not have a prefix anymore). This will accordingly be shown in all transcriptions of class 9 nouns with a hyphen in parentheses between the potential nasal prefix and the root.
 
 \begin{table}[!htbp]
 \caption{\small{Noun class reflexes in Teke (Ewo dialect)}}
@@ -98,7 +99,7 @@ PB	&	NPfx	&	\cellcolor{gray!60}As	&	Prox	&	Dist	&	`two’	&	SPr	&	SAgr/\underlin
 \end{small}
 \end{table}
 
-As can be seen in the shaded column of Table \ref{table2}, at most eight distinct classes are recognizable, which we identify by their associative marker. The singular/plural pairings (“genders”) are presented in Table 3, where the number (\#) indicated for each gender is based on a lexicon of 356 singular/plural nouns.
+As can be seen in the shaded column of \tabref{table2}, at most eight distinct classes are recognizable, which we identify by their associative marker. The singular/plural pairings (“genders”) are presented in Table 3, where the number (\#) indicated for each gender is based on a lexicon of 356 singular/plural nouns.
 
 \begin{table}[!htbp]
 \caption{Teke genders (./pl. pairings)}
@@ -128,7 +129,7 @@ From these tables the following observations and additional facts can be noted:\
 \item[(iii)]  The Teke reflexes of PB class 9 is used both as a singular (with a class 6 plural), but also as the plural of class 5 (from class Proto-Bantu class 11, see below), thus producing the two genders 9/6 and 5/9. Again, we know that the plural form is a reflex of class 9 because of its L tone associative (a reflex of Proto-Bantu class 10 would have a H tone).
 \item[(iv)]  Class 11 merged with class 5. Its plural is now in class 9, hence a 5/9 gender (see above).
 \item[(v)]  PB diminutive classes 12, 13 and 19 and locative classes 16, 17 and 18 are not present in Teke.
-\item[(vi)]  Of the eight singular/plural genders in Teke, those not occurring in PB are in parentheses \pgcitep{maho1999}{255--261}. As seen, most genders are innovations (five out of eight), as schematized in Figure \ref{Teke-fig} (the numerals refer to the PB noun classes that the modern Teke classes correspond to historically; the numerals in parentheses refer to the PB classes that merged with other classes). Examples of each gender follow in Table \ref{table5}. 
+\item[(vi)]  Of the eight singular/plural genders in Teke, those not occurring in PB are in parentheses \pgcitep{Maho1999}{255--261}. As seen, most genders are innovations (five out of eight), as schematized in Figure \ref{Teke-fig} (the numerals refer to the PB noun classes that the modern Teke classes correspond to historically; the numerals in parentheses refer to the PB classes that merged with other classes). Examples of each gender follow in \tabref{table5}. 
 \end{enumerate} 
 
 \begin{figure}
@@ -236,7 +237,7 @@ With this established, we now turn to consider how Teke derived from PB.
 \section{From Proto-Bantu to Teke} 
 \label{4-PB-Teke}
 
-As summarized in \S\ref{2-PB}, the noun classes inherited from PB have undergone a number of mergers. PB classes 3, 4 and 11 all merged their noun and agreements with classes 1, 8 and 5, respectively. Class 14, on the other hand has merged its \textit{*bʊ̀-} prefix with class 1 (and 3) \textit{ò-}, but maintains a separate agreement. Similarly, PB class 2 \textit{*bà-} and class 6 \textit{*mà-} have merged their noun prefix as \textit{a-}, but maintain distinct agreements. It is likely therefore that the noun prefixes merged first, and later their agreements. We survey these changes in this section. However, we first begin by considering the three genders that were inherited directly from PB. Table \ref{table6} presents examples of PB and later regional reconstructions, as well as their current reflexes in Teke.\footnote{Proto-Bantu reconstructions are taken from Bastin et al. (2002) (noun roots), and Meeussen (1967) (noun class prefixes, cf. Table \ref{table1}).}
+As summarized in \S\ref{2-PB}, the noun classes inherited from PB have undergone a number of mergers. PB classes 3, 4 and 11 all merged their noun and agreements with classes 1, 8 and 5, respectively. Class 14, on the other hand has merged its \textit{*bʊ̀-} prefix with class 1 (and 3) \textit{ò-}, but maintains a separate agreement. Similarly, PB class 2 \textit{*bà-} and class 6 \textit{*mà-} have merged their noun prefix as \textit{a-}, but maintain distinct agreements. It is likely therefore that the noun prefixes merged first, and later their agreements. We survey these changes in this section. However, we first begin by considering the three genders that were inherited directly from PB. \tabref{table6} presents examples of PB and later regional reconstructions, as well as their current reflexes in Teke.\footnote{Proto-Bantu reconstructions are taken from \citet{Bastinetal2002} (noun roots), and \citet{Meeussen1967} (noun class prefixes, cf. \tabref{table1}).}
 
 
 \begin{table}[!htbp]
@@ -262,9 +263,9 @@ As summarized in \S\ref{2-PB}, the noun classes inherited from PB have undergone
 \end{small}
 \end{table}
 
-As seen in Table \ref{table6}, the major change has been the loss of the initial consonant of PB class 2 \textit{*ba-}, class 6 *ma- and class 8 \textit{*bɪ-}. The Teke 5/6 examples show that class 5 nouns can be marked by \textit{lè-} or Ø. Nouns in 5/6 are roughly equally divided; those in 5/9 always take \textit{lè-}, since they all derive from PB class 11 *lʊ̀-.
+As seen in \tabref{table6}, the major change has been the loss of the initial consonant of PB class 2 \textit{*ba-}, class 6 *ma- and class 8 \textit{*bɪ-}. The Teke 5/6 examples show that class 5 nouns can be marked by \textit{lè-} or Ø. Nouns in 5/6 are roughly equally divided; those in 5/9 always take \textit{lè-}, since they all derive from PB class 11 *lʊ̀-.
 
-While the above genders have been stable, four class mergers directly explain two of the new genders: The first, gender 1/8 \textit{wà/bé}, is the formal merger of *3 > 1 and *4 > 8. Thus, as seen in Table \ref{table7}, PB 3/4 now corresponds to Teke 1/8 \textit{wà/bé}:
+While the above genders have been stable, four class mergers directly explain two of the new genders: The first, gender 1/8 \textit{wà/bé}, is the formal merger of *3 > 1 and *4 > 8. Thus, as seen in \tabref{table7}, PB 3/4 now corresponds to Teke 1/8 \textit{wà/bé}:
 
 \begin{table}[!htbp]
 \caption{Gender \textit{wà/bé} (*3/4 > 1/8)}
@@ -284,7 +285,7 @@ While the above genders have been stable, four class mergers directly explain tw
 \end{small}
 \end{table}
 
-Similarly, gender 5/9 \textit{lé/yè} derives from the merger of *11 > 5 and *10 > 9.\footnote{The same *10 > 9 merger seems to have occurred in Latege, another B71 dialect (Ruth Raharimanantsoa and Pauline Linton, p.c.), but not in Kukuya \citep{paulian1975}, Ngungwel, or Eboo (Ruth Raharimanantsoa p.c.). This merger thus seems to be a characteristic of B71 dialects only.}
+Similarly, gender 5/9 \textit{lé/yè} derives from the merger of *11 > 5 and *10 > 9.\footnote{The same *10 > 9 merger seems to have occurred in Latege, another B71 dialect (Ruth Raharimanantsoa and Pauline Linton, p.c.), but not in Kukuya \citep{Paulian1975}, Ngungwel, or Eboo (Ruth Raharimanantsoa p.c.). This merger thus seems to be a characteristic of B71 dialects only.}
 
 \begin{table}[!htbp]
 \caption{Gender \textit{lé/yè} (*11/10 > 5/9)}
@@ -302,7 +303,7 @@ Similarly, gender 5/9 \textit{lé/yè} derives from the merger of *11 > 5 and 
 \end{small}
 \end{table}
 \footnotetext{Note that the initial [n] in the singular form \emph{lè-\underline{n}dèlí} might be an indication that the singular was also initially in class 9, and then reassigned to class 5. }
-As discussed above, these mergers appear to be the result of regular sound changes affecting noun prefixes, e.g. the systematic loss of prefix-initial [b] or [m] (prefix-initial [l] and [k] are not affected), followed by the realignment of agreement patterns, as illustrated in Table \ref{table9} for the *4 > 8 merger:\footnote{The fact that only prefix-initial labial consonants are targeted does not necessarily contradict the Neogrammarian principle of sound change regularity: stem-initial prominence, which plays an important role in Teke and more generally Northwestern Bantu languages (cf. \cite{paulian1975}, \cite{hyman1987}, \cite{idiatovvandevelde2016}, a.o.) is not unlikely to have protected stem-initial consonants (and possibly other non-prefix consonants?) from this change. A detailed account of such sound changes in Teke is, however, outside the scope of this paper.}
+As discussed above, these mergers appear to be the result of regular sound changes affecting noun prefixes, e.g. the systematic loss of prefix-initial [b] or [m] (prefix-initial [l] and [k] are not affected), followed by the realignment of agreement patterns, as illustrated in \tabref{table9} for the *4 > 8 merger:\footnote{The fact that only prefix-initial labial consonants are targeted does not necessarily contradict the Neogrammarian principle of sound change regularity: stem-initial prominence, which plays an important role in Teke and more generally Northwestern Bantu languages (cf. \cite{Paulian1975}, \cite{Hyman1987}, \cite{Idiatovvandevelde2016}, a.o.) is not unlikely to have protected stem-initial consonants (and possibly other non-prefix consonants?) from this change. A detailed account of such sound changes in Teke is, however, outside the scope of this paper.}
 
 %\ea
 %\label{ex1}
@@ -325,7 +326,7 @@ As discussed above, these mergers appear to be the result of regular sound chang
 \end{small}
 \end{table}
 
-The origin of 5/9, and 9/6 can be traced back to class/gender reassignment following the consequences of the *10 > 9 merger, i.e. the loss of a number distinction for N- initial nouns. This again shows the importance of a prior prefix merger in motivating changes in noun class assignments. Former *9/10 nouns could have become a number-insensitive 9/9 gender, but did not. Instead, the *10 > 9 merger led to a class/gender reassignment based on the semantic property of animacy. Animate *9/10 nouns were reassigned to 1/2 \textit{wà/bá}, merging with the human nouns in that class, as shown in Table \ref{table11}.\footnote{Most of the former class 9 nouns that were reassigned to class 1 or class 5 start with a nasal consonant, which is a trace of the former nasal prefix of class 9, now part of the root. We have indicated the historical origin of this nasal consonant as a prefix with a hyphen in parentheses.)}
+The origin of 5/9, and 9/6 can be traced back to class/gender reassignment following the consequences of the *10 > 9 merger, i.e. the loss of a number distinction for N- initial nouns. This again shows the importance of a prior prefix merger in motivating changes in noun class assignments. Former *9/10 nouns could have become a number-insensitive 9/9 gender, but did not. Instead, the *10 > 9 merger led to a class/gender reassignment based on the semantic property of animacy. Animate *9/10 nouns were reassigned to 1/2 \textit{wà/bá}, merging with the human nouns in that class, as shown in \tabref{table11}.\footnote{Most of the former class 9 nouns that were reassigned to class 1 or class 5 start with a nasal consonant, which is a trace of the former nasal prefix of class 9, now part of the root. We have indicated the historical origin of this nasal consonant as a prefix with a hyphen in parentheses.)}
 
 %\ea
 %\label{ex2}
@@ -380,7 +381,7 @@ The origin of 5/9, and 9/6 can be traced back to class/gender reassignment follo
 \end{small}	
 \end{table}
 
-As also seen in Table \ref{table11}, one noun, \textit{lè-nyòní} `bird’, shifted into gender 5/2 \textit{lé/bá}. Note that this is the only noun illustrating both this shift, and the inquorate gender 5/2 \textit{lé/bá}. On the other hand, inanimate *9/10 nouns either became 9/6 \textit{yè/má} (plural reassignment only) or 5/6 \textit{lè/má} (complete gender reassignment), as shown in Table \ref{table12}.
+As also seen in \tabref{table11}, one noun, \textit{lè-nyòní} `bird’, shifted into gender 5/2 \textit{lé/bá}. Note that this is the only noun illustrating both this shift, and the inquorate gender 5/2 \textit{lé/bá}. On the other hand, inanimate *9/10 nouns either became 9/6 \textit{yè/má} (plural reassignment only) or 5/6 \textit{lè/má} (complete gender reassignment), as shown in \tabref{table12}.
 
 \begin{table}[!htbp]
 \caption{Inanimate *9/10 > 9/6 \textit{yè/má} or 5/6 \textit{lè/má}}
@@ -403,7 +404,7 @@ As also seen in Table \ref{table11}, one noun, \textit{lè-nyòní} `bird’, sh
 \end{small}
 \end{table}
 
-In addition, a few *9/10 inanimate nouns became either 1/8 \textit{wà/bé} or 5/9 \textit{lé/yè}, as can be seen in Table \ref{table13}.
+In addition, a few *9/10 inanimate nouns became either 1/8 \textit{wà/bé} or 5/9 \textit{lé/yè}, as can be seen in \tabref{table13}.
 
 \begin{table}[!htbp]
 \caption{Inanimate *9/10 > 1/8 \textit{wà/bé} or 5/9 \textit{lé/yè}}
@@ -425,7 +426,7 @@ In addition, a few *9/10 inanimate nouns became either 1/8 \textit{wà/bé} or 5
 
 Finally, a few former *9/10 nouns alternate between 5/6 \textit{lé/má} and 5/9 (< *10) \textit{lé/yè}, e.g. \textit{lè-mpàmbù lé} / \textit{à-mpàmbù má $\sim$ m(-)pàmbù yè} `worm’. Note that all former *9/10 nouns reassigned to 1/2 \textit{wà/bá}, 5/6 \textit{lè/má}, 9/6 \textit{yè/má}, 1/8 \textit{wà/bé}, or 5/9 \textit{lè/yè} have kept the historical N- prefix. The cause of all of the above *9/10 class/gender reassignments is presumably the need to maintain a singular/plural distinction, with animacy exploited as the guiding criterion for reassignment.
 
-Animacy plays a potential role in other places in the Teke noun class system. Recall that singular nouns marked by the prefix \textit{ò-} today may represent the merger of PB *1 and *3 (with the same agreements) or class *14 (with its distinct agreements). From the semantics one can almost perfectly predict whether an ò-prefixed noun will be in gender 1/2, 1/8 or 14/8. As before, animate nouns will all be in 1/2. Inanimates will either be in 14/8 \textit{bó/bé} if they represent an abstract quality (as in PB *14), otherwise in 1/8 \textit{wà/bé}. Representative examples are provided in Table \ref{table14}.
+Animacy plays a potential role in other places in the Teke noun class system. Recall that singular nouns marked by the prefix \textit{ò-} today may represent the merger of PB *1 and *3 (with the same agreements) or class *14 (with its distinct agreements). From the semantics one can almost perfectly predict whether an ò-prefixed noun will be in gender 1/2, 1/8 or 14/8. As before, animate nouns will all be in 1/2. Inanimates will either be in 14/8 \textit{bó/bé} if they represent an abstract quality (as in PB *14), otherwise in 1/8 \textit{wà/bé}. Representative examples are provided in \tabref{table14}.
 
 %\ea
 %\label{ex3}
@@ -462,7 +463,7 @@ Animacy plays a potential role in other places in the Teke noun class system. Re
 \end{small}
 \end{table}
 
-Table \ref{table15} shows the number of animate nouns that occur in each gender.
+\tabref{table15} shows the number of animate nouns that occur in each gender.
 
 \begin{table}[!htbp]
 \caption{Genders and animacy [bracketed number = nouns with human referent]}
@@ -486,9 +487,9 @@ Table \ref{table15} shows the number of animate nouns that occur in each gender.
 \end{small}
 \end{table}
 
-As seen in Table \ref{table15}, the total number of animates is 101 out of 353 total nouns. Of these 101, 73 occur in 1/2 \textit{wà/bá}. In fact, virtually all humans are in 1/2. Of the rest only 28 animate nouns occur outside 1/2. Interestingly, no animate noun has a class 9 \textit{yè} singular (gender 9/6 \textit{yè/má}). All PB *9/10 animate nouns were reassigned, mostly to 1/2 \textit{wà/bá}.
+As seen in \tabref{table15}, the total number of animates is 101 out of 353 total nouns. Of these 101, 73 occur in 1/2 \textit{wà/bá}. In fact, virtually all humans are in 1/2. Of the rest only 28 animate nouns occur outside 1/2. Interestingly, no animate noun has a class 9 \textit{yè} singular (gender 9/6 \textit{yè/má}). All PB *9/10 animate nouns were reassigned, mostly to 1/2 \textit{wà/bá}.
 
-To conclude this section, we note with considerable interest the variation in former *11 (and some *9) nouns that have been reassigned to class 5 \textit{lé}. These have kept the former class 10 plural N- form, even though it has the L tone agreement \textit{yè} of *9. However, as we have noted, an N- noun is ambiguous in terms of number, and may be interpreted either as singular or as plural. It can be the plural class 9 of a class 5 \textit{lé} singular (from *11) or the singular of 9/6 \textit{yè/má} and 1/2 \textit{wà/bá}. In addition, nearly half of class 5/6 nouns alternate between a prefixed \textit{lè-} and a Ø or N- singular form, approximately half in our lexicon occur without \textit{lè-}. (Recall that all 5/9 nouns require \textit{lè-} on their singular.) This is illustrated in Table \ref{table16}.
+To conclude this section, we note with considerable interest the variation in former *11 (and some *9) nouns that have been reassigned to class 5 \textit{lé}. These have kept the former class 10 plural N- form, even though it has the L tone agreement \textit{yè} of *9. However, as we have noted, an N- noun is ambiguous in terms of number, and may be interpreted either as singular or as plural. It can be the plural class 9 of a class 5 \textit{lé} singular (from *11) or the singular of 9/6 \textit{yè/má} and 1/2 \textit{wà/bá}. In addition, nearly half of class 5/6 nouns alternate between a prefixed \textit{lè-} and a Ø or N- singular form, approximately half in our lexicon occur without \textit{lè-}. (Recall that all 5/9 nouns require \textit{lè-} on their singular.) This is illustrated in \tabref{table16}.
 
 %\ea
 %\label{ex4}
@@ -519,7 +520,7 @@ To conclude this section, we note with considerable interest the variation in fo
 \end{small}
 \end{table}
 
-As a result this has produced several cases where the same N- noun can be interpreted as either singular or plural, paired with an appropriate noun class of opposite number, as shown in Table \ref{table17}.
+As a result this has produced several cases where the same N- noun can be interpreted as either singular or plural, paired with an appropriate noun class of opposite number, as shown in \tabref{table17}.
 
 %\ea
 %\label{ex5}
@@ -557,7 +558,7 @@ As a result this has produced several cases where the same N- noun can be interp
 
 As seen above, an identical prefix shape can not only lead to merger of noun classes (e.g. class *1 and *3, *4 and *8, *5 and *11), but can cause a noun to function in two different genders, one as a singular, the other as a plural. This too can be expected to lead to further realignments as the noun classes prepare for their next move.
 
-In the preceding sections, we have seen that the Teke noun class system has undergone important restructuring with loss of eleven of the nineteen PB classes, four class mergers, and many gender reassignments. As we have shown, only three out of eight genders are inherited from PB. Three variables have played an important role in this evolution: (i) prefix shapes; (ii) animacy; (iii) number. Number and animacy have played a major role in this restructuring, in particular in the class and gender reassignment of PB *9/10 nouns. These become 1/2 \textit{waà/bá} if animate, 5/6 \textit{lé/má} or 9/6 \textit{yè/má} if inanimate (occasionally also 1/8 \textit{wà/bé} and 5/9 \textit{lé/yè}). Animacy also plays an important role in synchrony. As we have shown, singular \textit{ò-} is interpreted as 1/2 \textit{wà/bá} if animate, 14/8 \textit{bó/bé} if abstract, and 1/8 \textit{wà/bé} if concrete inanimate. In addition, a noun with the prefix sequence \textit{à-N-} is unambiguously class 2 \textit{bá} if animate, class 6 \textit{má} if inanimate. The relevance (and potential conflict) of animacy in the synchronic and diachronic marking of noun classes is attested elsewhere in Bantu (\cite{wald1975}, \cite{maho1999}, \cite{contini2008}, among others), even to the extent of entirely replacing the inherited noun class system, as in Nzadi \citep{craneetal2011}. What is particularly interesting in the Teke case is the conspiracy between prefix shape and animacy. Noun classes are reassigned on the basis of animacy. As prefixes merge, noun class agreements merge, even those accompanying singular and plural 9/10. This shows that Teke speakers are paying attention not only to the semantics, but are impressively influenced by the forms. Such interplay in the reassignments which we have enumerated should be considered in probing parallel noun class changes in other Northwest Bantu and Niger-Congo in general.
+In the preceding sections, we have seen that the Teke noun class system has undergone important restructuring with loss of eleven of the nineteen PB classes, four class mergers, and many gender reassignments. As we have shown, only three out of eight genders are inherited from PB. Three variables have played an important role in this evolution: (i) prefix shapes; (ii) animacy; (iii) number. Number and animacy have played a major role in this restructuring, in particular in the class and gender reassignment of PB *9/10 nouns. These become 1/2 \textit{waà/bá} if animate, 5/6 \textit{lé/má} or 9/6 \textit{yè/má} if inanimate (occasionally also 1/8 \textit{wà/bé} and 5/9 \textit{lé/yè}). Animacy also plays an important role in synchrony. As we have shown, singular \textit{ò-} is interpreted as 1/2 \textit{wà/bá} if animate, 14/8 \textit{bó/bé} if abstract, and 1/8 \textit{wà/bé} if concrete inanimate. In addition, a noun with the prefix sequence \textit{à-N-} is unambiguously class 2 \textit{bá} if animate, class 6 \textit{má} if inanimate. The relevance (and potential conflict) of animacy in the synchronic and diachronic marking of noun classes is attested elsewhere in Bantu (\cite{Wald1975}, \cite{Maho1999}, \cite{Contini2008}, among others), even to the extent of entirely replacing the inherited noun class system, as in Nzadi \citep{Craneetal2011}. What is particularly interesting in the Teke case is the conspiracy between prefix shape and animacy. Noun classes are reassigned on the basis of animacy. As prefixes merge, noun class agreements merge, even those accompanying singular and plural 9/10. This shows that Teke speakers are paying attention not only to the semantics, but are impressively influenced by the forms. Such interplay in the reassignments which we have enumerated should be considered in probing parallel noun class changes in other Northwest Bantu and Niger-Congo in general.
 
 
 \sloppy
