@@ -1,0 +1,41 @@
+\documentclass{standalone}
+\usepackage{libertine}
+\usepackage[linguistics]{forest}
+\usetikzlibrary{arrows.meta,arrows}
+\begin{document}
+\begin{forest} for tree={nice empty nodes}
+[Agr\textsubscript{w}P
+    [~,name=Empty1]
+    [
+    [Agr\textsubscript{w}] [WP
+        [DemP] [
+            [W] [Agr\textsubscript{x}P
+                [~,name=Empty2,pin={[pin edge={{Triangle[]}-,draw=black}]below left:{No pied-piping: marked}}] [
+                    [Agr\textsubscript{x}] [XP
+                        [NumP] [
+                            [X] [Agr\textsubscript{y}P,name=AgrYP
+                                [~,name=Empty3] [
+                                    [Agr\textsubscript{y}] [YP
+                                        [AP] [
+                                            [Y] [\textbf{NP},name=NP
+                                                [~,minimum width=1cm,no edge,name=Empty4]
+                                            ]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+    ]
+]
+\draw[-{Triangle[]}] (Empty4.north west) -| (Empty3);
+\draw[-{Triangle[]}] (Empty3) -| (Empty2);
+\draw[-{Triangle[]}] (Empty2) -| (Empty1);
+\draw[] (Empty3.south west) |- (AgrYP.north east);
+\draw[] (Empty4.west) |- (NP.north east);
+\end{forest}
+\end{document}
