@@ -40,34 +40,7 @@ In a cartographic approach to DP structure, \citet{Greenberg1963} and \citet{Cin
   
 \begin{figure} 
 % % \includegraphics[width=\textwidth]{figures/baron-img1.png}
-\begin{forest} for tree={nice empty nodes}
-[Agr\textsubscript{w}P
-    [~]
-    [
-    [Agr\textsubscript{w}] [WP
-        [DemP] [
-            [W] [Agr\textsubscript{x}P
-                [~] [
-                    [Agr\textsubscript{x}] [XP
-                        [NumP] [
-                            [X] [Agr\textsubscript{y}P
-                                [~] [
-                                    [Agr\textsubscript{y}] [YP
-                                        [AP] [
-                                            [Y] [\textbf{NP}]
-                                        ]
-                                    ]
-                                ]
-                            ]
-                        ]
-                    ]
-                ]
-            ]
-        ]
-    ]
-    ]
-]
-\end{forest}
+\includegraphics{figures/baron-img1.pdf} % externalised b/c of awkward PGF bug.
 \caption{the cartographic representation of DPs (adapted from \citealt{Cinque2005}: (2)).} 
 \label{fig:baron:1}
 \end{figure}
@@ -303,7 +276,8 @@ Cinque argues that what makes this word order rather uncommon is that it is some
 
   
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/baron-img2.png}
+\includegraphics{figures/baron-img2.pdf}
+\todo[inline]{Please check tree}
 \caption{syntactic derivation for the word order N A Dem Num (adapted from \citealt{Cinque2005}).} 
 \label{fig:baron:2}
 \end{figure}
@@ -399,8 +373,9 @@ Since agreement with N occurs all the way up the DP spine, I argue that ƩP unde
 %%[Warning: Draw object ignored]
 In this paper, I have accounted for the structure and word order occurring in Nafara DPs. Following \citet{Cinque2005}, I argue for D > Dem > Num > A > N to be the DP-internal hierarchy. Additionally, and following \citet{Cinque2010}, I argue that there are two distinct types of attributive adjectives, that I refer to as high and low, and that do not seem to be interchangeable in the language. Finally, I argue that the surface word order is derived by moving ƩP to Spec,DP, for agreement purposes and due to the presence of an EPP feature on D. Because it is structurally higher than ƩP, Num does not undergo movement. For this reason, it surfaces in DP final position. The Spec-to-Spec movement of ƩP is illustrated in \REF{ex:baron:20} below.
 
-\ea\label{ex:baron:20}
-\includegraphics[width=\textwidth]{figures/baron-img5.png}
+\ea\label{ex:baron:20}\small
+% % \includegraphics[width=\textwidth]{figures/baron-img5.png}
+[\textsubscript{DP\ConnectTail{...}}\textbf{D}\textsubscript{[EPP]} [\textsubscript{DemP\ConnectHead*[2ex]{\ConnectTail{...}}}\textbf{Dem} [\textsubscript{NumP\ConnectHead*[2ex]{\ConnectTail{...}}}\textbf{Num} \ConnectHead*[2ex]{\fbox{[\textsubscript{ΣP} [\textsubscript{AP} \textbf{A}\textsubscript{\textbf{high}}] Σ [\textsubscript{NP} N [\textsubscript{AP} \textbf{A}\textsubscript{\textbf{low}}]]]}}]]
 \z
   
 
