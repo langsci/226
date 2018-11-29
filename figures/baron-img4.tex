@@ -1,0 +1,30 @@
+\documentclass{standalone}
+\usepackage{libertine}
+\usepackage[linguistics]{forest}
+\usetikzlibrary{arrows.meta,arrows,fit}
+\begin{document}
+\small
+\begin{forest} for tree={nice empty nodes}
+[DP\\{[DEF]}\\{[GEN]}\\{[NUM]}
+    [] [D'\\{[DEF]}
+        [D\\{[DEF]}\\{[uGEN]}\\{[uNUM]}\\EPP] [DemP
+            [] [Dem'
+                [Dem\\{[uGEN]}\\{[uNUM]}] [NumP
+                    [] [Num'
+                        [Num\\{[uGEN]}] [ΣP\\{[GEN]}\\{[NUM]}
+                            [AP [...A\textsubscript{high}...,roof]] [Σ'\\{[GEN]}\\{[NUM]}
+                                [Σ] [NP\\{[GEN]}\\{[NUM]} [N'\\{[GEN]}\\{[NUM]}
+                                    [N'\\{[GEN]}\\{[NUM]} [N\\{[GEN]}\\{[NUM]}]]
+                                    [AP [...A\textsubscript{low}...,roof]]
+                                    ]
+                                ]
+                            ]
+                        ] 
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\end{forest}
+\end{document}

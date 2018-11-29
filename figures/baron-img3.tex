@@ -1,0 +1,33 @@
+\documentclass{standalone}
+\usepackage{libertine}
+\usepackage[linguistics]{forest}
+\usetikzlibrary{arrows.meta,arrows,fit}
+\begin{document}
+\small
+\begin{forest} for tree={nice empty nodes}
+[DP\\{[DEF]}\\{[GEN]}\\{[NUM]}
+    [] [D'\\{[DEF]}
+        [D\\gə̄l] [DemP
+            [] [Dem'
+                [Dem\\gal] [NumP
+                    [] [Num',s sep=2cm
+                        [Num\\kɔrʃi] [ΣP,name=SigmaP
+                            [AP [kodivware,roof,name=kodivware]] [Σ'
+                                    [Σ] [NP
+                                        [N'
+                                            [N' [N\\lo,name=nlo]]
+                                            [AP [dɛl t\~{a},roof,name=delta]]
+                                        ]
+                                    ]
+                                ]
+                            ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+]
+\node [fit=(SigmaP) (kodivware) (delta) (nlo),draw,inner ysep=0pt, inner xsep=5pt] (group) {};
+\draw [dashed,-{Triangle[]}] (group.west) -| ++(-2cm,2cm);
+\end{forest}
+\end{document}
