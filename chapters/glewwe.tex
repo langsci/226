@@ -4,51 +4,43 @@
 
 % \chapterDOI{} %will be filled in at production
  
-\abstract{Certain Efik nominal constructions exhibit fixed tonal melodies that overwrite nouns’ underlying tones. Previous analyses of these alternations (\citealt{Welmers1973}, \citealt{Kim1974}, \citealt{Cook1985}) are purely phonological. Working in a constraint-based framework, I propose that the tonal alternations are actually phrasal morphology \citep{McPherson2014}. The tonal melodies are overlays encoded in lexicalized constructional schemas that relate idiosyncratic phrasal phonology with specific syntactic constructions. The constructional schemas are enforced by constraints. The Efik case extends the observed range of phrasal morphology by demonstrating that constructional schema constraints and phonological constraints can interact to determine a construction’s surface tones. 
-}
+\abstract{Certain Efik nominal constructions exhibit fixed tonal melodies that overwrite nouns’ underlying tones. Previous analyses of these alternations (\citealt{Welmers1973}, \citealt{Kim1974}, \citealt{Cook1985}) are purely phonological. Working in a constraint-based framework, I propose that the tonal alternations are actually phrasal morphology \citep{McPherson2014}. The tonal melodies are overlays encoded in lexicalized constructional schemas that relate idiosyncratic phrasal phonology with specific syntactic constructions. The constructional schemas are enforced by constraints. The Efik case extends the observed range of phrasal morphology by demonstrating that constructional schema constraints and phonological constraints can interact to determine a construction’s surface tones.}
 \maketitle
 
 \begin{document}
- 
-\title{\textsuperscript{}}
 
- 
-
-\begin{itemize}
-\item \section{Efik Nominal Tonal Alternations}\end{itemize}
+\section{Efik Nominal Tonal Alternations}
 
 Efik (Niger-Congo: Benue-Congo: Cross River) is a language spoken in Cross River State in southeastern Nigeria \citep{Cook1985}. It has two tones, high (H) and low (L), which may combine in a single syllable to produce falling (HL) and rising (LH) tones \citep{Welmers1968}. Additionally, there is a downstepped high tone (\textsuperscript{$\downarrow$}H) whose pitch is lower than H but higher than L. I analyze \textsuperscript{$\downarrow$}H as an H after a floating L. 
 
 In certain nominal constructions, including noun-noun compounds, adjective-noun constructions, and genitive constructions, nouns exhibit tonal alternations. For instance, in the noun-noun compound ‘dog house,’ the underlyingly H-H noun \textit{ébwá} ‘dog’ is realized as H-L after the underlyingly H-L noun \textit{úfɔk} ‘house’: 
 
 \ea \label{ex:glewwe:1}
-\gll {/úfɔk  ébwá/  ${\rightarrow}$  [úfɔk ébwà]}\\ 
-     house dog\\
+\gll /úfɔk  ébwá/ {${\rightarrow}$  [úfɔk ébwà]}\\ 
+     house dog {}\\
 \glt ‘dog house’
 \z
 
 The complete patterns of nominal tonal alternations in compounds are given in \tabref{tab:glewwe:1}. These patterns were reported by \citealt{Welmers1968} and \citealt{Cook1985} and confirmed with new data elicited from six native speakers of Efik. 
 
 \begin{table}
-    \centering
-    \begin{tabularx}{\textwidth}{|c|r|cccc|ccX|}
+    \begin{tabular}{crccccccc}
         \lsptoprule
-        \multicolumn{2}{|c|}{Underlying} &  \multicolumn{7}{c|}{Underlying Tonal Shape of Second Noun}\\
-        \cline{3-9}
-        \multicolumn{2}{|c|}{Tonal Shape of} & \multicolumn{4}{c|}{Group 1} & \multicolumn{3}{c|}{Group 2}\\
-        \cline{3-9}
-        \multicolumn{2}{|c|}{First Noun} & H-H & H-HL & H-L & L-L & L-H & L-HL\footnotemark{} & H-\textsuperscript{$\downarrow$}H\\
-        \hline
-        & H-H & & & & & & &  \\
-        Alternation & H-L & & & & & & &  \\
-        1 & L-L & \multicolumn{4}{c|}{H-L} & \multicolumn{3}{c|}{H-\textsuperscript{$\downarrow$}H} \\
+        \multicolumn{2}{p{3cm}}{\multirow{4}{3cm}{Underlying tonal shape of first noun}} &  \multicolumn{7}{c}{Underlying Tonal Shape of Second Noun}\\
+        \cmidrule(lr){3-9}
+        & & \multicolumn{4}{c}{Group 1} & \multicolumn{3}{c}{Group 2}\\\cmidrule(lr){3-6}\cmidrule(lr){7-9}
+        & & H-H & H-HL & H-L & L-L & L-H & L-HL\footnotemark{} & H-\textsuperscript{$\downarrow$}H\\
+        \midrule
+         Alternation 1 & H-H & & & & & & &  \\
+         & H-L & & & & & & &  \\
+         & L-L & \multicolumn{4}{c}{H-L} & \multicolumn{3}{c}{H-\textsuperscript{$\downarrow$}H} \\
          & L-H  & & & & & & & \\
          & H-H & & & & & & & \\
-         \hline
-        Alternation & H-HL  & \multicolumn{4}{c|}{L-L}&\multicolumn{3}{c|}{L-H}\\
-        2 & L-HL  & & & & & & & \\
+         \midrule
+        Alternation 2 & H-HL  & \multicolumn{4}{c}{L-L}&\multicolumn{3}{c}{L-H}\\
+         & L-HL  & & & & & & & \\
         \lspbottomrule
-    \end{tabularx}
+    \end{tabular}
     \caption{Surface Tones on the Second Noun in Noun-Noun Compounds}
     \label{tab:glewwe:1}
 \end{table}
@@ -123,7 +115,21 @@ The constructional schema for Efik compounds is given in \figref{fig:glewwe:2}:
 
   
 \begin{figure}
-\includegraphics[width=\textwidth]{figures/glewwe-img1.png}
+% % \includegraphics[width=\textwidth]{figures/glewwe-img1.png}
+\begin{forest} baseline
+[PHON, s sep=1cm
+    [,l=0mm,l sep=0mm,shape=coordinate,edge=->%dummy node
+        [ω\textsubscript{i},no edge,l=0mm,l sep=0mm [...σ [H] [L]]]
+        [ω\textsubscript{j},no edge,l=0mm,l sep=0mm [{[~]} [\{L\}]]]
+    ]
+    [,l=0mm,l sep=0mm,shape=coordinate,edge=->%dummy node
+        [ω\textsubscript{i},no edge,l=0mm,l sep=0mm [...σ [T]]]
+        [ω\textsubscript{j},no edge,l=0mm,l sep=0mm [{[~]} [\{HL\}]]]
+    ]
+]
+\end{forest}↔\begin{forest} baseline
+[NP [N [N\textsubscript{i}] [N\textsubscript{j}] ] ]
+\end{forest}
 \caption{Constructional schema for Efik noun-noun compounds}
 \label{fig:glewwe:2}
 \end{figure}
