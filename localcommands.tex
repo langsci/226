@@ -21,7 +21,7 @@
 %draws normal arrow
 \newcommand*{\DrawArrow}[3][]{%
 	\begin{tikzpicture}[overlay,remember picture, >=latex']
-	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em)coordinate (a) -- 
+	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em) coordinate (a) -- 
 	($(a-|#3)$) -- (#3);
 	\end{tikzpicture}%
 }
@@ -31,10 +31,10 @@
     % #1 = draw options
     % #2 = left point
     % #3 = right point
-    \begin{tikzpicture}[overlay,remember picture,>=latex']
+    \begin{tikzpicture}[overlay,remember picture,>=latex']%
        % \draw [-latex, #1] ($(#2)+(0.1em,0.5ex)$) to ($(#3)+(0,0.5ex)$);
 		\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em)coordinate (a) -- 
-		node%[font=\footnotesize]
+		node[fill=white,inner sep=0pt]%[font=\footnotesize]
 		{\ding{56}}
 		($(a-|#3)$) -- (#3);
     \end{tikzpicture}%
@@ -48,7 +48,7 @@
 	% \draw [-latex, #1] ($(#2)+(0.1em,0.5ex)$) to ($(#3)+(0,0.5ex)$);
 	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.2em)coordinate (a) -- 
 	%node[below,font=\footnotesize]{#4} 
-	node[midway,fill=white,font=\normalsize]{#4}
+	node[midway,fill=white,inner sep=0pt,font=\normalsize]{#4}
 	($(a-|#3)$) -- (#3);
 	\end{tikzpicture}%
 }% 
@@ -60,7 +60,7 @@
 	\begin{tikzpicture}[overlay,remember picture,>=latex']
 	% \draw [-latex, #1] ($(#2)+(0.1em,0.5ex)$) to ($(#3)+(0,0.5ex)$);
 	\draw[rounded corners, -latex,<-,semithick,#1]  (#2) -- ++(0,-1.8em)coordinate (a) -- 
-	node%[font=\footnotesize]
+	node[fill=white,inner sep=0pt]%[font=\footnotesize]
 	{\ding{56}}
 	($(a-|#3)$) -- (#3);
 	\end{tikzpicture}%

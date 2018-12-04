@@ -49,22 +49,21 @@ We will show that the \textit{á} construction, although appearing similar to cl
 Before we turn to the two constructions at stake, this section provides a brief overview of focus in general. Following \citet[2]{Zimmermann2010}, focus is ``a classical semantic notion expressing that a focused linguistic constituent is selected from a set of alternatives'', i.e.\ focus marks the presence of alternatives \citep{Rooth1992,Krifk2008}. Focus is generally said to be involved in question-answer congruence, correction, and the marking of contrast, among other contexts.
 
 The literature often distinguishes two main types, namely information focus and contrastive focus. The former signals the presence of contextual alternatives and often introduces new information. Therefore, we will use question-answer pairs to test for information focus. The latter type of focus comprises a number of subtypes, all of which add semantic and/or pragmatic conditions on the alternatives laid out by the presence of focus. In this paper, we will consider:\footnote{For reasons of brevity, we cannot discuss all possible types with respect to the focus strategies in Limbum in the present paper. To just name a few other important types, \textit{selection} features an explicit set of alternatives, from which one or more alternatives can be chosen; \textit{exclusivity} has one (set of) alternative(s) selected, where at least one of the non-selected (set of) alternative(s) is false \citep{vanderWal2011,vanderWal2014}, or only stronger alternatives on some scale are false \citep{Beaver2008,Coppock2012}; \textit{unexpectedness} involves the selected alternative to stand out \citep{Zimmermann2008,Zimmermann2011a,Hartmann2008,Skopeteas2009,Skopeteas2011,Frey2010,Zimmermann2011a,Destruel2014}. }
-\begin{itemize}
-\item \textit{Information focus}: marks the presence of alternatives
-\ea Who$_F$ stole the cookie?\\ \relax[PEter]$_F$ stole the cookie. \z
-\item \textit{Contrast}: an explicit alternative is present; often within the same utterance
-\ea An [AMErican]$_F$ farmer talked to a [CaNAdian]$_F$ farmer. \z
-\item \textit{Correction}: an explicit alternative from a previous utterance is rejected by giving a new explicit alternative
-\ea \relax[PEter]$_F$ stole the cookie.\\ No, [MAry]$_F$ did it.\z
-\item \textit{Exhaustivity}: one (set of) alternative(s) is selected; all non-selected alternatives are false \citep{Szabolcsi1981,Kiss1998,Vallduvi1998,Horvath2010,Horvath2013}, e.g.
-
+\begin{description}
+\item[Information focus:] marks the presence of alternatives
+\ea Who\textsubscript{F} stole the cookie?\\ \relax[PEter]\textsubscript{F} stole the cookie. \z
+\item[Contrast:] an explicit alternative is present; often within the same utterance
+\ea An [AMErican]\textsubscript{F} farmer talked to a [CaNAdian]\textsubscript{F} farmer. \z
+\item[Correction:] an explicit alternative from a previous utterance is rejected by giving a new explicit alternative
+\ea \relax[PEter]\textsubscript{F} stole the cookie.\\ No, [MAry]\textsubscript{F} did it.\z
+\item[Exhaustivity:] one (set of) alternative(s) is selected; all non-selected alternatives are false \citep{Szabolcsi1981,Kiss1998,Vallduvi1998,Horvath2010,Horvath2013}, e.g.
 \ea
 Hungarian\\
 \gll Anikó a templomba ment be, (máshová nem ment be).\\
 Anikó the church.into went in.\textsc{prv} elsewhere not went in.\textsc{prv}\\
 \glt `It was the CHURCH that Anikó entered (and nowhere else).'
 \z 
-\end{itemize}
+\end{description}
 
 \noindent
 In this section, we will look at three context tests that show how the two focus markers are felicitous in different contexts in Limbum. Then, we will address exhaustivity in more detail and provide evidence for \textit{bá} involving exhaustivity, while \textit{á} does not.
@@ -271,15 +270,15 @@ The alternative proposal in which {\em \'a} itself spells out the focus head and
 \gll \'i b\=a l\'a n\textipa{\`E} \'a rk\'ar f\textipa{\=O} (c\'i) {nd\=u} {zh\`i} \`a \`m y\'u \\  
      \textsc{3sg} \textsc{pst1} say \textsc{comp} \textsc{foc} car \textsc{det} \hspaceThis{(}\textsc{comp} {husband} her \textsc{3sg} \textsc{pst3} buy  \\ 
 \glt `She said that her husband bought the CAR.'
-\ex *...[$_{VP}$ [$_{V}$ l\'a][$_{CP}$ [$_{C}$ n\tikzmark{f}\`\textepsilon] [$_{FocP}$ rk\'ar f\textipa{\=O} [$_{Foc}$ \'a\tikzmark{t}] [$_{FinP}$ [$_{Fin}$ c\'i ]]]]] \label{ex:becker:s13}
-	\DrawXArrow[dashed]{f}{t}
+\ex *...[\textsubscript{VP} [\textsubscript{V} l\'a][\textsubscript{CP} [\textsubscript{C} n\tikzmark{s13f}\`\textepsilon] [\textsubscript{FocP} rk\'ar f\textipa{\=O} [\textsubscript{Foc} \'a\tikzmark{s13t}] [\textsubscript{FinP} [\textsubscript{Fin} c\'i ]]]]] \label{ex:becker:s13}
+	\DrawXArrow[dashed]{{pic cs:s13f}}{{pic cs:s13t}}
 \z \z
 \vspace{3mm}
 \noindent The complementizer {\em n\textipa{\`E}} would block movement of {\em \'a} to C, nevertheless {\em \'a} precedes the focused constituent. Hence, we assume the left periphery of the embedded clause in (\ref{ex:becker:s12}) to be composed as shown in figure \ref{fig:syntax:f1}.
 \begin{figure}
 \begin{tikzpicture}[baseline,scale=0.8,sibling distance=30pt]
 \tikzset{every tree node/.style={align=center,anchor=north}}
-\Tree  [.{...} [.{V\\l\'a} ][.CP [.C\\{n\`\textepsilon} ][.\node{FocP}; [.\node(j2){FP$_F$}; ] [.\node(j1){Foc\1}; [.\node{Foc$_{\small{ \bullet F \bullet}}$\\(c\'i)}; ] [.\node(tp){TP}; [.... ] [.... [.\node(fp){FP$_F$}; [.\node{F$_F$\\\'a}; ] [.\node(tp){XP}; \edge[roof]; {...} ] ] [.... ] ] ] ]] ]]
+\Tree  [.{...} [.{V\\l\'a} ][.CP [.C\\{n\`\textepsilon} ][.\node{FocP}; [.\node(j2){FP\textsubscript{F}}; ] [.\node(j1){Foc\1}; [.\node{Foc$_{\small{ \bullet F \bullet}}$\\(c\'i)}; ] [.\node(tp){TP}; [.... ] [.... [.\node(fp){FP\textsubscript{F}}; [.\node{F\textsubscript{F}\\\'a}; ] [.\node(tp){XP}; \edge[roof]; {...} ] ] [.... ] ] ] ]] ]]
 \draw[<-] (j2) ..controls +(south:3) and +(west:0.5)..  (fp.west);
 			\end{tikzpicture}
 \caption{Focus movement of FP}
@@ -306,13 +305,13 @@ Limbum patterns with Tlingit, in that the particle takes the focused phrase as a
 \end{xlist}
 \end{exe}
 An alternative account like the one shown in (\ref{ex:becker:s13}) cannot predict pied-piping without assuming further constraints on movement. Whichever phrase is focused, and thus bears an F feature, would be predicted to move to spec,FocP, see (\ref{ex:becker:s15}) for an illustration.
-\ea *[... \'a\sub{1} [$_{FocP}$ [$_{DP}$ Tán\tikzmark{f}kó$_F$]\sub{2} [$_{Foc}$ t\sub{1}] [$_{TP}$ ... [$_{DP}$ [$_{D'}$ [$_{NP}$ nd\'ur] $\varnothing_D$] t\tikzmark{t}\sub{2}]...]]
-	\DrawArrowok{f}{t}{\checkmark} \label{ex:becker:s15}
-\z
+\ea *[... \'a\sub{1} [\textsubscript{FocP} [\textsubscript{DP} Tán\tikzmark{s15f}kó\textsubscript{F}]\sub{2} [\textsubscript{Foc} t\sub{1}] [\textsubscript{TP} ... [\textsubscript{DP} [$_{D'}$ [\textsubscript{NP} nd\'ur] $\varnothing_D$] t\tikzmark{s15t}\sub{2}]...]]
+	\DrawArrowok{{pic cs:s15f}}{{pic cs:s15t}}{\ding{52}} \label{ex:becker:s15}
+\z\vspace{6mm}
 In the current analysis the FP is the closest goal the Foc head sees. It is therefore the entire FP that gets attracted to the specifier of FocP, making it impossible for a focused phrase contained in an FP to move to spec,FocP on its own, see (\ref{ex:becker:s16}).
-\ea \relax[$_{FocP}$ \tikzmark{f2}\hspace{2mm}\tikzmark{f} [$_{Foc}$ c\'i] [$_{TP}$ ... [$_{F\tikzmark{t}P}$ \'a [$_{DP}$ [$_{D'}$ [$_{NP}$ nd\'ur] $\varnothing_D$] Tán\tikzmark{t2}kó$_F$]]...]]
-	\DrawArrow{f}{t}
-    \DrawLXArrow[dashed]{f2}{t2} \label{ex:becker:s16}
+\ea \relax[\textsubscript{FocP} \tikzmark{s16f2}\hspace{2mm}\tikzmark{s16f} [\textsubscript{Foc} c\'i] [\textsubscript{TP} ... [$_{F\tikzmark{s16t}P}$ \'a [\textsubscript{DP} [$_{D'}$ [\textsubscript{NP} nd\'ur] $\varnothing_D$] Tán\tikzmark{s16t2}kó\textsubscript{F}]]...]]
+	\DrawArrow{{pic cs:s16f}}{{pic cs:s16t}}
+    \DrawLXArrow[dashed]{{pic cs:s16f2}}{{pic cs:s16t2}} \label{ex:becker:s16}
 \z
 \vspace{6mm}
 Extractions of the type shown in (\ref{ex:becker:s15}) can potentially be ruled out by general constraints on movement since they seem to be marked cross-linguistically \citep{Corver1990,Zeljko2005}. We would like to point out, however, that possessor extraction is not banned per se, since it is allowed in topic configurations, shown in (\ref{ex:becker:s17}), albeit with a resumptive pronoun. A base-generation approach seems implausible since topicalization is less acceptable out of islands, shown e.g.\ in (\ref{ex:becker:s17b}) for a complex noun phrase.
@@ -347,14 +346,14 @@ Another environment in which we can observe the pied-piping property of focus mo
 \end{xlist}
 \end{exe}
 Similar to the possessor case, the alternative account in which the focus particle {\em \'a} spells out the FOC head would predict the complement of P to be attractable to spec,FocP, in case it is the constituent that carries the F feature.
-\ea *[... \'a\sub{1} [$_{FocP}$ [$_{DP}$ \textipa{N}g\tikzmark{f}\=ar$_F$]\sub{2} [$_{Foc}$ t\sub{1}] [$_{TP}$ ... [$_{PP}$ [$_{P}$ n\sout{\`{\i}}] t\tikzmark{t}\sub{2}]...]]
-	\DrawArrowok{f}{t}{\checkmark} \label{ex:becker:s19}
+\ea *[... \'a\sub{1} [\textsubscript{FocP} [\textsubscript{DP} \textipa{N}g\tikzmark{s19f}\=ar\textsubscript{F}]\sub{2} [\textsubscript{Foc} t\sub{1}] [\textsubscript{TP} ... [\textsubscript{PP} [\textsubscript{P} n\sout{\`{\i}}] t\tikzmark{s19t}\sub{2}]...]]
+	\DrawArrowok{{pic cs:s19f}}{{pic cs:s19t}}{\ding{52}} \label{ex:becker:s19}
 \z
 \vspace{3mm}
 In contrast, the FP analysis predicts FP to be the goal that checks the F feature on the FOC head. Hence, the entire PP has to move to spec, FocP.
-\ea \relax[$_{FocP}$ \tikzmark{f2}\hspace{2mm}\tikzmark{f} [$_{Foc}$ c\'i] [$_{TP}$ ... [$_{F\tikzmark{t}P}$ \'a [$_{PP}$ [$_P$ n\sout{\`{\i}}] \textipa{N}g\tikzmark{t2}\=ar$_F$]...]]
-	\DrawArrow{f}{t}
-    \DrawLXArrow[dashed]{f2}{t2} \label{ex:becker:s20}
+\ea \relax[\textsubscript{FocP} \tikzmark{s20f2}\hspace{2mm}\tikzmark{s20f} [\textsubscript{Foc} c\'i] [\textsubscript{TP} ... [$_{F\tikzmark{s20t}P}$ \'a [\textsubscript{PP} [\textsubscript{P} n\sout{\`{\i}}] \textipa{N}g\tikzmark{s20t2}\=ar\textsubscript{F}]...]]
+	\DrawArrow{{pic cs:s20f}}{{pic cs:s20t}}
+    \DrawLXArrow[dashed]{{pic cs:s20f2}}{{pic cs:s20t2}} \label{ex:becker:s20}
 \z
 \vspace{6mm}
 Again, conditions on preposition stranding can be independently motivated, since this kind of movement seems to be banned in a number of languages \citep{Abels2003,Heck2008}. The FP analysis, however, offers an explanation for the lack of preposition stranding and possessor extraction simultaneously.
@@ -412,23 +411,35 @@ Even though a cleft analysis is ruled out, the Limbum patterns, shown in this pa
 
 One last point concerns the syntax of {\em b\'a}. In contrast to the {\em \'a} strategy, the {\em b\'a} construction does not seem to provide overt evidence for the existence of a higher functional head. The behaviour of focused subjects, however, indicates certain positional restrictions a focused phrase has to obey. Future work will explore whether the FP analysis can be extended to the {\em b\'a} strategy.
 
-
 \section*{Abbreviations}
-
-\begin{tabular}{ll|ll}
-		1,2,3 	& 1st, 2nd, 3rd person & \textsc{pl}  & Plural   \\ 
-        1-,2-,5-, 	& Noun classes &  \textsc{prep}  & Preposition     \\
-        \textsc{comp}  & Complementizer  & \textsc{prv}  & Preverb   \\
-        \textsc{cop}  & Copula  &  \textsc{pst1}  & Recent past tense \\
-        \textsc{det}  & Determiner  & \textsc{pst2}  & Distant past tense  \\
-        \textsc{dem}  & Demonstrative  &  \textsc{pst3}  & Remote past tense  \\
-        \textsc{expl}  & Expletive  &  \textsc{rel}  & Relative pronoun\\
-		\textsc{foc}  & Focus marker  & \textsc{sg}  & Singular  \\
-  \textsc{fut1}  & Near future tense  &  \'   & High tone \\
-   \textsc{hab}  & Habitual &  \`  & Low tone \\
-    \textsc{incl}  & Inclusive  & \=  & Mid tone \\
-    \textsc{perf}  & Perfective  &  & \\
-\end{tabular}
+\begin{multicols}{2}
+\begin{tabbing}
+1-,2-,5-,\hspace{1cm} \= 1st, 2nd, 3rd person\kill
+1,2,3          \> 1st, 2nd, 3rd person\\
+1-,2-,5-,      \> Noun classes        \\
+\textsc{comp}  \> Complementizer      \\
+\textsc{cop}   \> Copula              \\
+\textsc{det}   \> Determiner          \\
+\textsc{dem}   \> Demonstrative       \\
+\textsc{expl}  \> Expletive           \\
+\textsc{foc}   \> Focus marker        \\
+\textsc{fut1}  \> Near future tense   \\
+\textsc{hab}   \> Habitual            \\
+\textsc{incl}  \> Inclusive           \\
+\textsc{perf}  \> Perfective          \\
+\textsc{pl}  \> Plural   \\ 
+\textsc{prep}  \> Preposition     \\
+\textsc{prv}  \> Preverb   \\
+\textsc{pst1}  \> Recent past tense \\
+\textsc{pst2}  \> Distant past tense  \\
+\textsc{pst3}  \> Remote past tense  \\
+\textsc{rel}  \> Relative pronoun\\
+\textsc{sg}  \> Singular  \\
+\char"02CA \> High tone \\
+\char"02CB \> Low tone \\
+\hspace{1ex}\char"0304\> Mid tone
+\end{tabbing}
+\end{multicols}
 
 
 \section*{Acknowledgements}
