@@ -19,7 +19,7 @@
 \section{Introduction}\label{sec:baird:1}
 Gurmancema (ISO 639-3:gux), also known as Gulmancema, Gourmanchema, or Gourmanché, is a Gur language spoken in Burkina Faso, Togo, Benin, and Niger. It has approximately 1 million speakers across this region \cite{ethnologue}(Simons \& Fennig 2017). Primarily a spoken language, there is much dialectal variation across speakers in different villages and areas. Gurmancema is an SVO language with three tones (H, M, L). 
 
-Gurmancema has a five vowel system /a, e, i, o, u/. In this paper, I take these five phonemic vowels to be [+tense] and the allophone [ə] to be [-tense]\footnote{The feature [tense] is used for convenience to distinguish peripheral vowels from the central vowel [ə] and is not meant to make theoretical claims about the [tense] status of these vowels. The markedness constraints \textsc{Ident}[tense] has a weight of 0 in the model and does not change the analysis.}.  /aː, iː, uː/ are phonemic in Gurmancema and contrast with /a, i, u/. There are conflicting accounts of whether the long vowels /eː, oː/ are also phonemic. \footnote{For grammars containing phoneme inventories and justifications, see Chantoux (1968) and Naba 
+Gurmancema has a five vowel system /a, e, i, o, u/. In this paper, I take these five phonemic vowels to be [+tense] and the allophone [ə] to be [\textminus tense]\footnote{The feature [tense] is used for convenience to distinguish peripheral vowels from the central vowel [ə] and is not meant to make theoretical claims about the [tense] status of these vowels. The markedness constraints \textsc{Ident}[tense] has a weight of 0 in the model and does not change the analysis.}.  /aː, iː, uː/ are phonemic in Gurmancema and contrast with /a, i, u/. There are conflicting accounts of whether the long vowels /eː, oː/ are also phonemic. \footnote{For grammars containing phoneme inventories and justifications, see Chantoux (1968) and Naba 
 (1994)}
 There is also debate over which diphthongs are phonemic in the language. My 
 analysis only makes reference to short, word-final monophthongs, so I remain 
@@ -230,7 +230,7 @@ markedness constraint \textsc{NoFinalTenseVowel}:
 \textsc{NoFinalTenseVowel} (*[+tns]\#): Assign a violation for every word-final 	tense vowel
 \z
 
-The repairs triggered to satisfy *[+tns]\#, either by reducing a word-final vowel or deleting it, come with faithfulness violations. By reducing a vowel from any of the phonemic vowels to [ə], the vowel changes the feature [+tense] to [-tense]. This change violates the \textsc{Ident}(tense) constraint, which penalizes changes in the feature [tense] from the input to the output. In the final model, however, this constraint did not ever influence a winning candidate, so it is omitted from the rest of the paper.
+The repairs triggered to satisfy *[+tns]\#, either by reducing a word-final vowel or deleting it, come with faithfulness violations. By reducing a vowel from any of the phonemic vowels to [ə], the vowel changes the feature [+tense] to [\textminus tense]. This change violates the \textsc{Ident}(tense) constraint, which penalizes changes in the feature [tense] from the input to the output. In the final model, however, this constraint did not ever influence a winning candidate, so it is omitted from the rest of the paper.
 
 Reducing a vowel changes other features, so reduction is penalized through more specific constraints, described in 
 (\ref{faithful}).
@@ -297,8 +297,8 @@ Consonant clusters beginning with obstruents are highly marked in Gurmancema,
 leading to a preference for reduction over deletion when word-final vowels are preceded by an obstruent. In other words, word-final vowels are dispreferred, but when deletion would lead to an illicit consonant cluster, reduction is the preferred fix. The vowels /a, i, o/ reduce when preceded by an obstruent over 90\% of the time. The vowel /e/ is not addressed in this paper, as in the dataset it is always part of root material, which behaves differently from affixal/clitic material. The vowel /u/, however, shows variation when preceded by an obstruent. To start to account for this data, a new constraint is needed, penalizing consonant clusters beginning with obstruents. This is not a general *CC constraint, because not all consonant clusters are equally marked in Gurmancema (see (\ref{data})). 
 
 \ea \label{tc}
-*[-sonorant][+consonantal] (*TC): Assign a violation for every
-	[-sonorant][+consonantal] consonant cluster in the output. 
+*[\textminus sonorant][+consonantal] (*TC): Assign a violation for every
+	[\textminus sonorant][+consonantal] consonant cluster in the output. 
 \z
 
 \tabref{tab:baird:3} shows an example of reduction of a vowel following an obstruent. The tableau shows observed data for all /Ta\#C/, meaning all environments of an obstruent followed by /a/ followed by a consonant. 
@@ -312,9 +312,9 @@ leading to a preference for reduction over deletion when word-final vowels are p
 {} &  p   &  p   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{*TC}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{Ident} (lo)}  \\
 \midrule
    /kìbéga bìáni/ & obs & pred & score & 6.14 & 4.55 & 3.62 & 3.52 \\
-{a. [kìbéga bìáni]} & .05 & \textasciitilde .07 & 6.14 & 1 & 0 & 0 & 0 \\
-{b. [kìbégə bìáni]} & .91 & \textasciitilde .92 & 3.52 & 0 & 0 & 0 & 1 \\
-{c. [kìbég bìáni]} & .04 & \textasciitilde .01 & 8.17 & 0 & 1 & 1 & 0 \\
+{a. [kìbéga bìáni]} & 0.05 & \textasciitilde 0.07 & 6.14 & 1 & 0 & 0 & 0 \\
+{b. [kìbégə bìáni]} & 0.91 & \textasciitilde 0.92 & 3.52 & 0 & 0 & 0 & 1 \\
+{c. [kìbég bìáni]} &  0.04 & \textasciitilde  0.01 & 8.17 & 0 & 1 & 1 & 0 \\
 \lspbottomrule\end{tabularx}
 \end{table}
 
@@ -336,9 +336,9 @@ illustrated in \tabref{tab:baird:4}.
 {} &  \multicolumn{1}{c}{p}   &  \multicolumn{1}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{*TC}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{(lab)}   &   \multicolumn{1}{c}{(hi)}  \\
 \midrule
  /bútíbu bwà/ & \multicolumn{1}{c}{obs} & pred & score & 6.14 & 4.55 & 3.62 & 3.62 & 2.99 \\
-{a. [bútíbu bwà]} & .69 & \textasciitilde .57 & 6.14 & 1 & 0 & 0 & 0 & 0\\
-{b. [bútíbə bwà]} & .31 & \textasciitilde .35 & 6.61 & 0 & 0 & 0 & 1 & 1 \\
-{c. [bútíb bwà]} & 0 & \textasciitilde .08 & 8.17 & 0 & 1 & 1 & 0 & 0\\
+{a. [bútíbu bwà]} & .69 & \textasciitilde 0.57 & 6.14 & 1 & 0 & 0 & 0 & 0\\
+{b. [bútíbə bwà]} & .31 & \textasciitilde 0.35 & 6.61 & 0 & 0 & 0 & 1 & 1 \\
+{c. [bútíb bwà]} & 0 & \textasciitilde    0.08 & 8.17 & 0 & 1 & 1 & 0 & 0\\
 
 \lspbottomrule\end{tabularx}
 \end{table}
@@ -359,7 +359,7 @@ The reason we need two constraints *TC and *RC rather than a general *CC constra
 There were no cases of word-final /e/, /u/, or /o/ preceded by an approximant. Word-final /a/ preceded by approximants behaves differently from /i/, 
 however, always surfacing as a maintained [a]. The vowel /a/ reduces in other cases, such as after obstruents (see \tabref{tab:baird:2}), so this is not a result of constraints preventing /a/ from reducing. There is nothing morphologically unique about the words that exhibit this pattern, and it is very consistent. To account for this pattern, a new solution is necessary. The first ingredient in the solution is the following constraint: 
 \ea
-*[+approximant][-tense] (*R[ə]): Assign a violation for every approximant in 	the output followed by a [-tense] vowel
+*[+approximant][\textminus tense] (*R[ə]): Assign a violation for every approximant in 	the output followed by a [\textminus tense] vowel
 \z
 
 From a data perspective, it is clear that this pattern refers to both the input and the output, where having a reduced vowel after an approximant is marked, but worse when the vowel derives from /a/ as opposed to /i/. The candidate where an approximant is followed by /a/ and the /a/ reduces violates \textsc{Ident}[low] as well as *R[ə]. However, the violation of these two constraints is not strong enough to predict the correct forms. Both would need low weights to allow reduction in other environments, and their combined penalty is not enough to prevent /a/ from reducing. Thus, *R[ə] and \textsc{Ident}(lo) on their own motivate variation across the language in cases where there should not be any. In other words, ganging alone is not sufficient to make the correct predictions. 
@@ -368,22 +368,23 @@ The only way to add more weight to this combination is to use constraint conjunc
 
 The addition of the conjoined constraint *R[ə] \& \textsc{Ident}(lo) correctly predicts the data distribution. Although many superadditive models only use superadditivity for conjoining markedness constraints \citep{AlbrightEtAl2008}, there is also precedent for using faithfulness constraints in a superadditive manner \citep{GreenDavis2014}. Nevertheless, there is some debate about whether markedness and faithfulness constraints can be conjoined \citep{MoretonSmolensky2002}. Conjoined constraints are intended only to be used for patterns in local domains. According to \citet{MoretonSmolensky2002}, as the domain of markedness is the output while faithfulness necessarily refers to the input, it is not clear whether such conjunctions can be truly considered local. In this case, the only way to represent the data was to conjoin a faithfulness and a markedness constraint (*R[ə] \& \textsc{Ident}(lo)). 
 
-Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are shown in \tabref{tab:baird:5} 
+Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are shown in \tabref{tab:baird:5}.
 
 \begin{table}
 \small
 \caption{Tableau for /Ri\#C/ with sample phrase ‘hair covers’, $n=192$}
 \label{tab:baird:5}
 \fittable{
-\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}} 
+\begin{tabular}{lcSc *{6}{S[table-format=1.2]}} 
 \lsptoprule
 
-{} &  p   &  p   &    &   *R[ə] \& \textsc{Ident}(lo)  &   *[+tns]\#   &    *RC   &   \textsc{Max} (V)   &   \textsc{Ident} (hi)   &   *R[ə]\#  \\
+   &      &      &    &   *R[ə] \&   \\
+{} &  p   &  \multicolumn{1}{c}{p}   &    & \multicolumn{1}{c}{\textsc{Ident}(lo)} & \multicolumn{1}{c}{*[+tns]\#} & \multicolumn{1}{c}{*RC} & \multicolumn{1}{c}{\textsc{Max} (V)} & \multicolumn{1}{c}{\textsc{Ident} (hi)} & \multicolumn{1}{c}{*R[ə]\#} \\
 \midrule
-   /tìyúɾi ŋóagéni/ & obs & pred & score & 8.13 & 6.14 & 6.04 & 3.62 & 2.99 & 0 \\
-{a. [tìyúɾi ŋóagéni]} & .05 & \textasciitilde .04 & 6.14 & 0 &1 & 0 & 0 & 0 & 0 \\
-{b. [tìyúɾə ŋóagéni]} & .91 & \textasciitilde .96 & 2.99 & 0 & 0&0 & 0 & 1 & 1 \\
-{c. [tìyúɾ ŋóagéni]} & .04 & \textasciitilde 0 & 9.66 & 0 &0& 1 & 1 & 0 & 0\\
+   /tìyúɾi ŋóagéni/ & obs & \multicolumn{1}{c}{pred} & score          & 8.13 & 6.14 & 6.04 & 3.62 & 2.99 & 0 \\
+{a. [tìyúɾi ŋóagéni]} & 0.05 & \sim .04 & 6.14 & 0 &1 & 0 & 0 & 0 & 0 \\
+{b. [tìyúɾə ŋóagéni]} & 0.91 & \sim .96 & 2.99 & 0 & 0&0 & 0 & 1 & 1 \\
+{c. [tìyúɾ ŋóagéni]} &  0.04 &  \sim 0    & 9.66 & 0 &0& 1 & 1 & 0 & 0\\
 \lspbottomrule
 \end{tabular}
 }
@@ -392,70 +393,71 @@ Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are sho
 
 
 \begin{table}
-\small
+\footnotesize
  \caption{Tableau for /Ra\#C/ with sample phrase ‘children sell’, $n=160$}
 \label{tab:baird:6}
 \fittable{
-\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}} 
+\begin{tabular}{lc *{7}{S} c} 
 \lsptoprule
-
-{} &  p   &  p   &    &   *R[ə] \& \textsc{Ident}(lo)  &   *[+tns\#]   &   \textsc *RC   &   \textsc{Max}(V)  &   \textsc{Ident} (lo)   &   *R[ə] \\
+   &      &      &    &   \multicolumn{1}{c}{*R[ə] \&}    \\
+{} &  p   & \multicolumn{1}{c}{p} & & \multicolumn{1}{c}{\textsc{Ident}(lo)} & \multicolumn{1}{c}{*[+tns\#]} & \multicolumn{1}{c}{\textsc *RC} & \multicolumn{1}{c}{\textsc{Max}(V)} & \multicolumn{1}{c}{\textsc{Ident} (lo)}   &   *R[ə] \\
 \midrule
-   /abéla kúaɾi/ & obs & pred & score & 8.13 & 6.14 & 6.04 & 3.62 & 3.52 & 0\\
-{a. [abéla kúaɾi]} & 1 & \textasciitilde .97 & 6.14 & 0 & 1 & 0 & 0 & 0 & 0\\
-{b. [abélə kúaɾi]} & 0 & \textasciitilde 0 & 11.65 & 1 & 0 & 0 & 0 & 1 & 1\\
-{c. [abél kúaɾi]} & 0 & \textasciitilde .03 & 9.66 & 0 & 0 & 1 & 1 & 0 & 0\\
+/abéla kúaɾi/ & obs & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 8.13 & 6.14 & 6.04 & 3.62 & 3.52 & 0\\
+{a. [abéla kúaɾi]} & 1 & \sim .97 & 6.14 & 0 & 1 & 0 & 0 & 0 & 0\\
+{b. [abélə kúaɾi]} & 0 & \sim 0  & 11.65 & 1 & 0 & 0 & 0 & 1 & 1\\
+{c. [abél kúaɾi]}  & 0 & \sim .03 & 9.66 & 0 & 0 & 1 & 1 & 0 & 0\\
 \lspbottomrule
 \end{tabular}
 }
 \end{table}
 
-Without the use of superadditivity, the model predicts variation in this environment which showed categorical behavior. An example tableau is shown below. 
+Without the use of superadditivity, the model predicts variation in this environment which showed categorical behavior. An example tableau is shown in \tabref{tab:baird:7}. 
 
 
 \begin{table}
  \caption{Tableau for /Ra\#C/ with sample phrase ‘children sell’, $n=160$ without superadditivity}
+ \footnotesize
 \label{tab:baird:7} 
- \begin{tabularx}{\textwidth}{X@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c@{~~}c} 
+ \begin{tabularx}{\textwidth}{Xc *{7}{S}} 
  \lsptoprule
-
-{} &  p   &  p   &    &   *RC   &   \textsc *[+tns\#]    &   \textsc{Ident} (lo)  &   *R[ə]   &   \textsc{Max}(V)  \\
+{} &  p   &  \multicolumn{1}{c}{p} & & \multicolumn{1}{c}{*RC} & \multicolumn{1}{c}{\textsc{*[+tns\#]}} & \multicolumn{1}{c}{\textsc{Ident} (lo)} & \multicolumn{1}{c}{*R[ə]} & \multicolumn{1}{c}{\textsc{Max}(V)}\\
 \midrule
-    /abéla kúaɾi/ & obs & pred & score & 9.83 & 9.64 & 7.84 & 3.37 & 3.33\\
-    \textipa{a. [abéla kúaɾi]} & 1 & \textasciitilde .81 & 9.64  & 0 & 1 & 0 & 0 & 0\\
-   \textipa{b. [abélə kúaɾi]} & 0 & \textasciitilde .17 & 11.21  & 0 & 0 & 1 & 1 & 0\\
-   \textipa{c. [abél kúaɾi]} & 0 & \textasciitilde .02 & 13.16 &  1 & 0 & 0 & 0 & 1\\
+    /abéla kúaɾi/ & \multicolumn{1}{c}{obs} & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 9.83 & 9.64 & 7.84 & 3.37 & 3.33\\
+   \textipa{a. [abéla kúaɾi]} & 1 & \sim 0.81 & 9.64  & 0 & 1 & 0 & 0 & 0\\
+   \textipa{b. [abélə kúaɾi]} & 0 & \sim 0.17 & 11.21 & 0 & 0 & 1 & 1 & 0\\
+   \textipa{c. [abél kúaɾi]}  & 0 & \sim 0.02 & 13.16 & 1 & 0 & 0 & 0 & 1\\
  \lspbottomrule\end{tabularx}
-  \end{table}
+\end{table}
 
 This set of constraints still captures general patterns, but as it predicts variation where there is none, it does not satisfactorily capture the data. Moreover, under this representation, several other environments have inaccuracies, with the model errors in prediction of 20\% in multiple cases. 
 
 \subsection{Prevocalic Nasals}
 
-When /m/ is in penultimate position, it typically triggers reduction in the final vowel. This is counter-intuitive, as there is no markedness constraint against consonant clusters beginning with nasals. Consonant clusters beginning with nasals are in fact common in Gurmancema, occurring both within words and across word boundaries. Gurmancema, however, has strong nasal place assimilation, meaning consonant clusters with different places of articulation are highly marked. The markedness constraint is described below:
+When /m/ is in penultimate position, it typically triggers reduction in the final vowel. This is counter-intuitive, as there is no markedness constraint against consonant clusters beginning with nasals. Consonant clusters beginning with nasals are in fact common in Gurmancema, occurring both within words and across word boundaries. Gurmancema, however, has strong nasal place assimilation, meaning consonant clusters with different places of articulation are highly marked. The markedness constraint is described in \REF{ex:baird:16}.
 
-\ea
-*[+nasal, +$a$place][-$a$place] (\textsc{NasalAssimilation}): Assign a violation for every 	consonant cluster beginning with a nasal where the second consonant has a 	different place than the nasal.
+\ea\label{ex:baird:16}
+*[+nasal, +$a$place][\textminus $a$place] (\textsc{NasalAssimilation}): Assign a violation for every 	consonant cluster beginning with a nasal where the second consonant has a 	different place than the nasal.
 \z
 
 \textsc{Nasal Assimilation} prevents the consonant clusters with mismatched place but \textsc{Ident}(lab) prevents /m/ from assimilating to the following consonant. In the context of final vowel deletion, this situation leads to a strong preference for vowel reduction to avoid creating such a mismatched cluster.  In the cases where the vowel after /m/ does delete, however, the nasal retains its bilabial place due to \textsc{Ident}(lab). This does result in cases where there is no nasal place assimilation, which is rare in Gurmancema, but predicted correctly with the constraints in this model. 
-A tableau illustrating all the constraints for prevocalic /m/ is presented below. 
+A tableau illustrating all the constraints for prevocalic /m/ is presented in \tabref{tab:baird:8}. 
 
 
 \begin{table}
 \caption{Tableau for /mi\#C/ with sample phrase ‘elephants eat’, $n=44$}
 \label{tab:baird:8}
-\small
+\footnotesize
 \fittable{
-\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}} 
+\begin{tabular}{l*{8}{S}} 
 \lsptoprule
-{} &  p   &  p   &    &   *[+tns]\#   &   \textsc{Max}(V)   &   \textsc{Ident} (lab)   &   \textsc{Ident} (hi)   &   \textsc{Nasal Assimilation}  \\
+{} &      &      &    &               &                     &  \multicolumn{2}{c}{\textsc{Ident}} & \\\cmidrule(lr){7-8}
+{} &  \multicolumn{1}{c}{p}   &  \multicolumn{1}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{Max}(V)}   &   \multicolumn{1}{c}{(lab)}   &   \multicolumn{1}{c}{(hi)}   &   \multicolumn{1}{c}{\multirow{-2}{*}{\parbox{1.8cm}{\centering\textsc{Nasal\newline Assimilation}}}}  \\
 \midrule
-    /ilúomì dá/ & obs & pred & score & 6.14 & 3.62 & 3.62 & 2.99 & 2.55 \\
-    \textipa{a. [ilúomì dá]} & .07 & \textasciitilde .04 & 6.14 & 1 & 0 & 0 & 0 & 0\\
-   \textipa{b. [ilúomə̀ dá]} & .91 & \textasciitilde .91 & 2.99 & 0 & 0 & 0 & 1 & 0 \\
-   \textipa{c. [ilúom dá]} & .02 & \textasciitilde .04 & 6.17 & 0 & 1 & 0 & 0 & 1\\
-   \textipa{d. [ilúon dá]} & 0 & \textasciitilde .01 & 7.24 & 0 & 1 & 1 & 0 & 0\\
+    /ilúomì dá/ & \multicolumn{1}{c}{obs} & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 6.14     & 3.62 & 3.62 & 2.99 & 2.55 \\
+   \textipa{a. [ilúomì dá]}  & .07   & \sim .04 & 6.14 & 1    & 0  & 0 & 0 & 0\\
+   \textipa{b. [ilúomə̀ dá]}  & .91   & \sim .91 & 2.99 & 0    & 0  & 0 & 1 & 0 \\
+   \textipa{c. [ilúom dá]}   & .02   & \sim .04 & 6.17 & 0    &  1 & 0 & 0 & 1\\
+   \textipa{d. [ilúon dá]}   & 0     & \sim .01 & 7.24 & 0    &  1 & 1 & 0 & 0\\
  \lspbottomrule
  \end{tabular}
  }
@@ -464,18 +466,19 @@ A tableau illustrating all the constraints for prevocalic /m/ is presented below
 In cases where the next consonant is also bilabial, the vowel is more likely to delete because it only violates \textsc{Max}(V), rather than \textsc{Max}(V) as well as either \textsc{NasalAssimilation} or \textsc{Ident}(lab). 
 
 \begin{table}
- \caption{Tableau for /ma\#C/ with sample phrase ‘food hits’, $n=6$}
+\caption{Tableau for /ma\#C/ with sample phrase ‘food hits’, $n=6$}
 \label{tab:baird:9}
-\small
+\footnotesize
 \fittable{
-\begin{tabular}{l@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{~}c@{}}  
+\begin{tabular}{l*{8}{S}}  
 \lsptoprule
-{} &  p   &  p   &    &   *[+tns]\#   &   \textsc{Max}(V)   &   \textsc{Ident} (lab)   &   \textsc{Ident} (low)   &   \textsc{Nasal Assimilation}  \\
+{} &      &      &    &               &                     &  \multicolumn{2}{c}{\textsc{Ident}} & \\\cmidrule(lr){7-8}
+{} &  \multicolumn{1}{c}{p}   &  \multicolumn{1}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{Max}(V)}   &   \multicolumn{1}{c}{(lab)}   &   \multicolumn{1}{c}{(low)}   &   \multicolumn{1}{c}{\multirow{-2}{*}{\parbox{1.8cm}{\centering\textsc{Nasal\newline Assimilation}}}}  \\
 \midrule
-    /míɟemá pwá/ & obs & pred & score & 6.14 & 3.62 & 3.52 & 2.99 & 2.55 \\
-    \textipa{a. [míɟemá pwá]} & 0 & \textasciitilde .04 & 6.14 & 1 & 0 & 0 & 0 & 0\\
-   \textipa{b. [míɟemə́ pwá]} & .33 & \textasciitilde .50 & 3.52 & 0 & 0 & 0 & 1 & 0 \\
-   \textipa{c. [míɟem pwá]} & .67 & \textasciitilde .46 & 3.62 & 0 & 1 & 0 & 0 & 1\\
+    /míɟemá pwá/ & \multicolumn{1}{c}{obs} & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 6.14 & 3.62 & 3.52 & 2.99 & 2.55 \\
+   \textipa{a. [míɟemá pwá]} & 0 &   \sim .04 & 6.14 & 1 & 0 & 0 & 0 & 0\\
+   \textipa{b. [míɟemə́ pwá]} & .33 & \sim .50 & 3.52 & 0 & 0 & 0 & 1 & 0 \\
+   \textipa{c. [míɟem pwá]} & .67 &  \sim .46 & 3.62 & 0 & 1 & 0 & 0 & 1\\
  \lspbottomrule
  \end{tabular}
  }
@@ -488,21 +491,22 @@ While there may be greater deviation between observed and predicted probabilitie
 In the preceding subsections, I have presented tableaux with only the relevant constraints. In order to understand the complete analysis, I have provided a full list of constraints and their weights, in order from highest to lowest weights. 
 
 \ea
-
-	*V.V: 9.34 \newline
-	\textsc{Ident}(lo) \& *R[ə]: 8.13 \newline
-	*[+tns]\#: 6.14 \newline
-	*RC: 6.04\newline
-	\textsc{Dep}(C): 5.79\newline
-	*TC: 4.55\newline
-	\textsc{Ident}(lab): 3.62\newline
-	\textsc{Max}(V): 3.62\newline
-	\textsc{Ident}(lo): 3.52\newline
-	\textsc{Ident}(hi): 2.99\newline
-	\textsc{Nasal Assimilation}: 2.55\newline
-	\textsc{Ident}(tns): 0\newline
-	*R[ə]: 0\newline
-\z
+\begin{tabular}[t]{lS}
+	*V.V &  9.34 \\
+	\textsc{Ident}(lo) \&  *R[ə] &  8.13 \\
+	*[+tns]\# &  6.14 \\
+	*RC &  6.04\\
+	\textsc{Dep}(C) &  5.79\\
+	*TC &  4.55\\
+	\textsc{Ident}(lab) &  3.62\\
+	\textsc{Max}(V) &  3.62\\
+	\textsc{Ident}(lo) &  3.52\\
+	\textsc{Ident}(hi) &  2.99\\
+	\textsc{Nasal Assimilation} &  2.55\\
+	\textsc{Ident}(tns) &  0\\
+	*R[ə] &  0\\
+\end{tabular}
+\z\todo{Convert to proper Table?}
 
 \section{Conclusion}\label{sec:baird:6}
 
