@@ -70,7 +70,7 @@
  
 \newcommand{\all}[1]{\ensuremath{\forall #1}}
 
-\newcommand{\bari}{\ipabar{\i}{.5ex}{1.1}{}{}} 
+\newcommand{\bari}{\sout{\i}} 
 
 \let\oldemptyset\emptyset
 \let\emptyset\varnothing
@@ -86,22 +86,16 @@
 \definecolor{lsDOIGray}{cmyk}{0,0,0,0.45}
 
 %newkirk
-\newcommand{\ix}[1]{{\color{red}\textsubscript{#1}}} %probably i.nde.x
-\newcommand{\ol}[1]{{\color{red}\textit{#1}}} %probably o.bject l.anguage
-\newcommand{\alert}[1]{{\color{red}\textbf{#1}}}
-\newenvironment{context}{\color{red}
-\smallskip 
+\newcommand{\ix}[1]{\ensuremath{_{#1}}}   % ix =index; in text-semantics mode, allows upright subscript indices with non-math mode text 
+\newenvironment{context}{\medskip\par\noindent%
+			{\bfseries\sffamily Context: }% 
+			}%open environment
+			{\par}%close environment
+\newcommand{\den}[1]{\ensuremath{\llbracket}\,{#1}\,\ensuremath{\rrbracket}}
+\newcommand{\type}[1]{\ensuremath{\langle{#1}\rangle}} % Type brackets for type-theory 	 ... \type{e,\type{s,t}}
+\newcommand{\denol}[1]{\den{\textit{#1}}} % Denotation with object language
+\newcommand{\set}[1]{\ensuremath{\{~ #1 ~\}}} % Encloses a set (easier to see in source)
 
-\scriptsize 
-}{\color{black}\normalsize }
-\newcommand{\Newkirkm}[1]{{\color{red}\textsc{#1}}}
-\newcommand{\den}[1]{{\color{red}#1}}
-\newcommand{\type}[1]{{\color{red}#1}}
-\newcommand{\denol}[1]{{\color{red}#1}}
-\newcommand{\bex}{\ea}
-\newcommand{\fex}{\z}
-\newcommand{\set}{{\color{red} SET}}
- 
 \def\denotes#1{$\lbrack\!\lbrack${#1\/}$\rbrack\!\rbrack$}      % denotes
 \newcommand{\citeNP}{\citealt}
 
