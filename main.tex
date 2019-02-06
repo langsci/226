@@ -1,7 +1,14 @@
-\documentclass[output=book,modfonts,nonflat,collection,collectionchapter
-,colorlinks,citecolor=brown
+\documentclass[
+    output=book,
+    modfonts,
+    nonflat,
+    collection,
+    collectionchapter,
+    colorlinks,
+    citecolor=brown
 % ,draft
-,draftmode
+    ,draftmode
+    ,oldstylenumbers
 		  ]{langscibook}                               
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -17,7 +24,7 @@
 
 \WarningsOff[microtype]
 \WarningFilter{microtype}{Unkn\newlineown slot} 
-\includeonly{chapters/cahill}
+% \includeonly{chapters/baron}
 \begin{document}         
 \maketitle                
 \frontmatter
@@ -35,7 +42,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 \includepaper{chapters/cahill} 
-% % % % \includepaper{chapters/baird} %this chapters is included twice! See line 49
+% % % \includepaper{chapters/baird} %this chapters is included twice! See line 49
 \includepaper{chapters/baron} 
 \includepaper{chapters/downing}
 
