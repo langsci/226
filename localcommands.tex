@@ -135,5 +135,10 @@
 \newcommand{\Ò}{\`{\~{ɔ}}}
 \newcommand{\ú}{\'{ũ}}
 \newcommand{\ù}{\`{ũ}}
-
+\newcommand{\nolistbreak}{%
+  \let\oldpar\par\def\par{\oldpar\nobreak}% Any \par issues a \nobreak
+  \@nobreaktrue% Don't break with first \item
+}
 \newcommand{\NUM}{{\textsc{num}}}
+\makeatletter
+\makeatletter
