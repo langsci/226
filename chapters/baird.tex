@@ -143,7 +143,7 @@ In this paper, I will walk through a constraint-based analysis that models all o
 
 In the literature on Gurmancema, there is not a complete account of vowel deletion and variation. \citet{Naba1994} notes that three authors have touched on issues of reduced vowels from a phonotactic perspective, but they all have different analyses. He says that too little attention has been paid to elision, apocope, and assimilation and that the description and analysis of these phenomena are very important for tonal and morphological reasons.
 
-The only work focusing specifically on vowel deletion and reduction is \citet{Rialland1980,Rialland2001}. She labels the process “vowel punctuation and deletion,'' arguing that there are weak and strong forms of words.  Strong forms occur at the ends of phrases, where word-final vowels are maintained. In weak position, or phrase-medially, she argues that vowels are deleted and an epenthetic [i] is inserted to prevent illicit consonant clusters. She argues that these processes do not affect monosyllabic words. In \citet{Rialland2001}, she elaborates that monosyllabic words are slightly lengthened. Her paper does not attempt a constraint-based analysis -- I will argue that these frameworks are better suited to representing the data than rule-based phonology. 
+The only work focusing specifically on vowel deletion and reduction is \citet{Rialland1980,Rialland2001}. She labels the process “vowel punctuation and deletion'', arguing that there are weak and strong forms of words.  Strong forms occur at the ends of phrases, where word-final vowels are maintained. In weak position, or phrase-medially, she argues that vowels are deleted and an epenthetic [i] is inserted to prevent illicit consonant clusters. She argues that these processes do not affect monosyllabic words. In \citet{Rialland2001}, she elaborates that monosyllabic words are slightly lengthened. Her paper does not attempt a constraint-based analysis -- I will argue that these frameworks are better suited to representing the data than rule-based phonology. 
 	
 Across Niger-Congo languages, vowel elision is also common as a repair for vowel hiatus. Across word boundaries, the first vowel is always deleted \citep{Casali1997}, which holds true for Gurmancema. Although this is one aspect of the vowel-deletion process in Gurmancema, vowels do not only delete in hiatus contexts in Gurmancema, as can be seen in the examples in (\ref{m}). There is no process analagous to the word-final vowel reduction in Gurmancema that I could find in the Niger-Congo literature. 
  
@@ -160,10 +160,9 @@ I used formant measurements to determine whether a vowel was maintained or reduc
 
 
 \begin{figure} 
-\includegraphics[width=\linewidth]{figures/ACAL_Vowel_plot.png}
-\caption{Plot of maintained vowels and schwa in Gurmancema.}
-\small\textsuperscript{a=} Note: Ellipses mark2 standard deviations from the mean formant values of each vowel.
-  \end{figure}
+\includegraphics[width=10cm]{figures/ACAL_Vowel_plot.png} % width calculated from image resolution @ 300 dpi.
+\caption{Plot of maintained vowels and schwa in Gurmancema. \textsuperscript{a=} Note: Ellipses mark2 standard deviations from the mean formant values of each vowel.}
+\end{figure}
  
 
 Throughout the analysis, the term “prevocalic consonant” refers to the consonant that is in penultimate position of the given word (i.e. the onset of the final syllable). The term “following consonant” refers to the first consonant of the following word. 
@@ -175,7 +174,7 @@ In general, there are three surface forms for vowels. If a vowel surfaces the sa
 \section{Constraint-based analysis}\label{sec:baird:5}
 In this section, I will explain the model I used to analyze the data. 
 
-\subsection{Maximum Entropy Harmonic Grammar}
+\subsection{Maximum Entropy Harmonic Grammar}\largerpage
 
 Due to the complex and variable nature of the process, these data are well-suited to a constraint-based analysis. A major component of the complexity in the Gurmancema data is the free variation, which necessitates a stochastic constraint-based model. In this paper, I use Maximum Entropy Harmonic Grammar (MaxEnt), which captures patterns of variation \citep{GoldwaterJohnson2003,HayesWilson2008}. 
 	 
@@ -192,7 +191,7 @@ The MaxEnt grammar tool \citep{WilsonHayesGeorge08} optimizes all of the constra
 The probability P(\textit{x}) is calculated as follows based on all the possible forms in Ω:
 
 \ea 
-$ \mathrm{P}(x) = \frac{\mathrm{exp}(-h(x))}{Z}\text{, where } Z = \sum_{y\in \mathrm{Ω}} \mathrm{exp}(-h(y))$  
+$ \mathrm{P}(x) = \frac{\mathrm{exp}(-\mathrm{h}(x))}{Z}\text{, where } Z = \sum_{y\in \mathrm{Ω}} \mathrm{exp}(-\mathrm{h}(y))$  
 \z
 
 The base of the natural logarithm \textit{e} is raised to the negative of the score, and the probability is calculated over all possible forms. 
@@ -207,7 +206,7 @@ In this section, I will present the initial constraints that are the minimum set
 Other models for reduction and deletion often attribute vowel reduction and deletion to prosodic motivators. In Gurmancema, it is the word-final position that is targeted for reduction and deletion regardless of tone or stress (which does not appear to be a salient prosodic feature of the language). For this reason, the constraint I am using to explain this pattern is simply a markedness constraint targeting word-final tense vowels in the language. All data in this paper are phrase-medial, so each constraint is assumed to be phrase-bounded. 
 
 The overall dispreference for word-final tense vowels is captured by the 
-markedness constraint \textsc{NoFinalTenseVowel}:
+mar\-kedness constraint \textsc{NoFinalTenseVowel}:
 
 \ea
 \textsc{NoFinalTenseVowel} (*[+tns]\#): Assign a violation for every word-final tense vowel
@@ -247,16 +246,14 @@ The markedness constraint that motivates the hiatus resolution is as follows:
 \z
   
 Vowel hiatus in Gurmancema is always resolved by deleting the first vowel, or the word-final vowel. A tableau showing an example is shown in \tabref{tab:baird:2}.
-  
-\todo{these look more like standard tables than tableaux}  
+   
 \begin{table}
 \caption{Tableau for /di\#a/ with sample phrase ‘forgets jugs’, $n=10$}
 \label{tab:baird:2}
 \small
 {\begin{tabularx}{\textwidth}{Xrrr *{4}{S[table-format=1.2]}} 
 \lsptoprule
-{} &   p   &   p   &    &   \multicolumn{1}{c}{*V.V}   &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{Ident} (hi)}  \\
-\midrule
+{} &   \multicolumn{2}{c}{p}  &    &   \multicolumn{1}{c}{*V.V}   &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{Ident} (hi)}  \\\cmidrule(lr){2-3}\cmidrule(lr){5-8}
 /súndi àbóbà/ & obs & pred & score & 9.34 & 6.14 & 3.62 & 2.99 \\
 \midrule
 {a. [súndi àbóbà]} & 0 & \textasciitilde 0 & 15.44 & 1 & 1 & 0 & 0 \\
@@ -271,7 +268,7 @@ the word-final vowel always being deleted.
 
 \subsection{Prevocalic obstruents}
 Consonant clusters beginning with obstruents are highly marked in Gurmancema, 
-leading to a preference for reduction over deletion when word-final vowels are preceded by an obstruent. In other words, word-final vowels are dispreferred, but when deletion would lead to an illicit consonant cluster, reduction is the preferred fix. The vowels /a, i, o/ reduce when preceded by an obstruent over 90\% of the time. The vowel /e/ is not addressed in this paper, as in the dataset it is always part of root material, which behaves differently from affixal/clitic material. The vowel /u/, however, shows variation when preceded by an obstruent. To start to account for this data, a new constraint is needed, penalizing consonant clusters beginning with obstruents. This is not a general *CC constraint, because not all consonant clusters are equally marked in Gurmancema (see (\ref{data})). 
+leading to a preference for reduction over deletion when word-final vowels are preceded by an obstruent. In other words, word-final vowels are dispreferred, but when deletion would lead to an illicit consonant cluster, reduction is the preferred fix. The vowels /a, i, o/ reduce when preceded by an obstruent over 90\% of the time. The vowel /e/ is not addressed in this paper, as in the dataset it is always part of root material, which behaves differently from affixal/clitic material. The vowel /u/, however, shows variation when preceded by an obstruent. To start to account for this data, a new constraint is needed, penalizing consonant clusters beginning with obstruents. This is not a general *CC constraint, because not all consonant clusters are equally marked in Gurmancema (see \ref{data}). 
 
 \ea \label{tc}
 *[\textminus sonorant][+consonantal] (*TC): Assign a violation for every [\textminus sonorant][+consonantal] consonant cluster in the output. 
@@ -285,8 +282,7 @@ leading to a preference for reduction over deletion when word-final vowels are p
 \small
 \begin{tabularx}{\textwidth}{Xrrr *{4}{S[table-format=1.2]}} 
 \lsptoprule
-{} &  p   &  p   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{*TC}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{Ident} (lo)}  \\
-\midrule
+{} &  \multicolumn{2}{c}{p}  &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{*TC}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{Ident} (lo)} \\\cmidrule(lr){2-3}\cmidrule(lr){5-8}
    /kìbéga bìáni/ & obs & pred & score & 6.14 & 4.55 & 3.62 & 3.52 \\
    \midrule
 {a. [kìbéga bìáni]} & 0.05 & \textasciitilde 0.07 & 6.14 & 1 & 0 & 0 & 0 \\
@@ -307,19 +303,18 @@ illustrated in \tabref{tab:baird:4}.
 \caption{Tableau for /Tu\#C/ with sample phrase ‘tree wants’, $n=141$}
 \label{tab:baird:4}
 \footnotesize
-\fittable{
-\begin{tabularx}{\textwidth}{c s s r s s s s s}%{X S[table-format=1.2] rr *{5}{S[table-format=1.2]}} 
+\fittable{%
+\begin{tabular}{l l r r *{5}{S[table-format=1.2]}}
 \lsptoprule
-{} &  \multicolumn{1}{c}{p}   &  \multicolumn{1}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{*TC}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{ident}(lab)}   &   \multicolumn{1}{c}{\textsc{ident}(hi)}  \\
-\midrule
+{} &  \multicolumn{2}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{*TC}   &   \multicolumn{1}{c}{\textsc{Max} (V)}   &   \multicolumn{1}{c}{\textsc{ident}(lab)}   &   \multicolumn{1}{c}{\textsc{ident}(hi)}  \\
+\cmidrule(lr){2-3}\cmidrule(lr){5-9}
  /bútíbu bwà/ & \multicolumn{1}{c}{obs} & pred & score & 6.14 & 4.55 & 3.62 & 3.62 & 2.99 \\
  \midrule
-{a. [bútíbu bwà]} & .69 & \textasciitilde 0.57 & 6.14 & 1 & 0 & 0 & 0 & 0\\
-{b. [bútíbə bwà]} & .31 & \textasciitilde 0.35 & 6.61 & 0 & 0 & 0 & 1 & 1 \\
+{a. [bútíbu bwà]} & 0.69 & \textasciitilde 0.57 & 6.14 & 1 & 0 & 0 & 0 & 0\\
+{b. [bútíbə bwà]} & 0.31 & \textasciitilde 0.35 & 6.61 & 0 & 0 & 0 & 1 & 1 \\
 {c. [bútíb bwà]} & 0 & \textasciitilde    0.08 & 8.17 & 0 & 1 & 1 & 0 & 0\\
 
-\lspbottomrule\end{tabularx}
-}
+\lspbottomrule\end{tabular}}
 \end{table}
 
 The model is very accurate in predicting the distribution for maintenance (a) and reduction (b), but the predictions are slightly off, leading to an over-prediction of deletion (c), which was not observed. This is a result of the model being more general. The goal of this analysis was to account for the data with the simplest set of phonological constraints rather than overfitting the model by tailoring constraints to small subsets of data. *TC does not have a higher weight due to the few exceptional cases where TC consonant clusters occur as a result of deletion. \textsc{Max}(V), the only other constraint violated by (c), does not have a higher weight due to cases of vowel deletion elsewhere in the data. 
@@ -347,49 +342,43 @@ The only way to add more weight to this combination is to use constraint conjunc
 
 The addition of the conjoined constraint *R[ə] \& \textsc{Ident}(lo) correctly predicts the data distribution. Although many superadditive models only use superadditivity for conjoining markedness constraints \citep{AlbrightMagri2008}, there is also precedent for using faithfulness constraints in a superadditive manner \citep{GreenDavis2014}. Nevertheless, there is some debate about whether markedness and faithfulness constraints can be conjoined \citep{MoretonSmolensky2002}. Conjoined constraints are intended only to be used for patterns in local domains. According to \citet{MoretonSmolensky2002}, as the domain of markedness is the output while faithfulness necessarily refers to the input, it is not clear whether such conjunctions can be truly considered local. In this case, the only way to represent the data was to conjoin a faithfulness and a markedness constraint (*R[ə] \& \textsc{Ident}(lo)). 
 
-Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are shown in Tables \ref{tab:baird:5} and \ref{tab:baird:6}.
+Tableaux showing the different behaviors of /a/ and /i/ preceded by /ɾ/ are shown in Tables \ref{tab:baird:5} and \ref{tab:baird:6}.\largerpage[-1]
 
-\begin{table}
+\begin{table}[ht]
 \small
 \caption{Tableau for /Ri\#C/ with sample phrase ‘hair covers’, $n=192$}
 \label{tab:baird:5}
-\fittable{
+\fittable{%
 \begin{tabular}{lcSc *{6}{S[table-format=1.2]}} 
 \lsptoprule
-
    &      &      &    &   *R[ə] \&   \\
-{} &  p   &  \multicolumn{1}{c}{p}   &    & \multicolumn{1}{c}{\textsc{Ident}(lo)} & \multicolumn{1}{c}{*[+tns]\#} & \multicolumn{1}{c}{*RC} & \multicolumn{1}{c}{\textsc{Max} (V)} & \multicolumn{1}{c}{\textsc{Ident} (hi)} & \multicolumn{1}{c}{*R[ə]\#} \\
-\midrule
+{} &  \multicolumn{2}{c}{p}   &    & \multicolumn{1}{c}{\textsc{Ident}(lo)} & \multicolumn{1}{c}{*[+tns]\#} & \multicolumn{1}{c}{*RC} & \multicolumn{1}{c}{\textsc{Max} (V)} & \multicolumn{1}{c}{\textsc{Ident} (hi)} & \multicolumn{1}{c}{*R[ə]\#} \\\cmidrule(lr){2-3}\cmidrule(lr){5-10}
    /tìyúɾi ŋóagéni/ & obs & \multicolumn{1}{c}{pred} & score          & 8.13 & 6.14 & 6.04 & 3.62 & 2.99 & 0 \\
 \midrule
 {a. [tìyúɾi ŋóagéni]} & 0.05 & \sim .04 & 6.14 & 0 &1 & 0 & 0 & 0 & 0 \\
 {b. [tìyúɾə ŋóagéni]} & 0.91 & \sim .96 & 2.99 & 0 & 0&0 & 0 & 1 & 1 \\
 {c. [tìyúɾ ŋóagéni]} &  0.04 &  \sim 0    & 9.66 & 0 &0& 1 & 1 & 0 & 0\\
 \lspbottomrule
-\end{tabular}
-}
+\end{tabular}}
 \end{table}
 
-
-
-\begin{table}
+\begin{table}[ht]
 \footnotesize
- \caption{Tableau for /Ra\#C/ with sample phrase ‘children sell’, $n=160$}
+\caption{Tableau for /Ra\#C/ with sample phrase ‘children sell’, $n=160$}
 \label{tab:baird:6}
-\fittable{
+\fittable{%
 \begin{tabular}{lc *{7}{S} c} 
 \lsptoprule
    &      &      &    &   \multicolumn{1}{c}{*R[ə] \&}    \\
-{} &  p   & \multicolumn{1}{c}{p} & & \multicolumn{1}{c}{\textsc{Ident}(lo)} & \multicolumn{1}{c}{*[+tns\#]} & \multicolumn{1}{c}{\textsc *RC} & \multicolumn{1}{c}{\textsc{Max}(V)} & \multicolumn{1}{c}{\textsc{Ident} (lo)}   &   *R[ə] \\
-\midrule
+{} &  \multicolumn{2}{c}{p} & & \multicolumn{1}{c}{\textsc{Ident}(lo)} & \multicolumn{1}{c}{*[+tns\#]} & \multicolumn{1}{c}{\textsc *RC} & \multicolumn{1}{c}{\textsc{Max}(V)} & \multicolumn{1}{c}{\textsc{Ident} (lo)}   &   *R[ə] \\
+\cmidrule(lr){2-3}\cmidrule(lr){5-10}
 /abéla kúaɾi/ & obs & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 8.13 & 6.14 & 6.04 & 3.62 & 3.52 & 0\\
 \midrule
 {a. [abéla kúaɾi]} & 1 & \sim .97 & 6.14 & 0 & 1 & 0 & 0 & 0 & 0\\
 {b. [abélə kúaɾi]} & 0 & \sim 0  & 11.65 & 1 & 0 & 0 & 0 & 1 & 1\\
 {c. [abél kúaɾi]}  & 0 & \sim .03 & 9.66 & 0 & 0 & 1 & 1 & 0 & 0\\
 \lspbottomrule
-\end{tabular}
-}
+\end{tabular}}
 \end{table}
 
 Without the use of superadditivity, the model predicts variation in this environment which showed categorical behavior. An example tableau is shown in \tabref{tab:baird:7}. 
@@ -401,8 +390,8 @@ Without the use of superadditivity, the model predicts variation in this environ
 \label{tab:baird:7} 
  \begin{tabularx}{\textwidth}{Xc *{7}{S}} 
  \lsptoprule
-{} &  p   &  \multicolumn{1}{c}{p} & & \multicolumn{1}{c}{*RC} & \multicolumn{1}{c}{\textsc{*[+tns\#]}} & \multicolumn{1}{c}{\textsc{Ident} (lo)} & \multicolumn{1}{c}{*R[ə]} & \multicolumn{1}{c}{\textsc{Max}(V)}\\
-    \midrule
+{} &  \multicolumn{2}{c}{p} & & \multicolumn{1}{c}{*RC} & \multicolumn{1}{c}{\textsc{*[+tns\#]}} & \multicolumn{1}{c}{\textsc{Ident} (lo)} & \multicolumn{1}{c}{*R[ə]} & \multicolumn{1}{c}{\textsc{Max}(V)}\\
+    \cmidrule(lr){2-3}\cmidrule(lr){5-9}
     /abéla kúaɾi/ & \multicolumn{1}{c}{obs} & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 9.83 & 9.64 & 7.84 & 3.37 & 3.33\\
     \midrule
    {a. [abéla kúaɾi]} & 1 & \sim 0.81 & 9.64  & 0 & 1 & 0 & 0 & 0\\
@@ -429,12 +418,12 @@ A tableau illustrating all the constraints for prevocalic /m/ is presented in \t
 \caption{Tableau for /mi\#C/ with sample phrase ‘elephants eat’, $n=44$}
 \label{tab:baird:8}
 \footnotesize
-\fittable{
+\fittable{%
 \begin{tabular}{l*{8}{S}} 
 \lsptoprule
 {} &      &      &    &               &                     &  & \\
-{} &  \multicolumn{1}{c}{p}   &  \multicolumn{1}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{Max}(V)}   &   \multicolumn{1}{c}{\textsc{ident}(lab)}   &   \multicolumn{1}{c}{\textsc{ident}(hi)}   &   \multicolumn{1}{c}{\multirow{-2}{*}{\parbox{1.8cm}{\centering\textsc{Nasal\newline Assimilation}}}}  \\
-    \midrule
+{} &  \multicolumn{2}{c}{p}      &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{Max}(V)}   &   \multicolumn{1}{c}{\textsc{ident}(lab)}   &   \multicolumn{1}{c}{\textsc{ident}(hi)}   &   \multicolumn{1}{c}{\multirow{-2}{*}{\parbox{1.8cm}{\centering\textsc{Nasal\newline Assimilation}}}}  \\
+    \cmidrule(lr){2-3}\cmidrule(lr){5-9}
     /ilúomì dá/ & \multicolumn{1}{c}{obs} & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 6.14     & 3.62 & 3.62 & 2.99 & 2.55 \\
     \midrule
    {a. [ilúomì dá]}  & .07   & \sim .04 & 6.14 & 1    & 0  & 0 & 0 & 0\\
@@ -452,12 +441,12 @@ In cases where the next consonant is also bilabial, the vowel is more likely to 
 \caption{Tableau for /ma\#C/ with sample phrase ‘food hits’, $n=6$}
 \label{tab:baird:9}
 \footnotesize
-\fittable{
+\fittable{%
 \begin{tabular}{l*{8}{S}}  
 \lsptoprule
     &                           &                       &       &                               &                                           & & \\
-{} &  \multicolumn{1}{c}{p}   &  \multicolumn{1}{c}{p}   &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{max}(V)}   &   \multicolumn{1}{c}{\textsc{ident}(lab)}   &   \multicolumn{1}{c}{\textsc{ident}(low)}   &   \multicolumn{1}{c}{\multirow{-2}{*}{\parbox{1.8cm}{\centering\textsc{Nasal\newline Assimilation}}}}  \\
-    \midrule
+{} &  \multicolumn{2}{c}{p}     &    &   \multicolumn{1}{c}{*[+tns]\#}   &   \multicolumn{1}{c}{\textsc{max}(V)}   &   \multicolumn{1}{c}{\textsc{ident}(lab)}   &   \multicolumn{1}{c}{\textsc{ident}(low)}   &   \multicolumn{1}{c}{\multirow{-2}{*}{\parbox{1.8cm}{\centering\textsc{Nasal\newline Assimilation}}}}  \\
+    \cmidrule(lr){2-3}\cmidrule(lr){5-9}
     /míɟemá pwá/ & \multicolumn{1}{c}{obs} & \multicolumn{1}{c}{pred} & \multicolumn{1}{c}{score} & 6.14 & 3.62 & 3.52 & 2.99 & 2.55 \\
     \midrule
    {a. [míɟemá pwá]} & 0 &   \sim .04 & 6.14 & 1 & 0 & 0 & 0 & 0\\
@@ -475,7 +464,7 @@ While there may be greater deviation between observed and predicted probabilitie
 In the preceding subsections, I have presented tableaux with only the relevant constraints. In order to understand the complete analysis, \REF{ex:baird:17} provides a full list of constraints and their weights, in order from highest to lowest weights. 
 
 \ea \label{ex:baird:17}
-\begin{tabular}[t]{lS}
+\begin{tabular}[t]{ll}
 	*V.V &  9.34 \\
 	\textsc{Ident}(lo) \&  *R[ə] &  8.13 \\
 	*[+tns]\# &  6.14 \\
@@ -490,7 +479,7 @@ In the preceding subsections, I have presented tableaux with only the relevant c
 	\textsc{Ident}(tns) &  0\\
 	*R[ə] &  0\\
 \end{tabular}
-\z\todo{Convert to proper Table?}
+\z
 
 \section{Conclusion}\label{sec:baird:6}
 
