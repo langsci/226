@@ -1,6 +1,6 @@
 \documentclass[output=paper]{langscibook} 
 \title{Tone, orthographies, and phonological depth in African languages}
-\author{Michael Cahill}
+\author{Michael Cahill\affiliation{SIL international}}
 
 \abstract{Marking of tone in African orthographies has historically been a challenge, not only for linguistic and analytical reasons, but also because most designers of these orthographies have been educated in non-tonal languages. After a review of lexical vs. grammatical tone, this paper examines various strategies that have been used for marking both lexical and grammatical tone in several East and West African languages, as well as cases in which tone is not marked. The question of the desired phonological depth of an orthography is discussed, especially when applied to tonal processes. Many phonologists do not apply theory more recent than Chomsky and \citet{Halle1968} to orthographies. However, the more recent bifurcation of rules into lexical and postlexical provides a psycholinguistically supported phonological level at which tone marking can be based: the output of the lexical level. Experimental evidence supports this \textsc{lexical} level as more readable than either a \textsc{phonemic} or a \textsc{deep} level.  A tonal typology of languages also guides what types of languages more predictably would need lexical tone marking. Recommendations for orthographical implementation are given in the conclusion.}
 
@@ -23,7 +23,7 @@ This paper begins (\sectref{sec:LexicalVgrammaticalTone:2}) with a review of the
 
 \section{Lexical vs. grammatical tone: Review}
 \label{sec:LexicalVgrammaticalTone:2}
-Lexical tone is a difference in pitch that distinguishes one \textit{lexeme} from another. Samples of this are given in \REF{ex:LexicalToneDifferencesNouns:1}.\footnote{I follow a common notation for tone transcriptions that indicates tone levels with various diacritics: á = high, à = low, ā = mid, â = falling, ǎ = rising, and \textsuperscript{!}á = downstepped high. An unmarked tone is generally mid in a 3-level system. Unless indicated by other labeling, phonetic transcriptions are enclosed in square brackets [a], while orthographic representations are in angle brackets 〈a〉. ISO codes for languages are noted in the usual square brackets, e.g., [kma] for Kɔnni in \REF{ex:LexicalToneDifferencesNouns:1}.}
+Lexical tone is a difference in pitch that distinguishes one \textit{lexeme} from another. Samples of this are given in \REF{ex:LexicalToneDifferencesNouns:1}.\footnote{I follow a common notation for tone transcriptions that indicates tone levels with various diacritics: á = high, à = low, ā = mid, â = falling, ǎ = rising, and ꜝá = downstepped high. An unmarked tone is generally mid in a 3-level system. Unless indicated by other labeling, phonetic transcriptions are enclosed in square brackets [a], while orthographic representations are in angle brackets 〈a〉. ISO codes for languages are noted in the usual square brackets, e.g., [kma] for Kɔnni in \REF{ex:LexicalToneDifferencesNouns:1}.}
 
 \ea Lexical tone differences in nouns\\
 \label{ex:LexicalToneDifferencesNouns:1}
@@ -31,10 +31,10 @@ Lexical tone is a difference in pitch that distinguishes one \textit{lexeme} fro
 \langinfo{Kɔnni}{}{\citealt[306]{Cahill2007}}\smallskip\\
 %Kɔnni [kma] (Ghana) \citep[306]{Cahill2007}\\
 \begin{tabularx}{\linewidth}{@{}XXX@{}}
-\textit{kpááŋ} & \textit{kpá\textsuperscript{!}}\textit{áŋ} &  \textit{kpàáŋ}\\
+\textit{kpááŋ} & \textit{kpá}\,ꜝ\textit{áŋ} &  \textit{kpàáŋ}\\
 ‘oil’          & ‘guinea~fowl’                              & ‘back~of~head’ \\
 \end{tabularx}
-% % % \gll \textit{kpááŋ} \textit{kpá\textsuperscript{!}}\textit{áŋ} \textit{kpàáŋ}\\
+% % % \gll \textit{kpááŋ} \textit{kpáꜝ}\textit{áŋ} \textit{kpàáŋ}\\
 % % % ‘oil’ ‘guinea~fowl’ ‘back~of~head’ \\
 \ex
 Mono [mnh] (D. R. Congo) \citep[198]{Olson2005}\smallskip\\
@@ -72,8 +72,8 @@ In some languages (e.g., Tarok in \tabref{ex:SingPluralGrammaticalTone:3}), tone
 & \textit{vìnì} & \textit{víní} & ‘his sister/s’  \\
 & \textit{djānì} & \textit{djání} & ‘his father/s’  \\
 \multicolumn{4}{l}{b. Koro Waci [bqv] (Nigeria) (Rachelle Wenger, p.c.)\ia{Wenger, Rachelle@Wenger, Rachelle}}\\
-& \textit{ɪsʊr} & \textit{ɪsʊr} & ‘he-goat/s’  \\
-& \textit{ɪtɔmɪ} & \textit{ɪtɔmɪ} & {‘work/s’}  \\
+& \textit{\`{ɪ}s\'{ʊ}r}& \textit{\'{ɪ}s\'{ʊ}r} & ‘he-goat/s’  \\
+& \textit{\`{ɪ}t\'{ɔ}m\`{ɪ}} & \textit{\'{ɪ}t\'{ɔ}m\'{ɪ}} & {‘work/s’}  \\
 & \textit{ìbǔr} & \textit{íbûr} & ‘slime/s’  \\
 \multicolumn{4}{l}{c. Tarok  [yer] (Nigeria) \citep[90–91]{Longtau2008}}\\
 & \textit{ìfàng} & \textit{īfáng} & ‘fingers/s’  \\
@@ -88,16 +88,16 @@ Though verbal aspect may be the most common grammatical category distinguished b
 
 \ea Verbal aspect distinguished by grammatical tone\label{tab:VerbAspectByGrammaticalTone:4}\\Mbembe [mfn] (Nigeria) \citep{Barnwell1969}\smallskip\\
 \begin{tabularx}{\linewidth}{@{}XXX@{}}
- \textit{ɔkɔn}  ‘you sang’         & \textit{ɔkɔn}  {‘you should sing’}                          & \textit{móchí}  ‘he will eat’    \\    
- \textit{ɔkɔn} {‘you have sung’}   & \textit{ɔk\textsuperscript{!}}\textit{ɔn}  ‘if you sing’    & \textit{mòchí}  ‘he will not eat’\\
+ \textit{\`{ɔ}k\^{ɔ}n}  ‘you sang’         & \textit{\'{ɔ}k\'{ɔ}n}  {‘you should sing’}                          & \textit{móchí}  ‘he will eat’    \\    
+ \textit{\'{ɔ}k\`{ɔ}n} {‘you have sung’}   & \textit{\'{ɔ}k}\,ꜝ\textit{\'{ɔ}n}  ‘if you sing’    & \textit{mòchí}  ‘he will not eat’\\
 \end{tabularx}
 \z
 
 \ea Locative distinguished by grammatical tone\label{tab:LocativeByGrammaticalTone:5}\\Fur [fvr] (Sudan) \citep[61]{Kutsch2014}\smallskip\\
 \begin{tabularx}{\linewidth}{@{}XXX@{}}
  \textit{bàrù}  ‘country’ & \textit{bàrú}  ‘in the country’ & \\
- \textit{dɔŋá}  {‘hand’} & \textit{dɔŋà}  ‘in the hand’ & \\
- \textit{ʊtʊ}  ‘fire’ & ʊtʊ  ‘in the fire’ & \\
+ \textit{d\'{ɔ}ŋá}  {‘hand’} & \textit{d\'{ɔ}ŋà}  ‘in the hand’ & \\
+ \textit{\`{ʊ}t\'{ʊ}}  ‘fire’ & \textit{\v{ʊ}t\`{ʊ}}  ‘in the fire’ & \\
 \end{tabularx}
 \z
 
@@ -326,7 +326,7 @@ Zinza [zin] (Echizinza) marks both lexical and grammatical tone, with accent mar
 \section{Phonological theory and orthography}
 \label{sec:PhonTheoryOrtho:4}
 
-The above discussion has assumed that tones are completely stable, i.e., that underlying tones and surface tones are the same. The question of when or if to mark the results of \textit{tone rules} offers more challenges. For example, in a Bantu language, if a prefixal High tone spreads for three syllables, does one mark the initial prefix syllable alone, or the result of the spreading rule? Or, in west Africa, if underlying tones in a word are /HLH/, but surface as [H\textsuperscript{!}HH], what is the appropriate marking? The major question that involves both of these situation is: what \textit{depth} of phonological representation should be the basis for marking tone? This section addresses those questions.
+The above discussion has assumed that tones are completely stable, i.e., that underlying tones and surface tones are the same. The question of when or if to mark the results of \textit{tone rules} offers more challenges. For example, in a Bantu language, if a prefixal High tone spreads for three syllables, does one mark the initial prefix syllable alone, or the result of the spreading rule? Or, in west Africa, if underlying tones in a word are /HLH/, but surface as [HꜝHH], what is the appropriate marking? The major question that involves both of these situation is: what \textit{depth} of phonological representation should be the basis for marking tone? This section addresses those questions.
 
 Tone studies have advanced in the decades since the 1928 Rejaf conference, especially with Autosegmental Phonology \citep{Goldsmith1976} and Lexical Phonology \citep{Pulleyblank1986}. However, as \citet{Snider2014} notes, many people do not apply phonological theory more recent than \citet{Halle1968} to orthographies. Rather, the main distinctions that most orthographers have in mind are “deep” vs. “shallow” orthographies. However, as we will see, there are other options.
 
@@ -433,15 +433,15 @@ They tested 97 tenth-graders with orthographies that represented two tonal proce
     \begin{tabularx}{\textwidth}{QQQl}
     \lsptoprule
     Speech & Deep and lexical orthographies & Phonemic orthography & Gloss\\\midrule
-    {[sɛ-tʊ]} 
+    {[s\'{ɛ}-tʊ]} 
 
-    thanks-\textsc{nc9} & 〈sɛtʋ〉 & 〈sɛtʋ〉 & ‘thanks’\\
-    {[fɛyɪ]}
+    thanks-\textsc{nc9} & 〈s\'{ɛ}tʋ〉 & 〈s\'{ɛ}tʋ〉 & ‘thanks’\\
+    {[f\'{ɛ}y\'{ɪ}]}
 
-    there\_is\_no & 〈fɛyɩ〉 & 〈fɛyɩ〉 & ‘there is not’\\
-    {[sɛ\textsuperscript{!}tʊ fɛyɪ]}
+    there\_is\_no & 〈f\'{ɛ}y\'{ɩ}〉 & 〈f\'{ɛ}y\'{ɩ}〉 & ‘there is not’\\
+    {[s\'{ɛ}ꜝt\'{ʊ} f\'{ɛ}y\'{ɪ}]}
 
-    thanks-\textsc{nc9} there\_is\_no & 〈sɛtʋ fɛyɩ〉 & 〈sɛ’tʋ fɛyɩ〉 & ‘don’t mention it!’\\
+    thanks-\textsc{nc9} there\_is\_no & 〈s\'{ɛ}tʋ f\'{ɛ}y\'{ɩ}〉 & 〈s\'{ɛ}’t\'{ʋ} f\'{ɛ}y\'{ɩ}〉 & ‘don’t mention it!’\\
     \lspbottomrule
     \end{tabularx}
     \caption{HLH plateauing and Kabiye orthographies}
