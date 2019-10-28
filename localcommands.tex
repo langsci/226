@@ -2,6 +2,8 @@
 \renewcommand{\lsBackTitleFont}{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{22pt}{10mm}\selectfont}
 \renewcommand{\lsCoverSubTitleFont}{\sffamily\addfontfeatures{Scale=MatchUppercase}\fontsize{22pt}{10mm}\selectfont}
 
+\patchcmd{\mkbibindexname}{\ifdefvoid{#3}{}{\MakeCapital{#3} }}{\ifdefvoid{#3}{}{#3 }}{}{\AtEndDocument{\typeout{mkbibindexname could not be patched.}}}
+
 % Font size in Paper Footer
 \renewcommand{\lsChapterFooterSize}{\scriptsize}
 
