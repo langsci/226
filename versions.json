@@ -1,7 +1,1 @@
-{"versions": [{"versiontype": "proofreading",
-		"title": "African linguistics across the disciplines",
-		"authors": [{"name": "Samson Lotven"},{"name":" Silvina Bongiovanni"},{"name":" Phillip Weirich"},{"name":" Robert Botne"},{"name":" Samuel Gyasi Obeng"}],
-	"license": "CC-BY-4.0",
-	"publishedAt": "2019-02-11T22:29:40.000Z"}
-	]
-}
+{"versions": [{"authors": [{"name": "Samson Lotven"}, {"name": " Silvina Bongiovanni"}, {"name": " Phillip Weirich"}, {"name": " Robert Botne"}, {"name": " Samuel Gyasi Obeng"}], "title": "African linguistics across the disciplines", "publishedAt": "2019-02-11T22:29:40.000Z", "license": "CC-BY-4.0", "versiontype": "proofreading"}, {"title": "African linguistics across the disciplines", "versiontype": "first_edition", "license": "CC-BY-4.0", "publishedAt": "2019-11-07T13:32:20.367660", "authors": [{"name": "Samson Lotven"}, {"name": " Silvina Bongiovanni"}, {"name": " Phillip Weirich"}, {"name": " Robert Botne"}, {"name": " Samuel Gyasi Obeng"}]}]}
